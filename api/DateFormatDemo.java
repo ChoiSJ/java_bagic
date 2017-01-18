@@ -7,8 +7,8 @@ public class DateFormatDemo {
 		Date now = new Date();
 
 		//String pattern = "yyyy.MM.dd hh:mm:ss";
-		//String pattern = "yy³â M¿ù dÀÏ E¿äÀÏ";
-		String pattern = "a h½Ã mºĞ sÃÊ";
+		//String pattern = "yyë…„ Mì›” dì¼ Eìš”ì¼";
+		String pattern = "a hì‹œ më¶„ sì´ˆ";
 		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 		String text = sdf.format(now);
 		System.out.println(text);
