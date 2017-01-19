@@ -4,17 +4,17 @@ public class PhoneApp2 {
 		
 		SmartPhone	 p1 = new SmartPhone();
 		FeaturePhone p2 = new FeaturePhone();
-		// p1 ÂüÁ¶º¯¼ö´Â SmartPhone À» ÂüÁ¶ÇÏ°í ÀÖ±â ¶§¹®¿¡
-		// SmartPhone °´Ã¼ÀÇ ÇÊµå¿Í ¼Ó¼º¿¡ Á¢±Ù°¡´ÉÇÏ°í,
-		// Phone °´Ã¼ÀÇ ÇÊµå¿Í ¼Ó¼º¿¡ Á¢±Ù°¡´ÉÇÏ´Ù.
-		p1.ip = "192.168.0.1";					// SmartPhone ¿¡ Á¤ÀÇµÈ ÇÊµå
-		p1.web("www.google.co.jp");				// SmartPhone ¿¡ Á¤ÀÇµÈ ¸Þ¼Òµå
-		p1.telNumber = "010-1234-5678";			// Phone ¿¡ Á¤ÀÇµÈ ÇÊµå
-		p1.call("010-1111-2222");				// Phone ¿¡ Á¤ÀÇµÈ ¸Þ¼Òµå
+		// p1 ì°¸ì¡°ë³€ìˆ˜ëŠ” SmartPhone ì„ ì°¸ì¡°í•˜ê³  ìžˆê¸° ë•Œë¬¸ì—
+		// SmartPhone ê°ì²´ì˜ í•„ë“œì™€ ì†ì„±ì— ì ‘ê·¼ê°€ëŠ¥í•˜ê³ ,
+		// Phone ê°ì²´ì˜ í•„ë“œì™€ ì†ì„±ì— ì ‘ê·¼ê°€ëŠ¥í•˜ë‹¤.
+		p1.ip = "192.168.0.1";					// SmartPhone ì— ì •ì˜ëœ í•„ë“œ
+		p1.web("www.google.co.jp");				// SmartPhone ì— ì •ì˜ëœ ë©”ì†Œë“œ
+		p1.telNumber = "010-1234-5678";			// Phone ì— ì •ì˜ëœ í•„ë“œ
+		p1.call("010-1111-2222");				// Phone ì— ì •ì˜ëœ ë©”ì†Œë“œ
 
 		
-		// SmartPhone °ú FeaturePhone À» Phone Å¸ÀÔÀÇ ÂüÁ¶º¯¼ö¿¡ ´ã±â
-		// »ó¼Ó°ü°è¿¡ ÀÖ´Â Å¬·¡½ºÀÏ °æ¿ì ºÎ¸ðÅ¸ÀÔÀÇ ÂüÁ¶º¯¼ö¿¡ ÀÚ½ÄÅ¬·¡½º Å¸ÀÔÀÇ °´Ã¼¸¦ ÀúÀåÇÒ ¼ö ÀÖ´Ù.
+		// SmartPhone ê³¼ FeaturePhone ì„ Phone íƒ€ìž…ì˜ ì°¸ì¡°ë³€ìˆ˜ì— ë‹´ê¸°
+		// ìƒì†ê´€ê³„ì— ìžˆëŠ” í´ëž˜ìŠ¤ì¼ ê²½ìš° ë¶€ëª¨íƒ€ìž…ì˜ ì°¸ì¡°ë³€ìˆ˜ì— ìžì‹í´ëž˜ìŠ¤ íƒ€ìž…ì˜ ê°ì²´ë¥¼ ì €ìž¥í•  ìˆ˜ ìžˆë‹¤.
 		Phone		 p3 = new SmartPhone();
 		Phone		 p4 = new FeaturePhone();
 		

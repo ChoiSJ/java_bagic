@@ -1,42 +1,42 @@
 public class ProductApp {
 	public static void main(String[] args) {
 		
-		// ¼Ó¼º
-		// »óÇ°¹øÈ£, »óÇ°¸í, Á¦Á¶»ç, °¡°İ, ÇÒÀÎÀ²(½Ç¼ö), ÆÇ¸Å¿©ºÎ
-		// »óÇ°À» 5°³ ´ã´Â ¹è¿­À» Á¤ÀÇÇÏ±â
+		// ì†ì„±
+		// ìƒí’ˆë²ˆí˜¸, ìƒí’ˆëª…, ì œì¡°ì‚¬, ê°€ê²©, í• ì¸ìœ¨(ì‹¤ìˆ˜), íŒë§¤ì—¬ë¶€
+		// ìƒí’ˆì„ 5ê°œ ë‹´ëŠ” ë°°ì—´ì„ ì •ì˜í•˜ê¸°
 
 		Product[] pro = new Product[5];
-		// ¹è¿­¿¡ »óÇ° 5°³ ÀúÀåÇÏ±â
+		// ë°°ì—´ì— ìƒí’ˆ 5ê°œ ì €ì¥í•˜ê¸°
 
-		pro[0] = new Product(1, "¾ÆÀÌÆù7", "¾ÖÇÃ", 10000, 10.5, true);
-		pro[1] = new Product(2, "³Ø¼­½º5X", "±¸±Û(LG)", 5000, 30.9, true);
-		pro[2] = new Product(3, "°¶·°½Ã7", "»ï¼º", 10000, 40.0, false);
-		pro[3] = new Product(4, "¿¤ÁöV20", "LG", 6000, 30.0, false);
-		pro[4] = new Product(5, "¿¢½ºÆä¸®¾ÆXZ", "¼Ò´Ï", 12000, 5.7, true);
-		// ¹è¿­¿¡ ÀúÀåµÈ »óÇ° Áß¿¡¼­ ÆÇ¸Å ÁßÀÎ »óÇ°¸¸ Ç¥½ÃÇÏ±â
+		pro[0] = new Product(1, "ì•„ì´í°7", "ì• í”Œ", 10000, 10.5, true);
+		pro[1] = new Product(2, "ë„¥ì„œìŠ¤5X", "êµ¬ê¸€(LG)", 5000, 30.9, true);
+		pro[2] = new Product(3, "ê°¤ëŸ­ì‹œ7", "ì‚¼ì„±", 10000, 40.0, false);
+		pro[3] = new Product(4, "ì—˜ì§€V20", "LG", 6000, 30.0, false);
+		pro[4] = new Product(5, "ì—‘ìŠ¤í˜ë¦¬ì•„XZ", "ì†Œë‹ˆ", 12000, 5.7, true);
+		// ë°°ì—´ì— ì €ì¥ëœ ìƒí’ˆ ì¤‘ì—ì„œ íŒë§¤ ì¤‘ì¸ ìƒí’ˆë§Œ í‘œì‹œí•˜ê¸°
 		
-		System.out.print("ÇöÀç ÆÇ¸Å Áß: ");
+		System.out.print("í˜„ì¬ íŒë§¤ ì¤‘: ");
 		for (Product now : pro) {
 			if (now.isSale == true) { 
 				System.out.printf("%s ", now.name);
 			}
 		}
 		System.out.println();
-		// ¹è¿­¿¡ ÀúÀåµÈ »óÇ° Áß¿¡¼­ °¡°İÀÌ 10000¿ø ÀÌ»óÀÎ »óÇ°¸¸ Ç¥½ÃÇÏ±â
+		// ë°°ì—´ì— ì €ì¥ëœ ìƒí’ˆ ì¤‘ì—ì„œ ê°€ê²©ì´ 10000ì› ì´ìƒì¸ ìƒí’ˆë§Œ í‘œì‹œí•˜ê¸°
 
-		System.out.print("°¡°İ 1¸¸¿ø ÀÌ»ó: ");
+		System.out.print("ê°€ê²© 1ë§Œì› ì´ìƒ: ");
 		for (Product now : pro) {
 			if (now.price >= 10000) { 
 				System.out.printf("%s ", now.name);
 			}
 		}
 		System.out.println();
-		// ¹è¿­¿¡ ÀúÀåµÈ »óÇ°ÀÇ ÀüÃ¼ °¡°İÀ» Ç¥½ÃÇÏ±â
+		// ë°°ì—´ì— ì €ì¥ëœ ìƒí’ˆì˜ ì „ì²´ ê°€ê²©ì„ í‘œì‹œí•˜ê¸°
 		
-		System.out.println("»óÇ° ÀüÃ¼ °¡°İ ¸®½ºÆ®");
+		System.out.println("ìƒí’ˆ ì „ì²´ ê°€ê²© ë¦¬ìŠ¤íŠ¸");
 		for (Product now : pro) {
-			System.out.print(now.name + " - Á¤°¡: ");
-			System.out.print(now.price + ", ÇÒÀÎ°¡: ");
+			System.out.print(now.name + " - ì •ê°€: ");
+			System.out.print(now.price + ", í• ì¸ê°€: ");
 			System.out.print(now.discountPrice() + "\n");
 		}
 	}

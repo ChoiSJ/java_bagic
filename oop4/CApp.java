@@ -1,9 +1,9 @@
 public class CApp {
 	public static void main(String[] args) throws Exception {
-		// Class.forName("��üŬ�����̸�")
-		// �ش� Ŭ������ ã�Ƽ� �޸𸮿� �ε��Ѵ�.
+		// Class.forName("전체클래스이름")
+		// 해당 클래스를 찾아서 메모리에 로드한다.
 		
-		//Class.forName("C"); // -> �ʱ�ȭ ������ ����ƴ�.
+		//Class.forName("C"); // -> 초기화 블록이 실행됐다.
 
 		//C c1 = new C();
 		//C c2 = new C();

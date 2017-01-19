@@ -1,16 +1,16 @@
 public class Demo3 {
 	public static void main(String[] args) {
-		// »ïÇ× ¿¬»êÀÚ
-		// Á¶°Ç½Ä ? ÂüÀÏ ¶§ ¿¬»ê½Ä È¤Àº °ª : °ÅÁþÀÏ ¶§ ¿¬»ê½Ä È¤Àº °ª
+		// ì‚¼í•­ ì—°ì‚°ìž
+		// ì¡°ê±´ì‹ ? ì°¸ì¼ ë•Œ ì—°ì‚°ì‹ í˜¹ì€ ê°’ : ê±°ì§“ì¼ ë•Œ ì—°ì‚°ì‹ í˜¹ì€ ê°’
 		
-		// Á¡¼ö°¡ 60Á¡ ÀÌ»óÀÌ¸é ÇÕ°ÝÀ¸·Î ÆÇÁ¤ÇÑ´Ù.
+		// ì ìˆ˜ê°€ 60ì  ì´ìƒì´ë©´ í•©ê²©ìœ¼ë¡œ íŒì •í•œë‹¤.
 		int score = 57;
-		String result1 = (score >= 60 ? "ÇÕ°Ý" : "ºÒÇÕ°Ý");
-		System.out.println("ÆÇÁ¤ °á°ú: " + result1);
+		String result1 = (score >= 60 ? "í•©ê²©" : "ë¶ˆí•©ê²©");
+		System.out.println("íŒì • ê²°ê³¼: " + result1);
 		
-		// ±¸¸Å±Ý¾×ÀÌ 50000¿ø ÀÌ»óÀÌ¸é ¹è¼Ûºñ°¡ ¹«·á´Ù.
+		// êµ¬ë§¤ê¸ˆì•¡ì´ 50000ì› ì´ìƒì´ë©´ ë°°ì†¡ë¹„ê°€ ë¬´ë£Œë‹¤.
 		int price = 55000;
 		int creditPrice = (price >= 50000 ? price : price + 2500);
-		System.out.println("°áÁ¦±Ý¾×: " + creditPrice);
+		System.out.println("ê²°ì œê¸ˆì•¡: " + creditPrice);
 	}
 }

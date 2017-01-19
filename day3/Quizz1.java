@@ -1,20 +1,20 @@
-import java.util.*; // °°Àº µğ·ºÅä¸®¿¡ ÀÖÁö ¾Ê´Â ¼³°èµµ¸¦ µµÀÔ: java.util.Scanner; µµ °¡´É
+import java.util.*; // ê°™ì€ ë””ë ‰í† ë¦¬ì— ìˆì§€ ì•ŠëŠ” ì„¤ê³„ë„ë¥¼ ë„ì…: java.util.Scanner; ë„ ê°€ëŠ¥
 
 public class Quizz1 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in); // (System.in -> Å°º¸µå)ÀÇ ÀÔ·ÂÀ» ½ºÄµ
+		Scanner sc = new Scanner(System.in); // (System.in -> í‚¤ë³´ë“œ)ì˜ ì…ë ¥ì„ ìŠ¤ìº”
 
-		// ±¹¾î, ¿µ¾î, ¼öÇĞÁ¡¼ö¸¦ ÀÔ·Â¹Ş¾Æ¼­ ÃÑÇÕ°ú Æò±ÕÀ» °è»êÇÏ±â
-		System.out.print("±¹¾îÁ¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+		// êµ­ì–´, ì˜ì–´, ìˆ˜í•™ì ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ì„œ ì´í•©ê³¼ í‰ê· ì„ ê³„ì‚°í•˜ê¸°
+		System.out.print("êµ­ì–´ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 		int kor = sc.nextInt();
-		System.out.print("¿µ¾îÁ¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.print("ì˜ì–´ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 		int eng = sc.nextInt();
-		System.out.print("¼öÇĞÁ¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.print("ìˆ˜í•™ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 		int math = sc.nextInt();
 		
 		int total = kor + eng + math;
 		int avg = total/3;
-		System.out.println("ÃÑÁ¡: " + total + "\tÆò±Õ:" + avg);
+		System.out.println("ì´ì : " + total + "\tí‰ê· :" + avg);
 		 
 	}
 }

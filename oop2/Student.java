@@ -1,11 +1,11 @@
 public class Student {
-	int no;			// ÇĞ¹ø
+	int no;			// í•™ë²ˆ
 	String name;
 	int kor;
 	int eng;
 	int math;
 
-	// ±âº» »ı¼ºÀÚ
+	// ê¸°ë³¸ ìƒì„±ì
 	public Student() {
 		no = 1;
 		name = "";
@@ -14,7 +14,7 @@ public class Student {
 		math = 0;
 	}
 	
-	// ¸ğµç ÇÊµå¸¦ ÃÊ±âÈ­ÇÏ´Â »ı¼ºÀÚ
+	// ëª¨ë“  í•„ë“œë¥¼ ì´ˆê¸°í™”í•˜ëŠ” ìƒì„±ì
 	public Student(int nanba, String namae, int kokugo, int eigo, int sugaku) {
 		no = nanba;
 		name = namae;
@@ -23,27 +23,27 @@ public class Student {
 		math = sugaku;
 	}
 
-	// ÃÑÁ¡À» ¹İÈ¯ÇÏ´Â ±â´É -> total
+	// ì´ì ì„ ë°˜í™˜í•˜ëŠ” ê¸°ëŠ¥ -> total
 	public int total() {
 		int result = kor + eng + math;
 		return result;
 	}
 
-	// Æò±ÕÀ» ¹İÈ¯ÇÏ´Â ±â´É -> avg
+	// í‰ê· ì„ ë°˜í™˜í•˜ëŠ” ê¸°ëŠ¥ -> avg
 	public double avg() {
 		double result = total()/3.0;
 		return result;
 	}
 
-	// ÇĞ»ı Á¤º¸¸¦ Ãâ·ÂÇÏ´Â ±â´É(ÃÑÁ¡°ú Æò±Õµµ Æ÷ÇÔ) - info
+	// í•™ìƒ ì •ë³´ë¥¼ ì¶œë ¥í•˜ëŠ” ê¸°ëŠ¥(ì´ì ê³¼ í‰ê· ë„ í¬í•¨) - info
 	public void info() {
 		System.out.println("--------------------");
-		System.out.println("ÇĞ¹ø: " + no);
-		System.out.println("ÀÌ¸§: " + name);
-		System.out.println("±¹¾î: " + kor);
-		System.out.println("¿µ¾î: " + eng);
-		System.out.println("¼öÇĞ: " + math);
-		System.out.println("ÃÑÁ¡: " + total());
-		System.out.println("Æò±Õ: " + avg());
+		System.out.println("í•™ë²ˆ: " + no);
+		System.out.println("ì´ë¦„: " + name);
+		System.out.println("êµ­ì–´: " + kor);
+		System.out.println("ì˜ì–´: " + eng);
+		System.out.println("ìˆ˜í•™: " + math);
+		System.out.println("ì´ì : " + total());
+		System.out.println("í‰ê· : " + avg());
 	}
 }

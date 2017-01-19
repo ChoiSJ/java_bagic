@@ -1,7 +1,7 @@
 public class Book {
-	// Àº´ĞÈ­µÈ ¼Ó¼º Á¤ÀÇÇÏ±â
-	// Ã¥¹øÈ£(no), Á¦¸ñ(title), ÀúÀÚ(author), ÃâÆÇ»ç(publisher), °¡°İ(price),
-	// ÃâÆÇÀÏ(pubdate 2001-01-23)
+	// ì€ë‹‰í™”ëœ ì†ì„± ì •ì˜í•˜ê¸°
+	// ì±…ë²ˆí˜¸(no), ì œëª©(title), ì €ì(author), ì¶œíŒì‚¬(publisher), ê°€ê²©(price),
+	// ì¶œíŒì¼(pubdate 2001-01-23)
 	private int no;
 	private String title;
 	private String author;
@@ -9,13 +9,13 @@ public class Book {
 	private int price;
 	private String pubdate;
 
-	// °ø°³µÈ ±â´É Á¤ÀÇÇÏ±â
-		// ±âº» »ı¼ºÀÚ Á¤ÀÇÇÏ±â
+	// ê³µê°œëœ ê¸°ëŠ¥ ì •ì˜í•˜ê¸°
+		// ê¸°ë³¸ ìƒì„±ì ì •ì˜í•˜ê¸°
 	public Book() {
 		
 	}
 
-		// ¸ğµç ¼Ó¼ºÀ» ÃÊ±âÈ­ÇÏ±â À§ÇØ ¸Å°³º¯¼ö ÀÖ´Â »ı¼ºÀÚ Á¤ÀÇÇÏ±â
+		// ëª¨ë“  ì†ì„±ì„ ì´ˆê¸°í™”í•˜ê¸° ìœ„í•´ ë§¤ê°œë³€ìˆ˜ ìˆëŠ” ìƒì„±ì ì •ì˜í•˜ê¸°
 	public Book(int no, String title, String author, String publisher, int price, String pubdate) {
 		this.no = no;
 		this.title = title;
@@ -25,12 +25,12 @@ public class Book {
 		this.pubdate = pubdate;
 	}
 
-		// ¸ğµç ¼Ó¼º¿¡ ´ëÇÑ °¢°¢ÀÇ getter ÇÔ¼ö Á¤ÀÇÇÏ±â
-	public int getNo() {				// °ªÀ» Á¶È¸
+		// ëª¨ë“  ì†ì„±ì— ëŒ€í•œ ê°ê°ì˜ getter í•¨ìˆ˜ ì •ì˜í•˜ê¸°
+	public int getNo() {				// ê°’ì„ ì¡°íšŒ
 		return no;
 	}
 	
-	public void setNo(int no) {			// °ªÀ» º¯°æ(ÀÌ·¸°Ô Ã³¸®¸¦ ºĞ·ùÇØµÎ¸é Á¦¾î°¡ °¡´ÉÇØÁø´Ù.
+	public void setNo(int no) {			// ê°’ì„ ë³€ê²½(ì´ë ‡ê²Œ ì²˜ë¦¬ë¥¼ ë¶„ë¥˜í•´ë‘ë©´ ì œì–´ê°€ ê°€ëŠ¥í•´ì§„ë‹¤.
 		this.no = no;
 	} 
 

@@ -3,13 +3,13 @@ public class StringBuilderDemo {
 	
 		StringBuilder sb = new StringBuilder();
 
-		sb.append("Áß¾ÓhtaÇĞ¿ø")
-		  .append("Á¤±Ô°úÁ¤ ¾È³»")
+		sb.append("ì¤‘ì•™htaí•™ì›")
+		  .append("ì •ê·œê³¼ì • ì•ˆë‚´")
 		  .append("\n");
-		sb.append("ÀüÀÚÁ¤ºÎÇ¥ÁØÇÁ·¹ÀÓ¿öÅ© °úÁ¤,")
-		  .append("¼ÒÇÁÆ®¿ş¾î ÀÀ¿ëÇÁ·Î±×·¥ °³¹ßÀÚ °úÁ¤")
+		sb.append("ì „ìì •ë¶€í‘œì¤€í”„ë ˆì„ì›Œí¬ ê³¼ì •,")
+		  .append("ì†Œí”„íŠ¸ì›¨ì–´ ì‘ìš©í”„ë¡œê·¸ë¨ ê°œë°œì ê³¼ì •")
 		  .append("\n");
-		sb.append("¼ö°­±â°£(ÀÏ):");
+		sb.append("ìˆ˜ê°•ê¸°ê°„(ì¼):");
 		sb.append(120);
 
 		String text = sb.toString();

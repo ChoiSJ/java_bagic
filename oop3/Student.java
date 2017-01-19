@@ -7,14 +7,14 @@ public class Student {
 	private int eng;
 	private int math;
 
-	// Å¬·¡½º ¸¸µé±â
+	// í´ë˜ìŠ¤ ë§Œë“¤ê¸°
 	// Student
-			// ¹øÈ£, ÀÌ¸§, ±¹¾î, ¿µ¾î, ¼öÇĞ
-			// getter, setter ¸Ş¼Òµå Á¤ÀÇ
-			// ÃÑÁ¡, Æò±ÕÀ» ¹İÈ¯ÇÏ´Â getter ¸Ş¼Òµå Á¤ÀÇ
+			// ë²ˆí˜¸, ì´ë¦„, êµ­ì–´, ì˜ì–´, ìˆ˜í•™
+			// getter, setter ë©”ì†Œë“œ ì •ì˜
+			// ì´ì , í‰ê· ì„ ë°˜í™˜í•˜ëŠ” getter ë©”ì†Œë“œ ì •ì˜
 
 	// StudentApp
-			// Student °´Ã¼ 3°³ ´ãÀ» ¼ö ÀÖ´Â ¹è¿­ Á¤ÀÇÇÏ±â
+			// Student ê°ì²´ 3ê°œ ë‹´ì„ ìˆ˜ ìˆëŠ” ë°°ì—´ ì •ì˜í•˜ê¸°
 			// 
 	
 	public Student() {
@@ -68,7 +68,7 @@ public class Student {
 		return getTotal()/3.0;
 	}
 
-	public String getAverageForRound() {		// ¼Ò¼öÁ¡ µÎ ÀÚ¸®¸¦ ³²±â°í ¹İ¿Ã¸², ¼ıÀÚ°¡ ¾Æ´Ï¶ó ¹®ÀÚÀÌ´Ù.
+	public String getAverageForRound() {		// ì†Œìˆ˜ì  ë‘ ìë¦¬ë¥¼ ë‚¨ê¸°ê³  ë°˜ì˜¬ë¦¼, ìˆ«ìê°€ ì•„ë‹ˆë¼ ë¬¸ìì´ë‹¤.
 		DecimalFormat df = new DecimalFormat("##.00");
 		return df.format(getAvg());
 	}

@@ -5,7 +5,7 @@ public class ExceptionDemo4 {
 	public static void writing() {
 		try {
 			FileWriter writer = new FileWriter("sample.txt");
-			String text = "12¿ù 3ÀÏ º¼»¡°£ »çÃá±â ÄÜ¼­Æ®";
+			String text = "12ì›” 3ì¼ ë³¼ë¹¨ê°„ ì‚¬ì¶˜ê¸° ì½˜ì„œíŠ¸";
 
 			writer.write(text);
 			writer.flush();
@@ -20,7 +20,7 @@ public class ExceptionDemo4 {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader("memo.txt"));
 			String text = reader.readLine();
-			System.out.println("³»¿ë:" + text);
+			System.out.println("ë‚´ìš©:" + text);
 		} catch(FileNotFoundException e) {
 			throw new L2Exception();
 		} catch(IOException e) {

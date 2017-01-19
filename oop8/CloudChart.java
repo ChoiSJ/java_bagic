@@ -1,6 +1,6 @@
 public class CloudChart extends Chart {
 	
 	public void draw() {
-		System.out.println("Å¬¶ó¿ìµå¿¡ ÀúÀåµÈ µ¥ÀÌÅÍ¸¦ ÀĞ¾î¼­ ±×·¡ÇÁ ±×¸®±â...");
+		System.out.println("í´ë¼ìš°ë“œì— ì €ì¥ëœ ë°ì´í„°ë¥¼ ì½ì–´ì„œ ê·¸ë˜í”„ ê·¸ë¦¬ê¸°...");
 	}
 }

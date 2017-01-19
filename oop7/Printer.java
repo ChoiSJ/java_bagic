@@ -1,8 +1,8 @@
 public class Printer {
 	public void print(String text) {
-		System.out.println("["+text+"]¸¦ Èæ¹éÀ¸·Î ÀÎ¼âÇÕ´Ï´Ù.");
+		System.out.println("["+text+"]ë¥¼ í‘ë°±ìœ¼ë¡œ ì¸ì‡„í•©ë‹ˆë‹¤.");
 	}
 	public void feed() {
-		System.out.println("Á¾ÀÌ¸¦ °ø±ŞÇÕ´Ï´Ù.");
+		System.out.println("ì¢…ì´ë¥¼ ê³µê¸‰í•©ë‹ˆë‹¤.");
 	}
 }

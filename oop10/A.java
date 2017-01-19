@@ -9,9 +9,9 @@ public class A {
 		System.out.println(a1.equals(a2));
 		System.out.println(a1 == a2);
 
-		String s1 = "»ùÇÃ";
-		String s2 = new String("»ùÇÃ");
-		String s3 = new String("»ùÇÃ");
+		String s1 = "ìƒ˜í”Œ";
+		String s2 = new String("ìƒ˜í”Œ");
+		String s3 = new String("ìƒ˜í”Œ");
 
 		System.out.println(s1.equals(s2));
 		System.out.println(s1 == s2);

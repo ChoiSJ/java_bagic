@@ -1,14 +1,14 @@
 public class Demo2 {
 	public static void main(String[] args) {
 		
-		// ¼®Â÷°¡ 3µî ÀÌ³»ÀÌ°í, Á¡¼ö°¡ 4.3Á¡ ÀÌ»óÀÎ °æ¿ì ÀåÇĞ±İ Áö±Ş
+		// ì„ì°¨ê°€ 3ë“± ì´ë‚´ì´ê³ , ì ìˆ˜ê°€ 4.3ì  ì´ìƒì¸ ê²½ìš° ì¥í•™ê¸ˆ ì§€ê¸‰
 		int ranking = 4;
 		double score = 4.4;
 
 		boolean result1 = (ranking <= 3 && score >= 4.3);
-		System.out.println("ÆÇÁ¤ °á°ú: " + result1);
+		System.out.println("íŒì • ê²°ê³¼: " + result1);
 		
-		// ÀüÃ¼ ±¸¸Å±İ¾×ÀÌ 50¸¸¿ø ÀÌ»óÀÌ°Å³ª, ´ÜÀÏ Ç°¸ñ ÇÏ³ªÀÇ ±İ¾×ÀÌ 20¸¸¿ø ÀÌ»óÀÎ °æ¿ì »óÇ°±Ç Áö±Ş
+		// ì „ì²´ êµ¬ë§¤ê¸ˆì•¡ì´ 50ë§Œì› ì´ìƒì´ê±°ë‚˜, ë‹¨ì¼ í’ˆëª© í•˜ë‚˜ì˜ ê¸ˆì•¡ì´ 20ë§Œì› ì´ìƒì¸ ê²½ìš° ìƒí’ˆê¶Œ ì§€ê¸‰
 		int price1 = 15;
 		int price2 = 15;
 		int price3 = 3;
@@ -16,7 +16,7 @@ public class Demo2 {
 
 		boolean result2 = totalPrice > 50
 				|| price1 >= 20 || price2 >= 20 || price3 >= 20;
-		System.out.println("ÆÇÁ¤ °á°ú: " + result2);
+		System.out.println("íŒì • ê²°ê³¼: " + result2);
 
 	}
 }

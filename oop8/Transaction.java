@@ -1,14 +1,14 @@
 public abstract class Transaction {
 
-	// º¯ÇÏÁö ¾Ê´Â ÀÛ¾÷
+	// ë³€í•˜ì§€ ì•ŠëŠ” ì‘ì—…
 	public final void connect() {
-		System.out.println("±İÀ¶ °áÀç¿ø ¿¬°á");
+		System.out.println("ê¸ˆìœµ ê²°ì¬ì› ì—°ê²°");
 	}
-	// º¯ÇÏÁö ¾Ê´Â ÀÛ¾÷
+	// ë³€í•˜ì§€ ì•ŠëŠ” ì‘ì—…
 	public final void close() {
-		System.out.println("±İÀ¶ °áÀç¿ø ¿¬°á ÇØÁ¦");
+		System.out.println("ê¸ˆìœµ ê²°ì¬ì› ì—°ê²° í•´ì œ");
 	}
-	// º¯ÇÏ´Â ÀÛ¾÷
+	// ë³€í•˜ëŠ” ì‘ì—…
 	public abstract void job();
 
 	public final void process() {

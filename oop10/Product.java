@@ -26,7 +26,7 @@ public class Product implements Comparable<Product>, Cloneable {
 		return clonedProduct;
 	}
 
-	// Object·ÎºÎÅÍ ¹°·Á¹ŞÀº toString() ÀçÁ¤ÀÇÇÏ±â
+	// Objectë¡œë¶€í„° ë¬¼ë ¤ë°›ì€ toString() ì¬ì •ì˜í•˜ê¸°
 	public String toString() {
 		return "{name:"+name+", price:"+price+"}";
 	}

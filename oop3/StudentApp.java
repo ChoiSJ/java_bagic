@@ -6,31 +6,31 @@ public class StudentApp {
 		Scanner s = new Scanner(System.in);
 		Student student = new Student();
 		
-		// ÇĞ»ıÁ¤º¸(¹øÈ£, ÀÌ¸§, ±¹¾î, ¿µ¾î, ¼öÇĞ Á¡¼ö) ÀÔ·Â¹Ş¾Æ¼­
-		// Student °´Ã¼¿¡ ÀúÀåÇÏ±â.
+		// í•™ìƒì •ë³´(ë²ˆí˜¸, ì´ë¦„, êµ­ì–´, ì˜ì–´, ìˆ˜í•™ ì ìˆ˜) ì…ë ¥ë°›ì•„ì„œ
+		// Student ê°ì²´ì— ì €ì¥í•˜ê¸°.
 
-		System.out.print("¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 		int value1 = s.nextInt();
 		student.setNo(value1);
 
-		System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 		String value2 = s.next();
 		student.setName(value2);
 
-		System.out.print("±¹¾î Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("êµ­ì–´ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 		student.setKor(s.nextInt());
 
-		System.out.print("¿µ¾î Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ì˜ì–´ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 		student.setEng(s.nextInt());
 
-		System.out.print("¼öÇĞ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ìˆ˜í•™ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 		student.setMath(s.nextInt());
 
-		System.out.println("ÀÌ¸§: " + student.getName());
-		System.out.println("±¹¾î: " + student.getKor());
-		System.out.println("¿µ¾î: " + student.getEng());
-		System.out.println("¼öÇĞ: " + student.getMath());
-		System.out.println("ÃÑÁ¡: " + student.getTotal());
-		System.out.println("Æò±Õ: " + student.getAverageForRound());
+		System.out.println("ì´ë¦„: " + student.getName());
+		System.out.println("êµ­ì–´: " + student.getKor());
+		System.out.println("ì˜ì–´: " + student.getEng());
+		System.out.println("ìˆ˜í•™: " + student.getMath());
+		System.out.println("ì´ì : " + student.getTotal());
+		System.out.println("í‰ê· : " + student.getAverageForRound());
 	}
 }

@@ -5,6 +5,6 @@ public class Car {
 	int price;
 	
 	public Car() {
-		System.out.println("»ı¼ºÀÚ ½ÇÇà");
+		System.out.println("ìƒì„±ì ì‹¤í–‰");
 	}
 }

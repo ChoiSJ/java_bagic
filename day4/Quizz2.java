@@ -2,7 +2,7 @@ public class Quizz2 {
 	public static void main(String[] args) {
 		
 		for (int a=1; a<=5; a++) {
-			for (int b=1; b<=6-a; b++) { // aÀÇ º¯È­ÇÏ´Â °ªÀ» for±¸¹® ¾ÈÀÇ for¿¡ Àû¿ë
+			for (int b=1; b<=6-a; b++) { // aì˜ ë³€í™”í•˜ëŠ” ê°’ì„ forêµ¬ë¬¸ ì•ˆì˜ forì— ì ìš©
 				System.out.print("*");
 			}
 			System.out.println();

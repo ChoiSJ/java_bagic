@@ -1,32 +1,32 @@
-// database access ±â´ÉÀÌ ±¸ÇöµÈ Å¬·¡½º
+// database access ê¸°ëŠ¥ì´ êµ¬í˜„ëœ í´ë˜ìŠ¤
 public class DBAccess {
 	
-	// DBAccess °´Ã¼¸¦ »ı¼ºÇØ¼­ static º¯¼ö¿¡ ÀúÀåÇÑ´Ù.
+	// DBAccess ê°ì²´ë¥¼ ìƒì„±í•´ì„œ static ë³€ìˆ˜ì— ì €ì¥í•œë‹¤.
 	private static DBAccess db = new DBAccess();
-	// »ı¼ºÀÚ¸¦ Àº´ĞÈ­ ½ÃÅ²´Ù.
+	// ìƒì„±ìë¥¼ ì€ë‹‰í™” ì‹œí‚¨ë‹¤.
 	private DBAccess() {
 	
 	}
 
-	// »ı¼ºµÈ DBAccess °´Ã¼¸¦ ÂüÁ¶ÇÒ ¼ö ÀÖ´Â ÂüÁ¶°ªÀ» Á¦°øÇØÁÖ´Â
-	// Á¤Àû ¸Ş¼Òµå¸¦ Á¦°øÇÑ´Ù
+	// ìƒì„±ëœ DBAccess ê°ì²´ë¥¼ ì°¸ì¡°í•  ìˆ˜ ìˆëŠ” ì°¸ì¡°ê°’ì„ ì œê³µí•´ì£¼ëŠ”
+	// ì •ì  ë©”ì†Œë“œë¥¼ ì œê³µí•œë‹¤
 	public static DBAccess getInstance() {
 		return db;
 	}
 
 	public void insert() {
-		System.out.println("Ãß°¡ ÀÛ¾÷");
+		System.out.println("ì¶”ê°€ ì‘ì—…");
 	}
 
 	public void update() {
-		System.out.println("¼öÁ¤ ÀÛ¾÷");
+		System.out.println("ìˆ˜ì • ì‘ì—…");
 	}
 
 	public void delete() {
-		System.out.println("»èÁ¦ ÀÛ¾÷");
+		System.out.println("ì‚­ì œ ì‘ì—…");
 	}
 
 	public void retrieve() {
-		System.out.println("Á¶È¸ ÀÛ¾÷");
+		System.out.println("ì¡°íšŒ ì‘ì—…");
 	}
 }

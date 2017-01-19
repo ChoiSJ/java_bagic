@@ -7,14 +7,14 @@ public class ArrayListDemo2 {
 		Scanner sc = new Scanner(System.in);
 		ArrayList<String> names = new ArrayList<String>();
 		
-		// ¸î °³ ÀúÀåÇÒÁö Å©±â¸¦ ¹Ì¸® °áÁ¤ÇÏÁö ¾Ê¾Æµµ µÈ´Ù.
+		// ëª‡ ê°œ ì €ì¥í• ì§€ í¬ê¸°ë¥¼ ë¯¸ë¦¬ ê²°ì •í•˜ì§€ ì•Šì•„ë„ ëœë‹¤.
 		while (true) {
-			System.out.println("1.µî·Ï	2.Á¶È¸	0.Á¾·á");
-			System.out.print("¼±ÅÃ>");
+			System.out.println("1.ë“±ë¡	2.ì¡°íšŒ	0.ì¢…ë£Œ");
+			System.out.print("ì„ íƒ>");
 			int menu = sc.nextInt();
 
 			if (menu == 1) {
-				System.out.print("µî·ÏÇÒ ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä:");
+				System.out.print("ë“±ë¡í•  ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”:");
 				String name = sc.next();
 				names.add(name);
 			} else if (menu == 2) {

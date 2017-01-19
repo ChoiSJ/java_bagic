@@ -4,30 +4,30 @@ public class Quizz2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		// ¼ýÀÚ¸¦ ÀÔ·Â¹Þ¾Æ¼­ ±× ¼ýÀÚµéÀÇ ÇÕ°ú Æò±ÕÀ» °è»êÇØ¼­ Ãâ·ÂÇÏ±â
-		// 1. ÇÐ»ý ¼ö¸¦ ÀÔ·Â¹Þ±â
-		// 2. ÇÐ»ý ¼ö¸¸Å­ÀÇ Å©±â¸¦ °¡Áø ¹è¿­À» ¸¸µé±â
-		// 3. ÇÐ»ý ¼ö¸¸Å­ ¹Ýº¹ÇÏ¸é¼­ Á¡¼ö¸¦ ÀÔ·Â¹Þ°í ¹è¿­¿¡ ´ã±â
-		// 4. ¹è¿­¿¡ ÀúÀåµÈ °ªÀ¸·Î ÇÕ°è¿Í Æò±ÕÀ» °è»êÇØ¼­ Ãâ·ÂÇÏ±â
+		// ìˆ«ìžë¥¼ ìž…ë ¥ë°›ì•„ì„œ ê·¸ ìˆ«ìžë“¤ì˜ í•©ê³¼ í‰ê· ì„ ê³„ì‚°í•´ì„œ ì¶œë ¥í•˜ê¸°
+		// 1. í•™ìƒ ìˆ˜ë¥¼ ìž…ë ¥ë°›ê¸°
+		// 2. í•™ìƒ ìˆ˜ë§Œí¼ì˜ í¬ê¸°ë¥¼ ê°€ì§„ ë°°ì—´ì„ ë§Œë“¤ê¸°
+		// 3. í•™ìƒ ìˆ˜ë§Œí¼ ë°˜ë³µí•˜ë©´ì„œ ì ìˆ˜ë¥¼ ìž…ë ¥ë°›ê³  ë°°ì—´ì— ë‹´ê¸°
+		// 4. ë°°ì—´ì— ì €ìž¥ëœ ê°’ìœ¼ë¡œ í•©ê³„ì™€ í‰ê· ì„ ê³„ì‚°í•´ì„œ ì¶œë ¥í•˜ê¸°
 
-		System.out.print("±¹¾î ½ÃÇèÀ» º» ÇÐ»ýµéÀÇ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
-		int size = sc.nextInt();	// ÇÐ»ý ¼ö == ¹è¿­ÀÇ Å©±â
-		// ÇÐ»ý ¼ö¸¸Å­ÀÇ Á¡¼ö¸¦ ´ãÀ» ¹è¿­À» »ý¼º
+		System.out.print("êµ­ì–´ ì‹œí—˜ì„ ë³¸ í•™ìƒë“¤ì˜ ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ");
+		int size = sc.nextInt();	// í•™ìƒ ìˆ˜ == ë°°ì—´ì˜ í¬ê¸°
+		// í•™ìƒ ìˆ˜ë§Œí¼ì˜ ì ìˆ˜ë¥¼ ë‹´ì„ ë°°ì—´ì„ ìƒì„±
 		int[] student = new int[size];
 		int total = 0;
 		
-		// ¹è¿­¿¡ ±¹¾îÁ¡¼ö¸¦ ÀúÀåÇÏ±â
+		// ë°°ì—´ì— êµ­ì–´ì ìˆ˜ë¥¼ ì €ìž¥í•˜ê¸°
 		for (int i=0; i<student.length; i++) {
-			System.out.print("ÇÐ»ýÀÇ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+			System.out.print("í•™ìƒì˜ ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ");
 			int korSize = sc.nextInt();
-			student[i] += korSize;	// 0~student.length ¹ø µ¹¸é¼­ student[] ÀÇ °¢ À§Ä¡¿¡ ÇÏ³ª¾¿ ÀÔ·Â½ÃÅ²´Ù.
+			student[i] += korSize;	// 0~student.length ë²ˆ ëŒë©´ì„œ student[] ì˜ ê° ìœ„ì¹˜ì— í•˜ë‚˜ì”© ìž…ë ¥ì‹œí‚¨ë‹¤.
 		}
 		
-		// ÃÑÁ¡°ú Æò±Õ °è»êÇÏ±â
-		for (int a : student) {		// int a ¿¡ student ¹è¿­ÀÇ °¢ µ¥ÀÌÅÍ¸¦ ÇÑ ¹ø¾¿ Áý¾î³Ö´Â´Ù.
+		// ì´ì ê³¼ í‰ê·  ê³„ì‚°í•˜ê¸°
+		for (int a : student) {		// int a ì— student ë°°ì—´ì˜ ê° ë°ì´í„°ë¥¼ í•œ ë²ˆì”© ì§‘ì–´ë„£ëŠ”ë‹¤.
 			total += a;
 		}
 
-		System.out.printf("ÃÑÁ¡:%s    Æò±Õ:%s\n", total, total/size);
+		System.out.printf("ì´ì :%s    í‰ê· :%s\n", total, total/size);
 	}
 }

@@ -1,15 +1,15 @@
 public class DisplayChartApp {
 	public static void main(String[] args) {
 		
-		// Chart ±¸Çö °´Ã¼ ¸¸µé±â
+		// Chart êµ¬í˜„ ê°ì²´ ë§Œë“¤ê¸°
 		Chart c1 = new XLSChart();
 		Chart c2 = new CloudChart();
 
-		// Chart·ù °´Ã¼¸¦ Àü´ŞÇØ¼­ Display°´Ã¼ ¸¸µé±â
+		// Chartë¥˜ ê°ì²´ë¥¼ ì „ë‹¬í•´ì„œ Displayê°ì²´ ë§Œë“¤ê¸°
 		Display chartDisplay1 = new Display(c1);
 		Display chartDisplay2 = new Display(c2);
 
-		// ±×·¡ÇÁ ±×¸®±â
+		// ê·¸ë˜í”„ ê·¸ë¦¬ê¸°
 		chartDisplay1.drawGraph();
 		chartDisplay2.drawGraph();
 		

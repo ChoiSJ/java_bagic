@@ -8,18 +8,18 @@ public class ForDemo7 {
 
 		for (;;) {
 			System.out.println();
-			System.out.println("[1]Á¶È¸  [2]µî·Ï  [3]»èÁ¦ [0]Á¾·á");
-			System.out.print("¸Ş´º¸¦ ¼±ÅÃÇÏ¼¼¿ä:");
+			System.out.println("[1]ì¡°íšŒ  [2]ë“±ë¡  [3]ì‚­ì œ [0]ì¢…ë£Œ");
+			System.out.print("ë©”ë‰´ë¥¼ ì„ íƒí•˜ì„¸ìš”:");
 			
 			int menuNo = sc.nextInt();
 			if (menuNo == 1) {
-				System.out.println("Á¤º¸¸¦ Á¶È¸ÇÕ´Ï´Ù...");
+				System.out.println("ì •ë³´ë¥¼ ì¡°íšŒí•©ë‹ˆë‹¤...");
 			} else if (menuNo == 2) {
-				System.out.println("Á¤º¸¸¦ µî·ÏÇÕ´Ï´Ù...");
+				System.out.println("ì •ë³´ë¥¼ ë“±ë¡í•©ë‹ˆë‹¤...");
 			} else if (menuNo == 3) {
-				System.out.println("Á¤º¸¸¦ »èÁ¦ÇÕ´Ï´Ù...");
+				System.out.println("ì •ë³´ë¥¼ ì‚­ì œí•©ë‹ˆë‹¤...");
 			} else if (menuNo == 0) {
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				break;
 			}
 		}

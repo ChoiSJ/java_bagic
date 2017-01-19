@@ -1,16 +1,16 @@
 public class MemberService {
 	
-	// °í°´Á¤º¸
+	// ê³ ê°ì •ë³´
 	private Member member;
 	
-	// ·Î±×ÀÎ ¿©ºÎ
+	// ë¡œê·¸ì¸ ì—¬ë¶€
 	private boolean auth = false;
 
 	public MemberService(Member member) {
 		this.member = member;
 	}
 	/*
-	// ¾ÆÀÌµğ¿Í ºñ¹Ğ¹øÈ£¸¦ Àü´Ş¹Ş¾Æ¼­ ·Î±×ÀÎ °¡´É ¿©ºÎ¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+	// ì•„ì´ë””ì™€ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì „ë‹¬ë°›ì•„ì„œ ë¡œê·¸ì¸ ê°€ëŠ¥ ì—¬ë¶€ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
 	public boolean login(String id, String password) {
 		boolean result = false;
 		if (member.getId() == id && member.getPassword() == password) {
@@ -19,9 +19,9 @@ public class MemberService {
 		return result;
 	}
 	
-	// ¾ÆÀÌµğ¸¦ Àü´Ş¹Ş¾Æ¼­ ·Î±×¾Æ¿ô±â´ÉÀ» ¼öÇàÇÏ´Â ¸Ş¼Òµå
+	// ì•„ì´ë””ë¥¼ ì „ë‹¬ë°›ì•„ì„œ ë¡œê·¸ì•„ì›ƒê¸°ëŠ¥ì„ ìˆ˜í–‰í•˜ëŠ” ë©”ì†Œë“œ
 	public void logout(String id) {
-		System.out.println("[" + id + "] ´ÔÀÌ ·Î±×¾Æ¿ô µÇ¾ú½À´Ï´Ù.");
+		System.out.println("[" + id + "] ë‹˜ì´ ë¡œê·¸ì•„ì›ƒ ë˜ì—ˆìŠµë‹ˆë‹¤.");
 	}
 	*/
 
@@ -29,14 +29,14 @@ public class MemberService {
 		return auth;
 	}
 
-	// ¾ÆÀÌµğ¿Í ºñ¹øÀ» Àü´Ş¹Ş¾Æ¼­ member¿¡ ÀúÀåµÈ ¾ÆÀÌµğ ºñ¹Ğ¹øÈ£¿Í ºñ±³ÇØ¼­, auth¿¡ ´ã¾ÆµÎ±â
+	// ì•„ì´ë””ì™€ ë¹„ë²ˆì„ ì „ë‹¬ë°›ì•„ì„œ memberì— ì €ì¥ëœ ì•„ì´ë”” ë¹„ë°€ë²ˆí˜¸ì™€ ë¹„êµí•´ì„œ, authì— ë‹´ì•„ë‘ê¸°
 	public void login(String id, String password) {
 		if (member.getId().equals(id) && member.getPassword().equals(password)) {
 			auth = true;
 		} 
 	}
 
-	// ·Î±×¾Æ¿ô Ã³¸®ÇÏ±â (authÀÇ °ªÀ» false·Î ¹Ù²Ù±â)
+	// ë¡œê·¸ì•„ì›ƒ ì²˜ë¦¬í•˜ê¸° (authì˜ ê°’ì„ falseë¡œ ë°”ê¾¸ê¸°)
 	public void logout() {
 		if (auth) {
 			auth = false;

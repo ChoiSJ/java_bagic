@@ -3,24 +3,24 @@ public class Fileupload {
 	long maxFileSize;
 	int maxFileAmount;
 
-	public Fileupload() {				// ±âº» »ı¼ºÀÚ·Î µğÆúµå°ªÀ» ¼³Á¤
+	public Fileupload() {				// ê¸°ë³¸ ìƒì„±ìë¡œ ë””í´ë“œê°’ì„ ì„¤ì •
 		maxFileSize = 1024 * 1024 * 10; // 10M
 		maxFileAmount = 10;
 	}
 
 	public Fileupload(long size) {
-		maxFileSize = size;				// long ÀÌ»óÀÇ »çÀÌÁî¸¦ ¿ä±¸ÇÒ ¶§ º¯°æ °¡´É
+		maxFileSize = size;				// long ì´ìƒì˜ ì‚¬ì´ì¦ˆë¥¼ ìš”êµ¬í•  ë•Œ ë³€ê²½ ê°€ëŠ¥
 		maxFileAmount = 10;
 	}
 
 	public Fileupload(int amount) {
 		maxFileSize = 1024 * 1024 * 10;
-		maxFileAmount = amount;			// 10°³ ÀÌ»óÀÇ ¾÷·Îµå°¡ ÇÊ¿äÇÒ ¶§ ÇÊ¿ä ¼öÄ¡·Î º¯°æ °¡´É
+		maxFileAmount = amount;			// 10ê°œ ì´ìƒì˜ ì—…ë¡œë“œê°€ í•„ìš”í•  ë•Œ í•„ìš” ìˆ˜ì¹˜ë¡œ ë³€ê²½ ê°€ëŠ¥
 	}
 
 	public void upload() {
-		System.out.println("ÆÄÀÏ ¾÷·Îµå ½ÇÇà Áß...");
-		System.out.println("ÃÖ´ë ÆÄÀÏ »çÀÌÁî: " + maxFileSize);
-		System.out.println("ÃÖ´ë ÆÄÀÏ °¹¼ö: " + maxFileAmount);
+		System.out.println("íŒŒì¼ ì—…ë¡œë“œ ì‹¤í–‰ ì¤‘...");
+		System.out.println("ìµœëŒ€ íŒŒì¼ ì‚¬ì´ì¦ˆ: " + maxFileSize);
+		System.out.println("ìµœëŒ€ íŒŒì¼ ê°¯ìˆ˜: " + maxFileAmount);
 	}
 }

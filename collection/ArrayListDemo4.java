@@ -4,15 +4,15 @@ public class ArrayListDemo4 {
 
 	public static void main(String[] args) {
 	
-		// °ú¸ñ¸íÀ» ÀúÀåÇÏ´Â ArrayList ¸¸µé±â
+		// ê³¼ëª©ëª…ì„ ì €ì¥í•˜ëŠ” ArrayList ë§Œë“¤ê¸°
 		ArrayList<String> subjects = new ArrayList<String>();
-		subjects.add("ÀÚ¹Ù");
-		subjects.add("ÀÚ¹Ù½ºÅ©¸³Æ®");
+		subjects.add("ìë°”");
+		subjects.add("ìë°”ìŠ¤í¬ë¦½íŠ¸");
 		subjects.add("SQL");
-		subjects.add("ÇÏµÓ");
+		subjects.add("í•˜ë‘¡");
 
-		//subjects.remove("SQL");	// ÁöÁ¤ÇÑ °´Ã¼¾Æ ÀÏÄ¡ÇÏ´Â °³Ã¼¸¦ Ã£¾Æ¼­ Áö¿ì±â
-		subjects.remove(2);			// ÁöÁ¤ÇÑ À§Ä¡¿¡ ÀúÀåµÈ Á¸Àç¸¦ Áö¿ì±â
+		//subjects.remove("SQL");	// ì§€ì •í•œ ê°ì²´ì•„ ì¼ì¹˜í•˜ëŠ” ê°œì²´ë¥¼ ì°¾ì•„ì„œ ì§€ìš°ê¸°
+		subjects.remove(2);			// ì§€ì •í•œ ìœ„ì¹˜ì— ì €ì¥ëœ ì¡´ì¬ë¥¼ ì§€ìš°ê¸°
 
 		System.out.println(subjects);
 	}

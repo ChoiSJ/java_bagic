@@ -4,10 +4,10 @@ public class Score {
 	int eng;
 	int math;
 	
-	// ±âº» »ı¼ºÀÚ
+	// ê¸°ë³¸ ìƒì„±ì
 	public Score() {
-		// ÇÊµå ÃÊ±âÈ­
-		name = "È«±æµ¿";
+		// í•„ë“œ ì´ˆê¸°í™”
+		name = "í™ê¸¸ë™";
 		kor = 90;
 		eng = 100;
 		math = 60;

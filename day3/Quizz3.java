@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class Quizz3 {
 	public static void main(String[] args) {
-		// ÀÓÀÇÀÇ ¼ıÀÚ¸¦ ÀÔ·Â¹Ş¾Æ¼­ ±× ¼ö°¡ Â¦¼öÀÎÁö È¦¼öÀÎÁö
-		// »ïÇ×¿¬»êÀÚ¸¦ »ç¿ëÇØ¼­ °á°ú¸¦ Ç¥½ÃÇÏ±â
+		// ì„ì˜ì˜ ìˆ«ìë¥¼ ì…ë ¥ë°›ì•„ì„œ ê·¸ ìˆ˜ê°€ ì§ìˆ˜ì¸ì§€ í™€ìˆ˜ì¸ì§€
+		// ì‚¼í•­ì—°ì‚°ìë¥¼ ì‚¬ìš©í•´ì„œ ê²°ê³¼ë¥¼ í‘œì‹œí•˜ê¸°
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("¼ıÀÚÀ» ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.print("ìˆ«ìì„ ì…ë ¥í•˜ì„¸ìš”:");
 		int number = sc.nextInt();
 		
-		String result = ((number%2) == 0) ? "Â¦¼öÀÔ´Ï´Ù." : "È¦¼öÀÔ´Ï´Ù.";
+		String result = ((number%2) == 0) ? "ì§ìˆ˜ì…ë‹ˆë‹¤." : "í™€ìˆ˜ì…ë‹ˆë‹¤.";
 		System.out.println(result);
 	}
 }

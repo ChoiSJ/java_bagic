@@ -8,26 +8,26 @@ public class Homework {
 		Date now = new Date();
 		Calendar ann = Calendar.getInstance();
 
-		System.out.print("¿¬µµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.print("ì—°ë„ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 		int year = sc.nextInt();
-		System.out.print("¿ùÀ» ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.print("ì›”ì„ ì…ë ¥í•˜ì„¸ìš”:");
 		int mon = sc.nextInt();
-		System.out.print("ÀÏÀ» ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.print("ì¼ì„ ì…ë ¥í•˜ì„¸ìš”:");
 		int day = sc.nextInt();
 
 		ann.set(year, mon-1, day);
-		String pattern = "yyyyÒ´ MMêÅ ddìí";
+		String pattern = "yyyyå¹´ MMæœˆ ddæ—¥";
 		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 		
 		now = ann.getTime();
 		String text = sdf.format(now);
-		System.out.println("±â³äÀÏ:" + text);
+		System.out.println("ê¸°ë…ì¼:" + text);
 		
 		for (int i=1; i<=10; i++) {
 			ann.add(Calendar.DAY_OF_MONTH, 100);
 			now = ann.getTime();
 			String textAnn = sdf.format(now);
-			System.out.println((i*100) + "ÀÏÂ° ±â³äÀÏ:" + textAnn);	
+			System.out.println((i*100) + "ì¼ì§¸ ê¸°ë…ì¼:" + textAnn);	
 		}
 	}
 }

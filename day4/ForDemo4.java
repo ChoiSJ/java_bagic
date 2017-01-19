@@ -5,12 +5,12 @@ public class ForDemo4 {
 		int a = 10;
 		System.out.println(a);
 		
-		// °°Àº ºí·° ¾È¿¡ ¶È°°Àº º¯¼ö°¡ ÀÖÀ¸¸é ¾È µÈ´Ù
+		// ê°™ì€ ë¸”ëŸ­ ì•ˆì— ë˜‘ê°™ì€ ë³€ìˆ˜ê°€ ìˆìœ¼ë©´ ì•ˆ ëœë‹¤
 		int a = 20;
 		System.out.println(a);
 		int x = 4;
 
-		// ±× ºí·°¿¡¼­ ¸¸µç ºí·°Àº ±× ¾È¿¡¼­´Â °è¼Ó »ì¾Æ ÀÖ´Ù.
+		// ê·¸ ë¸”ëŸ­ì—ì„œ ë§Œë“  ë¸”ëŸ­ì€ ê·¸ ì•ˆì—ì„œëŠ” ê³„ì† ì‚´ì•„ ìˆë‹¤.
 		int a = x * 100; 
 		if (x%2 == 0) {
 			int a = x * 100;
@@ -23,7 +23,7 @@ public class ForDemo4 {
 		
 		}
 		
-		// for (int a=1; a<=10; a++) {} <- ÀÌ·¸°Ô »õ·Ó°Ô int º¯¼ö¸¦ ¼³Á¤ÇÒ ¼ö´Â ¾ø´Ù.
+		// for (int a=1; a<=10; a++) {} <- ì´ë ‡ê²Œ ìƒˆë¡­ê²Œ int ë³€ìˆ˜ë¥¼ ì„¤ì •í•  ìˆ˜ëŠ” ì—†ë‹¤.
 		
 		int a;
 		int b = 30;
@@ -37,11 +37,11 @@ public class ForDemo4 {
 		*/
 
 		for (int a=1; a<=5; a++) {
-			System.out.println("½ÇÇà");
+			System.out.println("ì‹¤í–‰");
 			
 			for (int b=1; b<=10; b++) {
 				if ((a+b)%3 == 0) {
-					System.out.println("aÀÇ °ª:" + a + " bÀÇ °ª:" + b);
+					System.out.println("aì˜ ê°’:" + a + " bì˜ ê°’:" + b);
 				}
 			}		
 		}

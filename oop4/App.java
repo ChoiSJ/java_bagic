@@ -4,20 +4,20 @@ public class App {
 	public void main(String[] args) {
 		
 
-		// static ¸â¹ö´Â Å¬·¡½º¸í.º¯¼ö, Å¬·¡½º¸í.¸Þ¼Òµå() Çü½ÄÀ¸·Î »ç¿ë
+		// static ë©¤ë²„ëŠ” í´ëž˜ìŠ¤ëª….ë³€ìˆ˜, í´ëž˜ìŠ¤ëª….ë©”ì†Œë“œ() í˜•ì‹ìœ¼ë¡œ ì‚¬ìš©
 		System.out.println(A.y);
 		
-		// Á¤Àûº¯¼ö y¿¡ °ª ÇÒ´çÇÏ±â
-		// AÅ¬·¡½º¸¦ »ç¿ëÇØ¼­ ¸¸µç ¸ðµç °´Ã¼´Â 
-		// Á¤Àûº¯¼ö y°ªÀ» °øÀ¯ÇÑ´Ù.
+		// ì •ì ë³€ìˆ˜ yì— ê°’ í• ë‹¹í•˜ê¸°
+		// Aí´ëž˜ìŠ¤ë¥¼ ì‚¬ìš©í•´ì„œ ë§Œë“  ëª¨ë“  ê°ì²´ëŠ” 
+		// ì •ì ë³€ìˆ˜ yê°’ì„ ê³µìœ í•œë‹¤.
 		//A.y = 100;
 		
-		// ¸â¹öº¯¼ö x´Â »ý¼ºµÈ °´Ã¼¸¶´Ù °³º°ÀûÀ¸·Î »ý¼ºµÈ´Ù.
-		// °¢°¢ÀÇ °´Ã¼´Â °´Ã¼¸¶´Ù ´Ù¸¥ x°ªÀ» °¡Áú ¼ö ÀÖ´Ù.
+		// ë©¤ë²„ë³€ìˆ˜ xëŠ” ìƒì„±ëœ ê°ì²´ë§ˆë‹¤ ê°œë³„ì ìœ¼ë¡œ ìƒì„±ëœë‹¤.
+		// ê°ê°ì˜ ê°ì²´ëŠ” ê°ì²´ë§ˆë‹¤ ë‹¤ë¥¸ xê°’ì„ ê°€ì§ˆ ìˆ˜ ìžˆë‹¤.
 		A a1 = new A();
 		//a1.x = 10;
 		System.out.println("x: " + a1.x);
-		//System.out.println(a1.y); // y°ªÀÌ Ãâ·ÂµÇ±â´Â ÇÏÁö¸¸, y°ªÀ» ¸â¹öº¯¼ö·Î ¿ÀÇØÇÒ ¼ö ÀÖ´Ù.
+		//System.out.println(a1.y); // yê°’ì´ ì¶œë ¥ë˜ê¸°ëŠ” í•˜ì§€ë§Œ, yê°’ì„ ë©¤ë²„ë³€ìˆ˜ë¡œ ì˜¤í•´í•  ìˆ˜ ìžˆë‹¤.
 		System.out.println("y: " +A.y);
 
 		A a2 = new A();

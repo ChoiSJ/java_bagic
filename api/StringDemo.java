@@ -2,12 +2,12 @@ public class StringDemo {
 	public static void main(String[] args) {
 	
 		/*
-			String Å¬·¡½º
-				String Å¬·¡½º´Â ¹®ÀÚ¿­À» Ç¥ÇöÇÑ´Ù.
-				String °ªÀº ºÒº¯°ªÀÌ´Ù. ÇÑ ¹ø ¸¸µé¾îÁø ÀÌÈÄ¿¡´Â º¯°æÇÒ ¼ö ¾ø´Ù.
-				String Àº °´Ã¼¸¦ »ı¼ºÇÏ´Â Æ¯º°ÇÑ ¹æ¹ıÀ» Á¦°øÇÑ´Ù.
-					String str = new String("abc");		// »ı¼ºÀÚ¸¦ ÀÌ¿ëÇÑ String °´Ã¼ »ı¼º
-					String str = "abc";					// ¹®ÀÚ¿­ Ç¥Çö½ÄÀ» ÀÌ¿ëÇÑ String °´Ã¼ »ı¼º
+			String í´ë˜ìŠ¤
+				String í´ë˜ìŠ¤ëŠ” ë¬¸ìì—´ì„ í‘œí˜„í•œë‹¤.
+				String ê°’ì€ ë¶ˆë³€ê°’ì´ë‹¤. í•œ ë²ˆ ë§Œë“¤ì–´ì§„ ì´í›„ì—ëŠ” ë³€ê²½í•  ìˆ˜ ì—†ë‹¤.
+				String ì€ ê°ì²´ë¥¼ ìƒì„±í•˜ëŠ” íŠ¹ë³„í•œ ë°©ë²•ì„ ì œê³µí•œë‹¤.
+					String str = new String("abc");		// ìƒì„±ìë¥¼ ì´ìš©í•œ String ê°ì²´ ìƒì„±
+					String str = "abc";					// ë¬¸ìì—´ í‘œí˜„ì‹ì„ ì´ìš©í•œ String ê°ì²´ ìƒì„±
 
 				Random ran = new Random();
 				ran.nextInt(45);
@@ -19,76 +19,76 @@ public class StringDemo {
 				"abc".toUpperCase();
 		*/
 		
-		String str1 = "ÀÚ¹Ù ÇÁ·Î±×·¡¹Ö ¿¬½À";
+		String str1 = "ìë°” í”„ë¡œê·¸ë˜ë° ì—°ìŠµ";
 		
-		// ¹®ÀÚ¿­ÀÇ ±æÀÌ¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå: int length()
+		// ë¬¸ìì—´ì˜ ê¸¸ì´ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ: int length()
 		int len = str1.length();
-		System.out.println("¹®ÀÚ¿­ÀÇ ±æÀÌ:" + len);
+		System.out.println("ë¬¸ìì—´ì˜ ê¸¸ì´:" + len);
 
-		// ¹®ÀÚ¿­ÀÌ ºñ¾î ÀÖ´ÂÁö ¿©ºÎ¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå: boolean isEmpty()
+		// ë¬¸ìì—´ì´ ë¹„ì–´ ìˆëŠ”ì§€ ì—¬ë¶€ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ: boolean isEmpty()
 		boolean empty = str1.isEmpty();
-		System.out.println("ºó ¹®ÀÚ¿­ÀÎ°¡?:" + empty);
+		System.out.println("ë¹ˆ ë¬¸ìì—´ì¸ê°€?:" + empty);
 		
-		// ¹®ÀÚ¿­¿¡¼­ ÀÇ¹Ì ¾ø´Â °ø¹é Á¦°ÅÇÑ »õ·Î¿î ¹®ÀÚ¿­À» ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå: String trim()
-		String str2 = "    È« ±æµ¿    ";
+		// ë¬¸ìì—´ì—ì„œ ì˜ë¯¸ ì—†ëŠ” ê³µë°± ì œê±°í•œ ìƒˆë¡œìš´ ë¬¸ìì—´ì„ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ: String trim()
+		String str2 = "    í™ ê¸¸ë™    ";
 		String str3 = str2.trim();
 		System.out.println("str2["+str2+"]");
 		System.out.println("str3["+str3+"]");
 
-		// ¹®ÀÚ¿­ÀÇ ³»¿ëÀ» ºñ±³ÇØ¼­ µ¿ÀÏÇÑ ³»¿ëÀ» °¡Áø ¹®ÀÚ¿­ÀÎÁö ¿©ºÎ¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå: boolean equals(Object str)
-		String str4 = "¾ÖÇÃ";
-		String str5 = "¾ÖÇÃ";
+		// ë¬¸ìì—´ì˜ ë‚´ìš©ì„ ë¹„êµí•´ì„œ ë™ì¼í•œ ë‚´ìš©ì„ ê°€ì§„ ë¬¸ìì—´ì¸ì§€ ì—¬ë¶€ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ: boolean equals(Object str)
+		String str4 = "ì• í”Œ";
+		String str5 = "ì• í”Œ";
 		boolean equal = str4.equals(str5);
-		System.out.println("µ¿ÀÏÇÑ ¹®ÀÚ¿­ÀÎ°¡?:" + equal);
+		System.out.println("ë™ì¼í•œ ë¬¸ìì—´ì¸ê°€?:" + equal);
 
 		String str6 = "apple";
 		String str7 = "Apple";
 		boolean equal2 = str6.equalsIgnoreCase(str7);
-		System.out.println("´ë¼Ò¹®ÀÚ ±¸ºĞ ¾øÀÌ ºñ±³ÇßÀ» ¶§ µ¿ÀÏÇÑ ¹®ÀÚ¿­ÀÎ°¡?:" + equal2);
+		System.out.println("ëŒ€ì†Œë¬¸ì êµ¬ë¶„ ì—†ì´ ë¹„êµí–ˆì„ ë•Œ ë™ì¼í•œ ë¬¸ìì—´ì¸ê°€?:" + equal2);
 
-		// ¹®ÀÚ¿­ÀÌ ÁöÁ¤ÇÑ ¹®ÀÚ¿­À» Æ÷ÇÔÇÏ°í ÀÖ´ÂÁö ¿©ºÎ¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå: boolean contains(charSequence s)
-		String str8 = "ÀÚ¹Ù ÇÁ·Î±×·¡¹Ö - ÀÚ¹Ù ±âÃÊ ¹× ÀÀ¿ë";
-		boolean contains = str8.contains("ÀÚ¹Ù");
-		System.out.println("[ÀÚ¹Ù]¶ó´Â ¹®ÀÚ¿­À» Æ÷ÇÔÇÏ°í ÀÖ´Â°¡?:" + contains);
+		// ë¬¸ìì—´ì´ ì§€ì •í•œ ë¬¸ìì—´ì„ í¬í•¨í•˜ê³  ìˆëŠ”ì§€ ì—¬ë¶€ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ: boolean contains(charSequence s)
+		String str8 = "ìë°” í”„ë¡œê·¸ë˜ë° - ìë°” ê¸°ì´ˆ ë° ì‘ìš©";
+		boolean contains = str8.contains("ìë°”");
+		System.out.println("[ìë°”]ë¼ëŠ” ë¬¸ìì—´ì„ í¬í•¨í•˜ê³  ìˆëŠ”ê°€?:" + contains);
 
-		// ¹®ÀÚ¿­¿¡¼­ ÁöÁ¤µÈ À§Ä¡ÀÇ ¹®ÀÚ(char)¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå: char charAt(int index)
+		// ë¬¸ìì—´ì—ì„œ ì§€ì •ëœ ìœ„ì¹˜ì˜ ë¬¸ì(char)ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ: char charAt(int index)
 		char ch = str8.charAt(1);
-		System.out.println("1¹øÂ° ¹®ÀÚ´Â?:" + ch);
+		System.out.println("1ë²ˆì§¸ ë¬¸ìëŠ”?:" + ch);
 
-		// ¹®ÀÚ¿­¿¡¼­ ÁöÁ¤µÈ ¹®ÀÚ¿­ÀÌ Ã³À½À¸·Î µîÀåÇÏ´Â À§Ä¡¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå: int indexOf(String str)
-		int index = str8.indexOf("ÇÁ");
-		System.out.println("¹®ÀÚ¿­¿¡¼­ [ÇÁ]ÀÌ¶ó´Â ±ÛÀÚ°¡ Ã³À½À¸·Î µîÀåÇÏ´Â À§Ä¡´Â?:" + index);
+		// ë¬¸ìì—´ì—ì„œ ì§€ì •ëœ ë¬¸ìì—´ì´ ì²˜ìŒìœ¼ë¡œ ë“±ì¥í•˜ëŠ” ìœ„ì¹˜ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ: int indexOf(String str)
+		int index = str8.indexOf("í”„");
+		System.out.println("ë¬¸ìì—´ì—ì„œ [í”„]ì´ë¼ëŠ” ê¸€ìê°€ ì²˜ìŒìœ¼ë¡œ ë“±ì¥í•˜ëŠ” ìœ„ì¹˜ëŠ”?:" + index);
 
-		// ¹®ÀÚ¿­ÀÇ ³»¿ëÀ» ÁöÁ¤µÈ ¹®ÀÚ¿­·Î ´ëÃ¼ÇÑ »õ·Î¿î ¹®ÀÚ¿­À» ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå: String replace(String tarket, STring newString)
-		String str9 = str8.replace("ÀÚ¹Ù", "ÆÄÀÌ½ã");
+		// ë¬¸ìì—´ì˜ ë‚´ìš©ì„ ì§€ì •ëœ ë¬¸ìì—´ë¡œ ëŒ€ì²´í•œ ìƒˆë¡œìš´ ë¬¸ìì—´ì„ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ: String replace(String tarket, STring newString)
+		String str9 = str8.replace("ìë°”", "íŒŒì´ì¬");
 		System.out.println("str8 ["+str8+"]");
 		System.out.println("str9 ["+str9+"]");
 
-		// ¹®ÀÚ¿­¿¡¼­ ÁöÁ¤µÈ À§Ä¡ºÎÅÍ ³¡±îÁö ¹®ÀÚ¿­À» Àß¶ó¼­ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå: String substring(int beginIndex)
+		// ë¬¸ìì—´ì—ì„œ ì§€ì •ëœ ìœ„ì¹˜ë¶€í„° ëê¹Œì§€ ë¬¸ìì—´ì„ ì˜ë¼ì„œ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ: String substring(int beginIndex)
 		String str10 = "abcdefghijklmn";
 		String sub1 = str10.substring(5);
-		System.out.println("5¹øÂ°ºÎÅÍ Àß¶ó³½ ¹®ÀÚ¿­:" + sub1);
+		System.out.println("5ë²ˆì§¸ë¶€í„° ì˜ë¼ë‚¸ ë¬¸ìì—´:" + sub1);
 
-		// ¹®ÀÚ¿­¿¡¼­ ÁöÁ¤µÈ ±¸°£ÀÇ ¹®ÀÚ¿­À» Àß¶ó¼­ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå: String substring(int begin, int end)
-		// ½ÃÀÛÀ§Ä¡´Â Æ÷ÇÔµÇ°í, ³¡À§Ä¡´Â Æ÷ÇÔµÇÁö ¾Ê´Â´Ù.
+		// ë¬¸ìì—´ì—ì„œ ì§€ì •ëœ êµ¬ê°„ì˜ ë¬¸ìì—´ì„ ì˜ë¼ì„œ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ: String substring(int begin, int end)
+		// ì‹œì‘ìœ„ì¹˜ëŠ” í¬í•¨ë˜ê³ , ëìœ„ì¹˜ëŠ” í¬í•¨ë˜ì§€ ì•ŠëŠ”ë‹¤.
 		String sub2 = str10.substring(0, 4);
-		System.out.println("0¹øºÎÅÍ 4¹ø±îÁö Àß¶ó³½ ¹®ÀÚ¿­:" + sub2);
+		System.out.println("0ë²ˆë¶€í„° 4ë²ˆê¹Œì§€ ì˜ë¼ë‚¸ ë¬¸ìì—´:" + sub2);
 
-		String name = "È«±æµ¿";
+		String name = "í™ê¸¸ë™";
 		String familyName = name.substring(0, 1);
-		System.out.println("¼º:" + familyName);
+		System.out.println("ì„±:" + familyName);
 	
 		/*
 			System.out.println(src, srcPosition, dest, destPosition, length);
-				src			 : ¿øº» ¹è¿­
-				srcPosition	 : ¿øº» ¹è¿­¿¡¼­ º¹»çÇÒ Ç×¸ñÀÇ ½ÃÀÛ À§Ä¡
-				dest		 : »õ ¹è¿­
-				destPosition : »õ ¹è¿­¿¡¼­ º¹»çÇÒ Ç×¸ñÀ» ºÙ¿©³ÖÀ» ½ÃÀÛ À§Ä¡
-				length		 : ¿øº» ¹è¿­¿¡¼­ º¹»çÇÒ Ç×¸ñÀÇ °¹¼ö
+				src			 : ì›ë³¸ ë°°ì—´
+				srcPosition	 : ì›ë³¸ ë°°ì—´ì—ì„œ ë³µì‚¬í•  í•­ëª©ì˜ ì‹œì‘ ìœ„ì¹˜
+				dest		 : ìƒˆ ë°°ì—´
+				destPosition : ìƒˆ ë°°ì—´ì—ì„œ ë³µì‚¬í•  í•­ëª©ì„ ë¶™ì—¬ë„£ì„ ì‹œì‘ ìœ„ì¹˜
+				length		 : ì›ë³¸ ë°°ì—´ì—ì„œ ë³µì‚¬í•  í•­ëª©ì˜ ê°¯ìˆ˜
 		*/
 
-		// ¹è¿­ º¹»çÇÏ±â
-		String[] src = {"ÀÌ¼ø½Å", "°­°¨Âù", "±èÀ¯½Å", "È«±æµ¿", "ÀÏÁö¸Å", "ÀÓ²©Á¤"};
+		// ë°°ì—´ ë³µì‚¬í•˜ê¸°
+		String[] src = {"ì´ìˆœì‹ ", "ê°•ê°ì°¬", "ê¹€ìœ ì‹ ", "í™ê¸¸ë™", "ì¼ì§€ë§¤", "ì„êº½ì •"};
 		String[] dest = new String[10];
 		
 		System.arraycopy(src, 3, dest, 1, 2);
@@ -96,23 +96,23 @@ public class StringDemo {
 		System.out.println();
 		System.out.println(Arrays.toString(dest));
 
-		// ¹®ÀÚ¿­À» ÁöÁ¤ÇÑ ±¸ºĞÀÚ¸¦ ±âÁØÀ¸·Î Àß¶ó¼­ ¹è¿­·Î ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå: String[] split(String delim)
-		String text = "¼­¿ï,°æ±â,ÀÎÃµ,´ëÀü,ºÎ»ê,±¤ÁÖ,¿ï»ê,´ë±¸";
+		// ë¬¸ìì—´ì„ ì§€ì •í•œ êµ¬ë¶„ìë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì˜ë¼ì„œ ë°°ì—´ë¡œ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ: String[] split(String delim)
+		String text = "ì„œìš¸,ê²½ê¸°,ì¸ì²œ,ëŒ€ì „,ë¶€ì‚°,ê´‘ì£¼,ìš¸ì‚°,ëŒ€êµ¬";
 		String[] area = text.split(",");
 		System.out.println(area[0]);
 		System.out.println(area[2]);
 
-		// ¹®ÀÚ¿­À» ¼Ò¹®ÀÚ/´ë¹®ÀÚ·Î º¯È¯ÇÑ »õ·Î¿î ¹®ÀÚ¿­À» ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+		// ë¬¸ìì—´ì„ ì†Œë¬¸ì/ëŒ€ë¬¸ìë¡œ ë³€í™˜í•œ ìƒˆë¡œìš´ ë¬¸ìì—´ì„ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
 		// String toUpperCase(), String toLowerCase()
 		String str11 = "sony";
 		String str12 = str11.toUpperCase();
 		System.out.println("str11 ["+str11+"]");
 		System.out.println("str12 ["+str12+"]");
 		
-		// Á¤¼ö, ½Ç¼ö, ºÒ¸°°ª, ±âÅ¸ ¿©·¯ Á¾·ùÀÇ °ªµéÀ» ¹®ÀÚ¿­·Î º¯È¯ÇØ¼­ ¹İÈ¯ÇÏ´Â Á¤Àû ¸Ş¼Òµå
+		// ì •ìˆ˜, ì‹¤ìˆ˜, ë¶ˆë¦°ê°’, ê¸°íƒ€ ì—¬ëŸ¬ ì¢…ë¥˜ì˜ ê°’ë“¤ì„ ë¬¸ìì—´ë¡œ ë³€í™˜í•´ì„œ ë°˜í™˜í•˜ëŠ” ì •ì  ë©”ì†Œë“œ
 		// String valueOf(int value), String valueOf(double value), String valueOf(boolean value)
 		int number = 1234;
-		// ¼ıÀÚ 1234 ¸¦ ¹®ÀÚ¿­ "123" À¸·Î º¯È¯ÇØ¼­ ¹İÈ¯ÇÑ´Ù.
+		// ìˆ«ì 1234 ë¥¼ ë¬¸ìì—´ "123" ìœ¼ë¡œ ë³€í™˜í•´ì„œ ë°˜í™˜í•œë‹¤.
 		String str13 = String.valueOf(number);
 		System.out.println(str13.substring(str13.length()-1));
 

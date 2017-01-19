@@ -1,19 +1,19 @@
 public class Demo6 {
 	public static void main(String[] args) {
-		// »ç¿ø Á¤º¸¸¦ ´ã´Â ÀûÀıÇÑ º¯¼öµé ¸¸µé±â
-		// »ç¿øÀÇ ÀÌ¸§, Á÷À§, ¼Ò¼ÓºÎ¼­, ±Ş¿©
-		// ÀüÈ­¹öÈ£, ÀÌ¸ŞÀÏ, ¸ö¹«°Ô, Å°, Ç÷¾×Çü, °áÈ¥¿©ºÎ
+		// ì‚¬ì› ì •ë³´ë¥¼ ë‹´ëŠ” ì ì ˆí•œ ë³€ìˆ˜ë“¤ ë§Œë“¤ê¸°
+		// ì‚¬ì›ì˜ ì´ë¦„, ì§ìœ„, ì†Œì†ë¶€ì„œ, ê¸‰ì—¬
+		// ì „í™”ë²„í˜¸, ì´ë©”ì¼, ëª¸ë¬´ê²Œ, í‚¤, í˜ˆì•¡í˜•, ê²°í˜¼ì—¬ë¶€
 
-		String name = "Ê¥Ôö¡¡Ò¯òĞÚ¸(Ä«Åä ³ªÃ÷¹Ì)";
-		String position = "ºÎÀå";
-		String department = "°æ¸®ºÎ";
+		String name = "åŠ è—¤ã€€å¥ˆæ´¥ç¾(ì¹´í†  ë‚˜ì¸ ë¯¸)";
+		String position = "ë¶€ì¥";
+		String department = "ê²½ë¦¬ë¶€";
 		int salary = 3000000;
 		String telNum = "010-3939-3939";
 		String mail = "kato_natumi@gmail.com";
 		double weight = 55;
 		double height = 165;
 		String bloodType = "O";
-		boolean isMarryed = false;	// is È¤Àº has µîÀ¸·Î ¼³Á¤ÇÏ±âµµ ÇÔ.
+		boolean isMarryed = false;	// is í˜¹ì€ has ë“±ìœ¼ë¡œ ì„¤ì •í•˜ê¸°ë„ í•¨.
 
 	}
 }

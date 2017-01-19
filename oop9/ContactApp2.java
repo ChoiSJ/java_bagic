@@ -10,47 +10,47 @@ public class ContactApp2 {
 		//Tel[] tel = new Tel[]
 		
 		for (;;) {
-			System.out.println("1.ÀÌ¸§µî·Ï 2.ÀüÈ­¹øÈ£µî·Ï 3.ÁÖ¼Òµî·Ï/¼öÁ¤ 4.Á¶È¸ 5.Á¾·á");
-			System.out.print("¸Ş´º¸¦ ¼±ÅÃÇÏ¼¼¿ä:");
+			System.out.println("1.ì´ë¦„ë“±ë¡ 2.ì „í™”ë²ˆí˜¸ë“±ë¡ 3.ì£¼ì†Œë“±ë¡/ìˆ˜ì • 4.ì¡°íšŒ 5.ì¢…ë£Œ");
+			System.out.print("ë©”ë‰´ë¥¼ ì„ íƒí•˜ì„¸ìš”:");
 			int no = sc.nextInt();
 
 			if (no == 1) {
-				// ÀÌ¸§À» ÀÔ·Â¹Ş¾Æ¼­ Contact¿¡ ÀúÀåÇÕ´Ï´Ù.
-				System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä:");
+				// ì´ë¦„ì„ ì…ë ¥ë°›ì•„ì„œ Contactì— ì €ì¥í•©ë‹ˆë‹¤.
+				System.out.print("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”:");
 				con.setName(sc.next());
 
 			} else if (no == 2) {
-				// ÀüÈ­¹øÈ£ Á¤º¸¸¦ ÀÔ·Â¹Ş¾Æ¼­ Contact¿¡ ÀúÀåÇÕ´Ï´Ù.
-				// Tel °´Ã¼ »ı¼º -> °ª ÀÔ·Â¹Ş¾Æ¼­ Ã¤¿ì°í
-				// -> ContactÀÇ add(Tel tel)¿¡°Ô Tel °´Ã¼ ÀúÀåÇØ¼­ ¹è¿­¿¡ ´ã±â
+				// ì „í™”ë²ˆí˜¸ ì •ë³´ë¥¼ ì…ë ¥ë°›ì•„ì„œ Contactì— ì €ì¥í•©ë‹ˆë‹¤.
+				// Tel ê°ì²´ ìƒì„± -> ê°’ ì…ë ¥ë°›ì•„ì„œ ì±„ìš°ê³ 
+				// -> Contactì˜ add(Tel tel)ì—ê²Œ Tel ê°ì²´ ì €ì¥í•´ì„œ ë°°ì—´ì— ë‹´ê¸°
 				Tel tel = new Tel();
-				System.out.print("¹øÈ£Á¾·ù¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+				System.out.print("ë²ˆí˜¸ì¢…ë¥˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 				tel.setType(sc.next());
-				System.out.print("ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+				System.out.print("ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 				tel.setNumber(sc.next());
 
 				con.addTel(tel);
 
 			} else if (no == 3) {
-				// ÁÖ¼Ò Á¤º¸¸¦ ÀÔ·Â¹Ş¾Æ¼­ Contact¿¡ ÀúÀåÇÕ´Ï´Ù.
-				// Address °´Ã¼ »ı¼º -> °ª ÀÔ·Â¹Ş¾Æ¼­ Ã¤¿ì°í, ContantÀÇ setter ÀÌ¿ëÇØ¼­ ÀúÀå
+				// ì£¼ì†Œ ì •ë³´ë¥¼ ì…ë ¥ë°›ì•„ì„œ Contactì— ì €ì¥í•©ë‹ˆë‹¤.
+				// Address ê°ì²´ ìƒì„± -> ê°’ ì…ë ¥ë°›ì•„ì„œ ì±„ìš°ê³ , Contantì˜ setter ì´ìš©í•´ì„œ ì €ì¥
 				Address arr = new Address();
-				System.out.print("°ÅÁÖÁöÀÇ ½Ã/µµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+				System.out.print("ê±°ì£¼ì§€ì˜ ì‹œ/ë„ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 				arr.setSido(sc.next());
-				System.out.print("°ÅÁÖÁöÀÇ ±¸/±ºÀ» ÀÔ·ÂÇÏ¼¼¿ä:");
+				System.out.print("ê±°ì£¼ì§€ì˜ êµ¬/êµ°ì„ ì…ë ¥í•˜ì„¸ìš”:");
 				arr.setGugun(sc.next());
-				System.out.print("³ª¸ÓÁö ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+				System.out.print("ë‚˜ë¨¸ì§€ ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 				arr.setDetail(sc.next());
 				
 				con.setAddress(arr);
 
 			} else if (no == 4) {
-				// ¿¬¶ôÃ³ Á¤º¸¸¦ È­¸é¿¡ Ç¥½ÃÇÕ´Ï´Ù.
+				// ì—°ë½ì²˜ ì •ë³´ë¥¼ í™”ë©´ì— í‘œì‹œí•©ë‹ˆë‹¤.
 				con.getInfo();
 				
 			} else if (no == 5) {
-				// ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+				// í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.
+				System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				break;
 			}
 		}

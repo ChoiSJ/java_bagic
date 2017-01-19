@@ -8,9 +8,9 @@ public class Plus {
 			int number2 = Integer.parseInt(args[1]);
 
 			int sum = number1 + number2;
-			System.out.println("ÇÕ°è:" + sum);
+			System.out.println("í•©ê³„:" + sum);
 		} catch(NumberFormatException e) {
-			System.out.println("»ç¿ë¹ý: java Plus <¼ýÀÚ> <¼ýÀÚ>");
+			System.out.println("ì‚¬ìš©ë²•: java Plus <ìˆ«ìž> <ìˆ«ìž>");
 		}
 	}
 }

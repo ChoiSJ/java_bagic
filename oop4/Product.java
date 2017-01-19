@@ -7,19 +7,19 @@ public class Product {
 	private double discountRate;
 	private boolean isFree;
 	
-	// ±âº» »ý¼ºÀÚ <- this()¿Í °°Àº Çü½ÄÀ¸·Î Å¬·¡½º ³»ºÎ¿¡¼­ »ç¿ëÇÒ ¼ö ÀÖ´Ù.
+	// ê¸°ë³¸ ìƒì„±ìž <- this()ì™€ ê°™ì€ í˜•ì‹ìœ¼ë¡œ í´ëž˜ìŠ¤ ë‚´ë¶€ì—ì„œ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤.
 	public Product() {
 	
 	}
 	
-	// ÀÔ·Â¹Þ´Â ¼öÄ¡ ÀÌ¿ÜÀÇ °ªÀ» ±âº» ÃÊ±â°ªÀ¸·Î ¼³Á¤ÇÒ ¶§ °°Àº ÄÚµå¸¦ Áßº¹ÇÏ°Ô µÈ´Ù
-	// ±×°ÍÀ» ÁÙÀÌ±â À§ÇØ this() ¸¦ »ç¿ëÇÑ´Ù.
+	// ìž…ë ¥ë°›ëŠ” ìˆ˜ì¹˜ ì´ì™¸ì˜ ê°’ì„ ê¸°ë³¸ ì´ˆê¸°ê°’ìœ¼ë¡œ ì„¤ì •í•  ë•Œ ê°™ì€ ì½”ë“œë¥¼ ì¤‘ë³µí•˜ê²Œ ëœë‹¤
+	// ê·¸ê²ƒì„ ì¤„ì´ê¸° ìœ„í•´ this() ë¥¼ ì‚¬ìš©í•œë‹¤.
 	public Product(int no, String name, String maker, int price) {
-		this(no, name, maker, "»õÀçÇ°", price, 0.0, false);
+		this(no, name, maker, "ìƒˆìž¬í’ˆ", price, 0.0, false);
 		System.out.println("Product(int, String, String, int) is running");
 	}
 	
-	// this(int, String, String, String, String, int) ¿Í °°Àº Çü½ÄÀ¸·Î Å¬·¡½º ³»ºÎ¿¡¼­ »ç¿ë °¡´É
+	// this(int, String, String, String, String, int) ì™€ ê°™ì€ í˜•ì‹ìœ¼ë¡œ í´ëž˜ìŠ¤ ë‚´ë¶€ì—ì„œ ì‚¬ìš© ê°€ëŠ¥
 	public Product(int no, String name, String maker, String category, int price) {
 		//this.no = no;
 		//this.name = name;
@@ -46,12 +46,12 @@ public class Product {
 	}
 
 	public void displayInfo() {
-		System.out.println("¹ø    È£: " + no);
-		System.out.println("ÀÌ    ¸§: " + name);
-		System.out.println("Á¦ Á¶ »ç: " + maker);
-		System.out.println("Á¾    ·ù: " + category);
-		System.out.println("°¡    °Ý: " + price);
-		System.out.println("ÇÒ ÀÎ À²: " + discountRate);
-		System.out.println("¹«·á¿©ºÎ: " + isFree);
+		System.out.println("ë²ˆ    í˜¸: " + no);
+		System.out.println("ì´    ë¦„: " + name);
+		System.out.println("ì œ ì¡° ì‚¬: " + maker);
+		System.out.println("ì¢…    ë¥˜: " + category);
+		System.out.println("ê°€    ê²©: " + price);
+		System.out.println("í•  ì¸ ìœ¨: " + discountRate);
+		System.out.println("ë¬´ë£Œì—¬ë¶€: " + isFree);
 	}
 }

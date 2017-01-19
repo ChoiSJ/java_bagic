@@ -1,27 +1,27 @@
 public class Contact {
 	
-	// ¿¬¶ôÃ³ °ü¸® ÇÁ·Î±×·¥
-	// ¿¬¶ôÃ³¸¦ µî·ÏÇÒ ¼ö ÀÖ´Ù.
-	// µî·ÏµÈ ¿¬¶ôÃ³¸¦ Á¶È¸ÇÒ ¼ö ÀÖ´Ù.
-	// 1. ¿¬¶ôÃ³ Á¤º¸(¹øÈ£, ÀÌ¸§, ÀüÈ­¹øÈ£, ÀÌ¸ÞÀÏ)¸¦ ÀúÀåÇÒ ¼ö ÀÖ´Â °´Ã¼ÀÇ ¼³°èµµ ¸¸µé±â
-	// 2. ±¸ÇöÇÒ ±â´É ¼±Á¤ÇÏ±â
-	//		- µî·Ï
-	//			¹è¿­¿¡ Contact °´Ã¼¸¦ ÀúÀåÇÏ´Â °Í ±¸ÇöÇÏ±â
+	// ì—°ë½ì²˜ ê´€ë¦¬ í”„ë¡œê·¸ëž¨
+	// ì—°ë½ì²˜ë¥¼ ë“±ë¡í•  ìˆ˜ ìžˆë‹¤.
+	// ë“±ë¡ëœ ì—°ë½ì²˜ë¥¼ ì¡°íšŒí•  ìˆ˜ ìžˆë‹¤.
+	// 1. ì—°ë½ì²˜ ì •ë³´(ë²ˆí˜¸, ì´ë¦„, ì „í™”ë²ˆí˜¸, ì´ë©”ì¼)ë¥¼ ì €ìž¥í•  ìˆ˜ ìžˆëŠ” ê°ì²´ì˜ ì„¤ê³„ë„ ë§Œë“¤ê¸°
+	// 2. êµ¬í˜„í•  ê¸°ëŠ¥ ì„ ì •í•˜ê¸°
+	//		- ë“±ë¡
+	//			ë°°ì—´ì— Contact ê°ì²´ë¥¼ ì €ìž¥í•˜ëŠ” ê²ƒ êµ¬í˜„í•˜ê¸°
 	//	
-	//		- Á¶È¸
-	//			¹è¿­¿¡ ÀúÀåµÈ ¸ðµç Contact °´Ã¼ÀÇ Á¤º¸¸¦ Ç¥½ÃÇÏ´Â °Í ±¸ÇöÇÏ±â
+	//		- ì¡°íšŒ
+	//			ë°°ì—´ì— ì €ìž¥ëœ ëª¨ë“  Contact ê°ì²´ì˜ ì •ë³´ë¥¼ í‘œì‹œí•˜ëŠ” ê²ƒ êµ¬í˜„í•˜ê¸°
 	
 	private int no; 
 	private String name;
 	private String phone;
 	private String email;
 
-	// ±âº» »ý¼º°¡
+	// ê¸°ë³¸ ìƒì„±ê°€
 	public Contact() {
 	
 	}
 
-	// getter/setter ¸Þ¼Òµå
+	// getter/setter ë©”ì†Œë“œ
 	public int getNo() {
 		return no;
 	}

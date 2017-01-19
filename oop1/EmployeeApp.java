@@ -5,21 +5,21 @@ public class EmployeeApp {
 		Employee e2 = new Employee();
 		Employee es = new Employee();
 		
-		// ¿¬ºÀ°è»ê±â
+		// ì—°ë´‰ê³„ì‚°ê¸°
 		es.annual(300);
 	
 		e1.no = 1;
-		e1.name = "Àåº¸°í";
+		e1.name = "ì¥ë³´ê³ ";
 		e1.phone = "010-3939-3939";
-		e1.department = "ÇØ±º";
-		e1.position = "¼ÒÀå";
+		e1.department = "í•´êµ°";
+		e1.position = "ì†Œì¥";
 		e1.salary = 1000;
 
 		e2.no = 2;
-		e2.name = "ÀüºÀÁØ";
+		e2.name = "ì „ë´‰ì¤€";
 		e2.phone = "010-1234-9876";
-		e2.department = "³ó¸²¼ö»êºÎ";
-		e2.position = "Àå°ü";
+		e2.department = "ë†ë¦¼ìˆ˜ì‚°ë¶€";
+		e2.position = "ì¥ê´€";
 		e2.salary = 5000;
 		
 		e1.personal();

@@ -12,8 +12,8 @@ public class DecimalFormatDemo {
 		System.out.println(text);
 
 		double rate = 3212.345;
-		//String pattern2 = "#,###.##";	// ¼Ò¼ıÁ¡ 2ÀÚ¸®±îÁö Ç¥Çö, ¼Ò¼öÁ¡ 3ÀÚ¸®¿¡¼­ ¹İ¿Ã¸²µÈ´Ù.
-		//String pattern2 = "#,###.####";	// ºó ÀÚ¸®¸¦ Ã¤¿ìÁö ¾Ê´Â´Ù.
+		//String pattern2 = "#,###.##";	// ì†Œìˆ«ì  2ìë¦¬ê¹Œì§€ í‘œí˜„, ì†Œìˆ˜ì  3ìë¦¬ì—ì„œ ë°˜ì˜¬ë¦¼ëœë‹¤.
+		//String pattern2 = "#,###.####";	// ë¹ˆ ìë¦¬ë¥¼ ì±„ìš°ì§€ ì•ŠëŠ”ë‹¤.
 		String pattern2 = "0,000.0000";
 		DecimalFormat df2 = new DecimalFormat(pattern2);
 		String text2 = df2.format(rate);

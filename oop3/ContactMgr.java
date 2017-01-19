@@ -2,19 +2,19 @@ public class ContactMgr {
 	private Contact[] contacts = new Contact[100];
 	private int currentPosition = 0;
 
-	// Contact °´Ã¼¸¦ Àü´Ş¹Ş¾Æ¼­ ¹è¿­¿¡ ÀúÀåÇÏ±â
+	// Contact ê°ì²´ë¥¼ ì „ë‹¬ë°›ì•„ì„œ ë°°ì—´ì— ì €ì¥í•˜ê¸°
 	public void addContact(Contact contact) {
 		contacts[currentPosition] = contact;
 		currentPosition++;
 	}
 
-	// contants ¹è¿­¿¡ ÀúÀåµÈ ¸ğµç ¿¬¶ôÃ³ Á¤º¸ Ç¥½ÃÇÏ±â
+	// contants ë°°ì—´ì— ì €ì¥ëœ ëª¨ë“  ì—°ë½ì²˜ ì •ë³´ í‘œì‹œí•˜ê¸°
 	public void displayContact() {
 		for (int i=0; i<currentPosition; i++) {
-			System.out.println("¹øÈ£: " + contacts[i].getNo());
-			System.out.println("ÀÌ¸§: " + contacts[i].getName());
-			System.out.println("ÀüÈ­¹øÈ£: " + contacts[i].getPhone());
-			System.out.println("ÀÌ¸ŞÀÏ: " + contacts[i].getEmail());
+			System.out.println("ë²ˆí˜¸: " + contacts[i].getNo());
+			System.out.println("ì´ë¦„: " + contacts[i].getName());
+			System.out.println("ì „í™”ë²ˆí˜¸: " + contacts[i].getPhone());
+			System.out.println("ì´ë©”ì¼: " + contacts[i].getEmail());
 		}
 	}
 }

@@ -1,16 +1,16 @@
 public class Demo4 {
 	public static void main(String[] args) {
-		// ¹®ÀÚ Å¸ÀÔ - ÇÑ ±ÛÀÚ¸¦ ÀúÀåÇÏ´Â ÀÚ·áÇü
+		// ë¬¸ì íƒ€ì… - í•œ ê¸€ìë¥¼ ì €ì¥í•˜ëŠ” ìë£Œí˜•
 		
 		char c1 = 'A';
-		char c2 = 65;	// int¿¡ ´ãÀ¸¸é ¼ıÀÚ, char¿¡ ´ãÀ¸¸é ÇØ´çÇÏ´Â ±ÛÀÚ·Î º¯È¯
+		char c2 = 65;	// intì— ë‹´ìœ¼ë©´ ìˆ«ì, charì— ë‹´ìœ¼ë©´ í•´ë‹¹í•˜ëŠ” ê¸€ìë¡œ ë³€í™˜
 		char c3 = '\u0041';
 
 		System.out.println(c1);
 		System.out.println(c2);
 		System.out.println(c3);
 
-		// ¿À·ù
-		// char c4 = 'AB' ±ÛÀÚ 2°³¸¦ ÀúÀåÇÒ ¼ö ¾ø´Ù.
+		// ì˜¤ë¥˜
+		// char c4 = 'AB' ê¸€ì 2ê°œë¥¼ ì €ì¥í•  ìˆ˜ ì—†ë‹¤.
 	}
 }

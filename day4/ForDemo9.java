@@ -6,10 +6,10 @@ public class ForDemo9 {
 		
 		Scanner sc = new Scanner(System.in);
 		Random random = new Random();
-		// 1. µÎ ÁÖ»çÀ§ÀÇ ÇÕÀÌ 7ÀÌ µÇ¸é ¹«ÀÎµµÇà
-		// 2. ¹«ÀÎµµ¿¡ °¤Èù °æ¿ì, °°Àº ¼ýÀÚ Á¶ÇÕÀÏ ¶§¸¸ ¹«ÀÎµµ¿¡¼­ Å»Ãâ
-		// 3. ¹«ÀÎµµ¿¡ °°ÀÎ °æ¿ì, ÁÖ»çÀ§¸¦ 3¹ø ±¼·È´Ù¸é ¹«ÀÎµµ¿¡¼­ Å»Ãâ
-		// 4. ¹«ÀÎµµ¿¡ °¤È÷Áö ¾ÊÀº °æ¿ì¿£, ÁÖ»çÀ§ÀÇ ÇÕ¸¸Å­ Ä­À» ÀÌµ¿
+		// 1. ë‘ ì£¼ì‚¬ìœ„ì˜ í•©ì´ 7ì´ ë˜ë©´ ë¬´ì¸ë„í–‰
+		// 2. ë¬´ì¸ë„ì— ê°‡ížŒ ê²½ìš°, ê°™ì€ ìˆ«ìž ì¡°í•©ì¼ ë•Œë§Œ ë¬´ì¸ë„ì—ì„œ íƒˆì¶œ
+		// 3. ë¬´ì¸ë„ì— ê°™ì¸ ê²½ìš°, ì£¼ì‚¬ìœ„ë¥¼ 3ë²ˆ êµ´ë ¸ë‹¤ë©´ ë¬´ì¸ë„ì—ì„œ íƒˆì¶œ
+		// 4. ë¬´ì¸ë„ì— ê°‡ížˆì§€ ì•Šì€ ê²½ìš°ì—”, ì£¼ì‚¬ìœ„ì˜ í•©ë§Œí¼ ì¹¸ì„ ì´ë™
 		for (int i=1; i<=10; i++) {
 			
 			int first = random.nextInt(6) + 1;

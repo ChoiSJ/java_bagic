@@ -3,9 +3,9 @@ public class FinalDemo1 {
 		
 		final int x = 10;
 
-		System.out.println("xÀÇ °ª: " + x);
+		System.out.println("xì˜ ê°’: " + x);
 
-		//x = 10;	// °ªÀ» º¯°æÇÒ ¼ö ¾ø´Ù.
-		//System.out.println("xÀÇ °ª: " + x);
+		//x = 10;	// ê°’ì„ ë³€ê²½í•  ìˆ˜ ì—†ë‹¤.
+		//System.out.println("xì˜ ê°’: " + x);
 	} 
 }

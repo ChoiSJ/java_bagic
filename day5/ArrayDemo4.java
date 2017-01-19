@@ -3,19 +3,19 @@ public class ArrayDemo4 {
 		/*
 		String[][] groups = new String[2][3];
 		
-		// ´ÙÂ÷¿ø ¹è¿­¿¡ °ª ÀúÀåÇÏ±â
-		groups[0][0] = "È²Áø¼ö";
-		groups[0][1] = "ÁøÈñ³²";
-		groups[0][2] = "ÀåÇØ¿µ";
+		// ë‹¤ì°¨ì› ë°°ì—´ì— ê°’ ì €ìž¥í•˜ê¸°
+		groups[0][0] = "í™©ì§„ìˆ˜";
+		groups[0][1] = "ì§„í¬ë‚¨";
+		groups[0][2] = "ìž¥í•´ì˜";
 
-		groups[1][0] = "È«½ÂÈ¯";
-		groups[1][1] = "À±¿ëÇÐ";
-		groups[1][2] = "ÀÌÇüÁØ";
+		groups[1][0] = "í™ìŠ¹í™˜";
+		groups[1][1] = "ìœ¤ìš©í•™";
+		groups[1][2] = "ì´í˜•ì¤€";
 		*/
 
-		String[][] groups = {{"È²Áø¼ö", "ÁøÈñ³²", "ÀåÇØ¿µ"}, {"È«½ÂÈ¯", "À±¿ëÇÐ", "ÀÌÇüÁØ"}};
+		String[][] groups = {{"í™©ì§„ìˆ˜", "ì§„í¬ë‚¨", "ìž¥í•´ì˜"}, {"í™ìŠ¹í™˜", "ìœ¤ìš©í•™", "ì´í˜•ì¤€"}};
 
-		// ´ÙÂ÷¿ø ¹è¿­ÀÇ °ª Ç¥½ÃÇÏ±â
+		// ë‹¤ì°¨ì› ë°°ì—´ì˜ ê°’ í‘œì‹œí•˜ê¸°
 		/*
 		for (int i=0; i<2; i++) {
 			for (int j=0; j<3; j++) {
@@ -24,8 +24,8 @@ public class ArrayDemo4 {
 			System.out.println();
 		}
 		*/
-		for (String[] group : groups) {		// ¹è¿­ 2°³¿¡¼­ ÇÑ ¹è¿­¾¿ ÀÚ·á¸¦ ÃßÃâ
-			for (String name : group) {		// for¹®¿¡ µû¶ó ÀçÁ¤·Ä
+		for (String[] group : groups) {		// ë°°ì—´ 2ê°œì—ì„œ í•œ ë°°ì—´ì”© ìžë£Œë¥¼ ì¶”ì¶œ
+			for (String name : group) {		// forë¬¸ì— ë”°ë¼ ìž¬ì •ë ¬
 				System.out.print(name + "\t");
 			}
 			System.out.println();

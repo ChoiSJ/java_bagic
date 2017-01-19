@@ -3,23 +3,23 @@ public class PrinterApp3 {
 		
 		Printer p1 = new ColorPrinter();
 
-		// p1 ÂüÁ¶º¯¼ö´Â ColorPrinter °´Ã¼¿Í ÇÔ²² »ı¼ºµÈ Printer °´Ã¼¸¦ ÂüÁ¶ÇÑ´Ù
-		// p1 ÂüÁ¶º¯¼ö´Â Printer °´Ã¼ÀÇ ÇÊµå/¸Ş¼Òµå¸¦ ½ÇÇàÇÒ ¼ö ÀÖ´Ù
-		// p1 ÂüÁ¶º¯¼ö´Â ColorPrinter °´Ã¼ÀÇ ÇÊµå/¸Ş¼Òµå´Â ½ÇÇàÇÒ ¼ö ¾ø´Ù.
-		// ´Ü, ColorPrinter °´Ã¼¿Í Printer °´Ã¼¿¡ ÀçÁ¤ÀÇ °ü°è¿¡ ÀÖ´Â ¸Ş¼Òµå°¡ ÀÖ´Ù¸é
-		// p1 ÂüÁ¶º¯¼ö·Î ColorPrinter °´Ã¼ÀÇ ÀçÁ¤ÀÇµÈ ¸Ş¼Òµå¸¦ ½ÇÇàÇÒ ¼ö ÀÖ´Ù.
+		// p1 ì°¸ì¡°ë³€ìˆ˜ëŠ” ColorPrinter ê°ì²´ì™€ í•¨ê»˜ ìƒì„±ëœ Printer ê°ì²´ë¥¼ ì°¸ì¡°í•œë‹¤
+		// p1 ì°¸ì¡°ë³€ìˆ˜ëŠ” Printer ê°ì²´ì˜ í•„ë“œ/ë©”ì†Œë“œë¥¼ ì‹¤í–‰í•  ìˆ˜ ìˆë‹¤
+		// p1 ì°¸ì¡°ë³€ìˆ˜ëŠ” ColorPrinter ê°ì²´ì˜ í•„ë“œ/ë©”ì†Œë“œëŠ” ì‹¤í–‰í•  ìˆ˜ ì—†ë‹¤.
+		// ë‹¨, ColorPrinter ê°ì²´ì™€ Printer ê°ì²´ì— ì¬ì •ì˜ ê´€ê³„ì— ìˆëŠ” ë©”ì†Œë“œê°€ ìˆë‹¤ë©´
+		// p1 ì°¸ì¡°ë³€ìˆ˜ë¡œ ColorPrinter ê°ì²´ì˜ ì¬ì •ì˜ëœ ë©”ì†Œë“œë¥¼ ì‹¤í–‰í•  ìˆ˜ ìˆë‹¤.
 
-		p1.feed();					// Printer ¿¡ Á¤ÀÇµÈ ¸Ş¼Òµå
-		p1.print("ÀÎ¼âÇÕ´Ï´Ù.");	// Printer ¿¡ Á¤ÀÇ, ColorPrinter ¿¡ ÀçÁ¤ÀÇ
-									// ColorPrinter ÀÇ Print(Strint text) °¡ ½ÇÇà
+		p1.feed();					// Printer ì— ì •ì˜ëœ ë©”ì†Œë“œ
+		p1.print("ì¸ì‡„í•©ë‹ˆë‹¤.");	// Printer ì— ì •ì˜, ColorPrinter ì— ì¬ì •ì˜
+									// ColorPrinter ì˜ Print(Strint text) ê°€ ì‹¤í–‰
 
-		// ¾Æ·¡ ÄÚµåÀÇ ¿À·ù <-- p1 ÂüÁ¶º¯¼ö·Î´Â Á¢±Ù ºÒ°¡
-		//p1.dpi = 600;				// ColorPrinter ¿¡ Á¤ÀÇµÈ ÇÊµå
-		//p1.chargeInk();			// ColorPrinter ¿¡ Á¤ÀÇµÈ ÇÊµå
+		// ì•„ë˜ ì½”ë“œì˜ ì˜¤ë¥˜ <-- p1 ì°¸ì¡°ë³€ìˆ˜ë¡œëŠ” ì ‘ê·¼ ë¶ˆê°€
+		//p1.dpi = 600;				// ColorPrinter ì— ì •ì˜ëœ í•„ë“œ
+		//p1.chargeInk();			// ColorPrinter ì— ì •ì˜ëœ í•„ë“œ
 
-		// °´Ã¼ÀÇ °­Á¦ Çüº¯È¯
-		ColorPrinter p2 = (ColorPrinter) p1;	// p1¿¡¼­ ColorPrinter °´Ã¼ÂÊÀ¸·Î ¿Å°Ü°£´Ù.
-												// ColorPrinter °´Ã¼ÀÇ ÂüÁ¶°ªÀÌ ¹İÈ¯µÈ´Ù.
+		// ê°ì²´ì˜ ê°•ì œ í˜•ë³€í™˜
+		ColorPrinter p2 = (ColorPrinter) p1;	// p1ì—ì„œ ColorPrinter ê°ì²´ìª½ìœ¼ë¡œ ì˜®ê²¨ê°„ë‹¤.
+												// ColorPrinter ê°ì²´ì˜ ì°¸ì¡°ê°’ì´ ë°˜í™˜ëœë‹¤.
 		p2.dpi = 600;
 		p2.chargeInk();
 

@@ -2,9 +2,9 @@ public class FinalDemo3 {
 	public static void main(String[] args) {
 
 		/*
-	    	FinalDemo2 °´Ã¼´Â °´Ã¼¸¶´Ù x°ª°ú y°ªÀ» °¢°¢ ´Ù¸¥ °ªÀ» °¡Áø °´Ã¼¸¦
-			»ý¼ºÇÒ ¼ö ÀÖ´Ù.
-			ÇÏÁö¸¸, Final·Î ÁöÁ¤µÈ x°ªÀº º¯°æÇÒ ¼ö ¾ø´Ù.
+	    	FinalDemo2 ê°ì²´ëŠ” ê°ì²´ë§ˆë‹¤ xê°’ê³¼ yê°’ì„ ê°ê° ë‹¤ë¥¸ ê°’ì„ ê°€ì§„ ê°ì²´ë¥¼
+			ìƒì„±í•  ìˆ˜ ìžˆë‹¤.
+			í•˜ì§€ë§Œ, Finalë¡œ ì§€ì •ëœ xê°’ì€ ë³€ê²½í•  ìˆ˜ ì—†ë‹¤.
 		*/
 		
 		FinalDemo2 d1 = new FinalDemo2(10, 1);

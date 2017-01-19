@@ -1,6 +1,6 @@
 public class FeaturePhone extends Phone {
 	
 	public void keypad() {
-		System.out.println("Å°ÀÔ·ÂÀ» Áö¿øÇÕ´Ï´Ù.");
+		System.out.println("í‚¤ì…ë ¥ì„ ì§€ì›í•©ë‹ˆë‹¤.");
 	}
 }

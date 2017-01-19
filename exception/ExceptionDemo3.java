@@ -5,7 +5,7 @@ public class ExceptionDemo3 {
 	public static void writing() throws HtaException {
 		try {
 			FileWriter writer = new FileWriter("sample.txt");
-			String text = "12¿ù 3ÀÏ º¼»¡°£ »çÃá±â ÄÜ¼­Æ®";
+			String text = "12ì›” 3ì¼ ë³¼ë¹¨ê°„ ì‚¬ì¶˜ê¸° ì½˜ì„œíŠ¸";
 
 			writer.write(text);
 			writer.flush();
@@ -20,9 +20,9 @@ public class ExceptionDemo3 {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader("memo.txt"));
 			String text = reader.readLine();
-			System.out.println("³»¿ë:" + text);
+			System.out.println("ë‚´ìš©:" + text);
 		} catch(FileNotFoundException e) {
-			// FileNotFoundException ÀÌ ¹ß»ıÇÑ °ÍÀ» °¡·ÎÃ¤°í, ´ë½Å HtaException À» »ı¼ºÇØ¼­ ´øÁö±â
+			// FileNotFoundException ì´ ë°œìƒí•œ ê²ƒì„ ê°€ë¡œì±„ê³ , ëŒ€ì‹  HtaException ì„ ìƒì„±í•´ì„œ ë˜ì§€ê¸°
 			throw new HtaException();
 		} catch(IOException e) {
 			throw new HtaException();
@@ -35,7 +35,7 @@ public class ExceptionDemo3 {
 			reading();
 			writing();
 		} catch(HtaException e) {
-			System.out.println("ÇÁ·Î±×·¥ ½ÇÇà Áß ¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù.");
+			System.out.println("í”„ë¡œê·¸ë¨ ì‹¤í–‰ ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì˜€ìŠµë‹ˆë‹¤.");
 		}  
 	}
 }

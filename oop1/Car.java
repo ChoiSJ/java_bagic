@@ -1,15 +1,15 @@
 public class Car {
-	// ¼Ó¼º(ÇÊµå) Á¤ÀÇÇÏ±â
+	// ì†ì„±(í•„ë“œ) ì •ì˜í•˜ê¸°
 	int speed;
 
-	// ±â´É(¸Ş¼Òµå) Á¤ÀÇÇÏ±â
+	// ê¸°ëŠ¥(ë©”ì†Œë“œ) ì •ì˜í•˜ê¸°
 	public void speedUp() {
 		speed += 10;
-		System.out.println("ÇöÀç ¼Óµµ: " + speed + "km");
+		System.out.println("í˜„ì¬ ì†ë„: " + speed + "km");
 	}
 	
 	public void speedDown() {
 		speed -= 10;
-		System.out.println("ÇöÀç ¼Óµµ: " + speed + "km");
+		System.out.println("í˜„ì¬ ì†ë„: " + speed + "km");
 	}
 }

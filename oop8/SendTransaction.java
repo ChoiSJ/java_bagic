@@ -1,10 +1,10 @@
 public class SendTransaction extends Transaction {
 
 	//public void connect() {
-	//	System.out.println("½ºÀ§½º ³» ºñ¹Ð°èÁÂ·Î ÀüºÎ ¿¬°á...");
+	//	System.out.println("ìŠ¤ìœ„ìŠ¤ ë‚´ ë¹„ë°€ê³„ì¢Œë¡œ ì „ë¶€ ì—°ê²°...");
 	//}
 
 	public void job() {
-		System.out.println("¼Û±ÝÇÏ±â");
+		System.out.println("ì†¡ê¸ˆí•˜ê¸°");
 	}
 }

@@ -7,17 +7,17 @@ public class ProductApp {
 		ProductRepository repo = new ProductRepository();
 		Scanner sc = new Scanner(System.in);
 		
-		// ÀÔ·Â°ª ÀĞ¾î¿À±â
-		System.out.println("»óÇ°¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		// ì…ë ¥ê°’ ì½ì–´ì˜¤ê¸°
+		System.out.println("ìƒí’ˆë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int no = Integer.parseInt(sc.nextLine());
-		System.out.println("»óÇ°¸íÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ìƒí’ˆëª…ì„ ì…ë ¥í•˜ì„¸ìš”");
 		String name = sc.nextLine();
-		// ÀÔ·Â°ªÀ» ´ãÀ» °´Ã¼ ¸¸µé±â
+		// ì…ë ¥ê°’ì„ ë‹´ì„ ê°ì²´ ë§Œë“¤ê¸°
 		Product p = new Product();
-		// »ı¼ºµÈ °´Ã¼¿¡ ÀÔ·Â°ª ´ã±â
+		// ìƒì„±ëœ ê°ì²´ì— ì…ë ¥ê°’ ë‹´ê¸°
 		p.setNo(no);
 		p.setName(name);
-		// db¿¡ °ªÀ» ÀúÀåÇØÁÖ´Â ¸Ş¼Òµå¿¡ °ªÀ» ´ã°í ÀÖ´Â °´Ã¼¸¦ Àü´ŞÇÏ±â
+		// dbì— ê°’ì„ ì €ì¥í•´ì£¼ëŠ” ë©”ì†Œë“œì— ê°’ì„ ë‹´ê³  ìˆëŠ” ê°ì²´ë¥¼ ì „ë‹¬í•˜ê¸°
 		repo.addProduct(p);
 
 		repo.displayProducts();

@@ -8,10 +8,10 @@ import kr.co.l2.sub.Family;
 
 public class Demo {
 	public static void main(String[] args) {
-		System.out.println("ÆĞÅ°Áö µ¥¸ğ ¾ÖÇÃ¸®ÄÉÀÌ¼Ç");
+		System.out.println("íŒ¨í‚¤ì§€ ë°ëª¨ ì• í”Œë¦¬ì¼€ì´ì…˜");
 
 		Person p = new Person();
-		p.setName("È«±æµ¿");
+		p.setName("í™ê¸¸ë™");
 		System.out.println(p);
 		System.out.println(p.getName());
 

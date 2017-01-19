@@ -7,52 +7,52 @@ public class AccountApp {
 		Account acc = new Account();
 		
 		for (;;) {
-			System.out.println("1.µî·Ï, 2.Á¶È¸ 3.ºñ¹øº¯°æ 4.ÀÔ±İ 5.Ãâ±İ 6.Á¾·á\n");
-			System.out.print("¸Ş´º ¼±ÅÃ>");
+			System.out.println("1.ë“±ë¡, 2.ì¡°íšŒ 3.ë¹„ë²ˆë³€ê²½ 4.ì…ê¸ˆ 5.ì¶œê¸ˆ 6.ì¢…ë£Œ\n");
+			System.out.print("ë©”ë‰´ ì„ íƒ>");
 			int menuNo = sc.nextInt();
 
 			if (menuNo == 1) {
-				System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+				System.out.print("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 				acc.setName(sc.next());
-				System.out.print("ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+				System.out.print("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 				acc.setPassword(sc.nextInt());
-				System.out.print("ÀÔ±İÇÒ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+				System.out.print("ì…ê¸ˆí•  ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 				acc.setBalance(sc.nextInt());
 
 			} else if (menuNo == 2) {
-				System.out.println("ÀÌ    ¸§: " + acc.getName());
-				System.out.println("°èÁÂ¹øÈ£: " + acc.getAccountNum());
-				System.out.println("ÀÜ    ¾×: " + acc.getBalance());
+				System.out.println("ì´    ë¦„: " + acc.getName());
+				System.out.println("ê³„ì¢Œë²ˆí˜¸: " + acc.getAccountNum());
+				System.out.println("ì”    ì•¡: " + acc.getBalance());
 			} else if (menuNo == 3) {
-				System.out.print("ÇöÀç ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+				System.out.print("í˜„ì¬ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 				int password = sc.nextInt();
 
 				if (acc.getPassword() == password) {
-					System.out.print("»õ ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+					System.out.print("ìƒˆ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 					acc.setPassword(sc.nextInt());
 				} else { 
-					System.out.println("Æ²·È½À´Ï´Ù. ´Ù½Ã ½ÃµµÇÏ¼¼¿ä.");
+					System.out.println("í‹€ë ¸ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.");
 				}
 			} else if (menuNo == 4) {
-				System.out.print("ÀÔ±İÇÒ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+				System.out.print("ì…ê¸ˆí•  ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 				int deposit = sc.nextInt();
 				int result = acc.getBalance() + deposit;
 				acc.setBalance(result);
 			
 			} else if (menuNo == 5) {
-				System.out.print("ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä ");
+				System.out.print("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš” ");
 				int password = sc.nextInt();
 
 				if (acc.getPassword() == password) {
-					System.out.print("Ãâ±İÇÒ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+					System.out.print("ì¶œê¸ˆí•  ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 					int withdraw = sc.nextInt();
 					int result = acc.getBalance() - withdraw;
 					acc.setBalance(result);
 				} else {
-					System.out.println("Æ²·È½À´Ï´Ù. ´Ù½Ã ½ÃµµÇÏ¼¼¿ä.");
+					System.out.println("í‹€ë ¸ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.");
 				}
 			} else if (menuNo == 6) {
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				break;
 			}
 		} 

@@ -1,5 +1,5 @@
 public class Account {
-	// ¼Ó¼ºÀ» Àº´ĞÈ­ ½ÃÅ°±â
+	// ì†ì„±ì„ ì€ë‹‰í™” ì‹œí‚¤ê¸°
 	private String owner;
 	private String accountNumber;
 	private int password;
@@ -12,7 +12,7 @@ public class Account {
 		this.balance = balance;
 	}
 
-	public String getOwner() {		// getter ¸Ş¼Òµå(´ã¾Æ ÀÖ´Â °ªÀ», ÀĞ±â´Â °¡´ÉÇÏÁö¸¸, º¯°æÀ» ÇÒ ¼ö ¾ø°Ô ÇÑ´Ù.)
+	public String getOwner() {		// getter ë©”ì†Œë“œ(ë‹´ì•„ ìˆëŠ” ê°’ì„, ì½ê¸°ëŠ” ê°€ëŠ¥í•˜ì§€ë§Œ, ë³€ê²½ì„ í•  ìˆ˜ ì—†ê²Œ í•œë‹¤.)
 		return owner;
 	}
 
@@ -26,7 +26,7 @@ public class Account {
 	}
 	*/
 
-	// ±â´ÉÀ» °ø°³ÇÏ±â
+	// ê¸°ëŠ¥ì„ ê³µê°œí•˜ê¸°
 	public void info() {
 		System.out.printf("%s %s %d %d\n", owner, accountNumber, password, balance);
 	}

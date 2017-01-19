@@ -3,24 +3,24 @@ import java.util.HashSet;
 public class HashSetDemo {
 
 	public static void main(String[] args) {
-		// ¸Ş´ºÀÌ¸§À» ÀúÀåÇÏ´Â HashSet °´Ã¼ ¸¸µé±â
+		// ë©”ë‰´ì´ë¦„ì„ ì €ì¥í•˜ëŠ” HashSet ê°ì²´ ë§Œë“¤ê¸°
 		
 		boolean r = false;
 		HashSet<String> menuset = new HashSet<String>();
-		r = menuset.add("Ã»±¹Àå");
-		System.out.println("Ã»±¹Àå--->" + r);
-		menuset.add("µÈÀåÂî°³");
-		menuset.add("µÎºÎÁ¶¸²");
-		menuset.add("ÇÑ¿ìÀ°°³Àå");
-		menuset.add("È²ÅÂÁ¶¸²");
-		menuset.add("Á¦À°ººÀ½");
-		menuset.add("Á¦À°ººÀ½");
-		menuset.add("Á¦À°ººÀ½");
-		r = menuset.add("Á¦À°ººÀ½");
-		System.out.println("Á¦À°ººÀ½--->" + r);
+		r = menuset.add("ì²­êµ­ì¥");
+		System.out.println("ì²­êµ­ì¥--->" + r);
+		menuset.add("ëœì¥ì°Œê°œ");
+		menuset.add("ë‘ë¶€ì¡°ë¦¼");
+		menuset.add("í•œìš°ìœ¡ê°œì¥");
+		menuset.add("í™©íƒœì¡°ë¦¼");
+		menuset.add("ì œìœ¡ë³¶ìŒ");
+		menuset.add("ì œìœ¡ë³¶ìŒ");
+		menuset.add("ì œìœ¡ë³¶ìŒ");
+		r = menuset.add("ì œìœ¡ë³¶ìŒ");
+		System.out.println("ì œìœ¡ë³¶ìŒ--->" + r);
 
 		int len = menuset.size();
-		System.out.println("ÀúÀåµÈ °¹¼ö:" + len);
+		System.out.println("ì €ì¥ëœ ê°¯ìˆ˜:" + len);
 
 		for (String menu : menuset) {
 			System.out.println(menu);

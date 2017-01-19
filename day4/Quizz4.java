@@ -7,32 +7,32 @@ public class Quizz4 {
 		int balance = 0;
 
 		for (;;) {
-			System.out.println("1.ÀÔ±İ\t2.Ãâ±İ\t3.Á¶È¸\t4.Á¾·á");
-			System.out.print("¹øÈ£¸¦ ¼±ÅÃÇÏ¼¼¿ä: ");
+			System.out.println("1.ì…ê¸ˆ\t2.ì¶œê¸ˆ\t3.ì¡°íšŒ\t4.ì¢…ë£Œ");
+			System.out.print("ë²ˆí˜¸ë¥¼ ì„ íƒí•˜ì„¸ìš”: ");
 			int select = sc.nextInt();
 
 			if (select == 1) {
-				System.out.print("\nÀÔ±İÇÒ ±İ¾×ÀÇ ¾×¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+				System.out.print("\nì…ê¸ˆí•  ê¸ˆì•¡ì˜ ì•¡ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 				int money = sc.nextInt();
 
 				balance += money;
 			} else if (select == 2) {
-				System.out.print("\nÃâ±İÇÒ ±İ¾×ÀÇ ¾×¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+				System.out.print("\nì¶œê¸ˆí•  ê¸ˆì•¡ì˜ ì•¡ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 				int money = sc.nextInt();
 
 				if (balance >= money) {
 					balance -= money;
 				} else {
-					System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
+					System.out.println("ì”ì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
 				}
 			} else if (select == 3) {
-				System.out.println("\nÇöÀç ÀÜ¾×: " + balance);
+				System.out.println("\ní˜„ì¬ ì”ì•¡: " + balance);
 			} else if (select == 4) {
-				System.out.println("\nÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("\ní”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				break;
 			}
 		//System.out.println();
-		System.out.println("\nÀÌ¿ëÇØÁÖ¼Å¼­ °¨»çÇÕ´Ï´Ù.\n");
+		System.out.println("\nì´ìš©í•´ì£¼ì…”ì„œ ê°ì‚¬í•©ë‹ˆë‹¤.\n");
 		} 
 	}
 }

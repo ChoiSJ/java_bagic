@@ -1,13 +1,13 @@
 public class ScoreApp2 {
 	public static void main(String[] args) {
 		
-		// °´Ã¼ »ı¼º ¹× È«±æµ¿ ÇĞ»ıÀÇ ¼ºÀûÀ¸·Î °´Ã¼°¡ ÃÊ±âÈ­µÇ¾úÀ½
+		// ê°ì²´ ìƒì„± ë° í™ê¸¸ë™ í•™ìƒì˜ ì„±ì ìœ¼ë¡œ ê°ì²´ê°€ ì´ˆê¸°í™”ë˜ì—ˆìŒ
 		Score s = new Score();
 
 		int result1 = s.total();
 		double result2 = s.average();
 
-		System.out.println("ÃÑÁ¡: " + result1);
-		System.out.println("Æò±Õ: " + result2);
+		System.out.println("ì´ì : " + result1);
+		System.out.println("í‰ê· : " + result2);
 	}
 }

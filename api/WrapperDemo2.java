@@ -1,9 +1,9 @@
 public class WrapperDemo2 {
 	public static void main(String[] args) {
 	
-		// Integer ÀÇ Á¤Àû¸Ş¼Òµå
+		// Integer ì˜ ì •ì ë©”ì†Œë“œ
 
-		// ¹®ÀÚ¿­À» int °ªÀ¸·Î º¯È¯ÇÏ´Â ¸Ş¼Òµå: int parseInt(String text)
+		// ë¬¸ìì—´ì„ int ê°’ìœ¼ë¡œ ë³€í™˜í•˜ëŠ” ë©”ì†Œë“œ: int parseInt(String text)
 		int num1 = Integer.parseInt("123");
 
 		int num2 = Integer.parseInt("1100", 2);
@@ -12,11 +12,11 @@ public class WrapperDemo2 {
 		int num3 = Integer.parseInt("a", 16);
 		System.out.println("num3:" + num3);
 		
-		// Á¤¼ö12¸¦ 2Áø¼ö ¹®ÀÚ¿­·Î º¯È¯ÇØ¼­ ¹İÈ¯ÇÑ´Ù.
+		// ì •ìˆ˜12ë¥¼ 2ì§„ìˆ˜ ë¬¸ìì—´ë¡œ ë³€í™˜í•´ì„œ ë°˜í™˜í•œë‹¤.
 		String str1 = Integer.toBinaryString(12);
 		System.out.println("str1:" + str1);
 		
-		// Á¤¼ö15345¸¦ 16Áø¼ö ¹®ÀÚ¿­·Î º¯È¯ÇØ¼­ ¹İÈ¯ÇÑ´Ù.
+		// ì •ìˆ˜15345ë¥¼ 16ì§„ìˆ˜ ë¬¸ìì—´ë¡œ ë³€í™˜í•´ì„œ ë°˜í™˜í•œë‹¤.
 		String str2 = Integer.toHexString(15345);
 		System.out.println("str2:" + str2);
 

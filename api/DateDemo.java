@@ -2,7 +2,7 @@ import java.util.Date;
 
 public class DateDemo {
 	public static void main(String[] args) {
-		// ½Ã½ºÅÛÀÇ ÇöÀç ³¯Â¥/½Ã°£ Á¤º¸¸¦ °¡Áö´Â Date °´Ã¼ ¸¸µé±â
+		// ì‹œìŠ¤í…œì˜ í˜„ì¬ ë‚ ì§œ/ì‹œê°„ ì •ë³´ë¥¼ ê°€ì§€ëŠ” Date ê°ì²´ ë§Œë“¤ê¸°
 		Date now = new Date();
 		System.out.println(now);
 

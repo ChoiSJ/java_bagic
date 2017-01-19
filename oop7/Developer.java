@@ -3,18 +3,18 @@ public class Developer extends Employee {
 	int todo;
 	int completed;
 	
-	// °³¹ß¿¡ ¸Â°Ô print() ¸Ş¼Òµå ÀçÁ¤ÀÇÇÏ±â
+	// ê°œë°œì— ë§ê²Œ print() ë©”ì†Œë“œ ì¬ì •ì˜í•˜ê¸°
 	public void print() {
-		System.out.println("»ç¿ø¹øÈ£:" + no);
-		System.out.println("ÀÌ    ¸§:" + name);
-		System.out.println("°³¹ß¾÷¹«:" + todo);
-		System.out.println("¿Ï·á°Ç¼ö:" + completed);
-		System.out.println("Áø Ã´ ·ü:" + completed/(double)todo);
+		System.out.println("ì‚¬ì›ë²ˆí˜¸:" + no);
+		System.out.println("ì´    ë¦„:" + name);
+		System.out.println("ê°œë°œì—…ë¬´:" + todo);
+		System.out.println("ì™„ë£Œê±´ìˆ˜:" + completed);
+		System.out.println("ì§„ ì²™ ë¥ :" + completed/(double)todo);
 		System.out.println();
 	}
 	
 	public void develop() {
-		System.out.println("¾÷¹« ¼öÇà");
+		System.out.println("ì—…ë¬´ ìˆ˜í–‰");
 		completed++;
 		System.out.println();
 	}

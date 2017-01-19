@@ -4,21 +4,21 @@ public class SmartPhone extends Phone {
 	String email;
 
 	/*
-	// ºÎ¸ğÅ¬·¡½º·ÎºÎÅÍ ¹°·Á¹ŞÀº ÇÊµå
+	// ë¶€ëª¨í´ë˜ìŠ¤ë¡œë¶€í„° ë¬¼ë ¤ë°›ì€ í•„ë“œ
 	String telNumber;
-	// ºÎ¸ğÅ¬·¡½º·ÎºÎÅÍ ¹°·Á¹ŞÀº ¸Ş¼Òµå
+	// ë¶€ëª¨í´ë˜ìŠ¤ë¡œë¶€í„° ë¬¼ë ¤ë°›ì€ ë©”ì†Œë“œ
 	public void call(String to) {
-		System.out.println("[" + telNumber + "]¿¡¼­ [" + to + "]·Î ÀüÈ­¸¦ °Ì´Ï´Ù.");
+		System.out.println("[" + telNumber + "]ì—ì„œ [" + to + "]ë¡œ ì „í™”ë¥¼ ê²ë‹ˆë‹¤.");
 	}
 	public void message(String to, String text) {
-		System.out.println("[" + telNumber + "]¿¡¼­ [" + to + "]·Î [" + text + "]¸¦ º¸³À´Ï´Ù.");
+		System.out.println("[" + telNumber + "]ì—ì„œ [" + to + "]ë¡œ [" + text + "]ë¥¼ ë³´ëƒ…ë‹ˆë‹¤.");
 	}
 	*/
 
 	public void web(String url) {
-		System.out.println("["+url+"] À¥ ÆäÀÌÁö¸¦ Ç¥½ÃÇÕ´Ï´Ù.");
+		System.out.println("["+url+"] ì›¹ í˜ì´ì§€ë¥¼ í‘œì‹œí•©ë‹ˆë‹¤.");
 	}
 	public void sendEmail(String to, String title, String text) {
-		System.out.println("["+email+"]¿¡¼­ ["+to+"]·Î ["+title+"] ["+text+"]¸¦ º¸³À´Ï´Ù.");
+		System.out.println("["+email+"]ì—ì„œ ["+to+"]ë¡œ ["+title+"] ["+text+"]ë¥¼ ë³´ëƒ…ë‹ˆë‹¤.");
 	}
 }

@@ -19,17 +19,17 @@ public class Banking {
 		if (password.equals(oldPassword)) {
 			password = newPassword;
 		} else {
-			throw new BankingException("ºñ¹Ğ¹øÈ£ º¯°æ ¿À·ù [ºñ¹Ğ¹øÈ£ ºÒÀÏÄ¡]");
+			throw new BankingException("ë¹„ë°€ë²ˆí˜¸ ë³€ê²½ ì˜¤ë¥˜ [ë¹„ë°€ë²ˆí˜¸ ë¶ˆì¼ì¹˜]");
 		}
 	}
 
 	public void fireAccount(String password) throws BankingException {
 
 		if (this.password.equals(password)) {
-			// °èÁÂ »ç¿ë ¸øÇÏ°Ô ÇÏ±â
+			// ê³„ì¢Œ ì‚¬ìš© ëª»í•˜ê²Œ í•˜ê¸°
 			lock = true;
 		} else {
-			throw new BankingException("°èÁÂ ÇØÁö ¿À·ù [ºñ¹Ğ¹øÈ£ ºÒÀÏÄ¡]", "ERR01");
+			throw new BankingException("ê³„ì¢Œ í•´ì§€ ì˜¤ë¥˜ [ë¹„ë°€ë²ˆí˜¸ ë¶ˆì¼ì¹˜]", "ERR01");
 		}
 	}
 
@@ -38,15 +38,15 @@ public class Banking {
 		int withdrawAmount = 0;
 
 		if (lock) {
-			throw new BankingException("Ãâ±İ Áß ¿À·ù [ÇØÁöµÈ °èÁÂÀÔ´Ï´Ù.]", "ERR02");
+			throw new BankingException("ì¶œê¸ˆ ì¤‘ ì˜¤ë¥˜ [í•´ì§€ëœ ê³„ì¢Œì…ë‹ˆë‹¤.]", "ERR02");
 		}
 
 		if (!this.password.equals(password)) {
-			throw new BankingException("Ãâ±İ Áß ¿À·ù [ºñ¹Ğ¹øÈ£ ºÒÀÏÄ¡]", "ERR01");
+			throw new BankingException("ì¶œê¸ˆ ì¤‘ ì˜¤ë¥˜ [ë¹„ë°€ë²ˆí˜¸ ë¶ˆì¼ì¹˜]", "ERR01");
 		}
 
 		if (balance < amount) {
-			throw new BankingException("Ãâ±İ Áß ¿À·ù [ÀÜ¾× ºÎÁ·]", "ERR10");
+			throw new BankingException("ì¶œê¸ˆ ì¤‘ ì˜¤ë¥˜ [ì”ì•¡ ë¶€ì¡±]", "ERR10");
 		}
 		
 		balance -= amount;

@@ -5,16 +5,16 @@ public class SwitchDemo {
 		
 		switch (grade) {
 			case "Gold":
-				System.out.println("╟Я╣Е╣Н╠ч ╟М╟╢╢т х╞©╣гу╢о╢ы.");
+				System.out.println("ЙЁ╗К⌠°К⌠╠Й╦┴ ЙЁ═Й╟²К▀≤ М≥≤Л≤│М∙╘К▀┬К▀╓.");
 				break;
 			case "Silver":
-				System.out.println("╫г╧Ж╣Н╠ч ╟М╟╢╢т х╞©╣гу╢о╢ы.");
+				System.out.println("Л▀╓К╡└К⌠╠Й╦┴ ЙЁ═Й╟²К▀≤ М≥≤Л≤│М∙╘К▀┬К▀╓.");
 				break;
 			case "Bronze":
-				System.out.println("╨Й╥паН╣Н╠ч ╟М╟╢╢т х╞©╣гу╢о╢ы.");
+				System.out.println("К╦▄К║═Л╕┬К⌠╠Й╦┴ ЙЁ═Й╟²К▀≤ М≥≤Л≤│М∙╘К▀┬К▀╓.");
 				break;
 			default:
-				System.out.println("╪у╢т х╞©╣гу╢о╢ы.");
+				System.out.println("Л├░К▀≤ М≥≤Л≤│М∙╘К▀┬К▀╓.");
 		}
 	}
 }

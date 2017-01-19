@@ -4,7 +4,7 @@ public class ForDemo5 {
 		for (int i=0; i<10; i++) {
 			System.out.println(i);
 			if (i == 5) {
-				break; // °¡Àå °¡±î¿î for¹® ¿¡¼­ Å»Ãâ
+				break; // ê°€ìž¥ ê°€ê¹Œìš´ forë¬¸ ì—ì„œ íƒˆì¶œ
 			}
 		}
 	} 

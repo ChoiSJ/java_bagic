@@ -2,25 +2,25 @@ import java.io.*;
 
 public class ExceptionDemo2 {
 	
-	// reading() Àº ÀÚ½ÅÀÌ »ç¿ëÇÏ´Â ½ÇÇà¹®¿¡¼­ ¹ß»ıÇÏ´Â ¿¹¿Ü¸¦ Ã³¸®ÇÏÁö ¾Ê´Â´Ù.
-	// ´ë½Å ¹ß»ıÀÌ ¿¹»óµÇ´Â ¿¹¿Ü¸¦ ´Ù½Ã ´øÁ®¹ö¸°´Ù.
+	// reading() ì€ ìì‹ ì´ ì‚¬ìš©í•˜ëŠ” ì‹¤í–‰ë¬¸ì—ì„œ ë°œìƒí•˜ëŠ” ì˜ˆì™¸ë¥¼ ì²˜ë¦¬í•˜ì§€ ì•ŠëŠ”ë‹¤.
+	// ëŒ€ì‹  ë°œìƒì´ ì˜ˆìƒë˜ëŠ” ì˜ˆì™¸ë¥¼ ë‹¤ì‹œ ë˜ì ¸ë²„ë¦°ë‹¤.
 	public static void reading() throws FileNotFoundException, IOException {
-		// FileNotFoundException À» ´øÁö´Â »ı¼ºÀÚ
+		// FileNotFoundException ì„ ë˜ì§€ëŠ” ìƒì„±ì
 		BufferedReader reader = new BufferedReader(new FileReader("memo.txt"));
-		// IOException À» ´øÁö´Â ¸Ş¼Òµå
+		// IOException ì„ ë˜ì§€ëŠ” ë©”ì†Œë“œ
 		String text = reader.readLine();
-		System.out.println("³»¿ë:" + text);
+		System.out.println("ë‚´ìš©:" + text);
 	}
 	
-	// main() ¸Ş¼Òµå´Â reading() ¸Ş¼Òµå°¡ ´øÁö´Â ¿¹¿Ü¿¡ ´ëÇÑ Ã³¸®¸¦ ±¸ÇöÇÏ°í ÀÖ´Ù.
-	// reading() ¸Ş¼Òµå´Â ÀÚ½ÅÀ» »ç¿ëÇÏ´Â main() ¿¡°Ô ¿¹¿ÜÃ³¸® Ã¥À½À» ¶°³Ñ°å´Ù.
+	// main() ë©”ì†Œë“œëŠ” reading() ë©”ì†Œë“œê°€ ë˜ì§€ëŠ” ì˜ˆì™¸ì— ëŒ€í•œ ì²˜ë¦¬ë¥¼ êµ¬í˜„í•˜ê³  ìˆë‹¤.
+	// reading() ë©”ì†Œë“œëŠ” ìì‹ ì„ ì‚¬ìš©í•˜ëŠ” main() ì—ê²Œ ì˜ˆì™¸ì²˜ë¦¬ ì±…ìŒì„ ë– ë„˜ê²¼ë‹¤.
 	public static void main(String[] args) {
 		try {
 			reading();
 		} catch(FileNotFoundException e1) {
-			System.out.println("ÆÄÀÏÀ» Ã£À» ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("íŒŒì¼ì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		} catch(IOException e2) {
-			System.out.println("ÆÄÀÏÀ» ÀĞ´Â Áß ¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù.");
+			System.out.println("íŒŒì¼ì„ ì½ëŠ” ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì˜€ìŠµë‹ˆë‹¤.");
 		}
 	}
 }

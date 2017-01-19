@@ -1,6 +1,6 @@
 public class DBAccessApp {
 	public static void main(String[] args) {
-		 /* DBAccess Å¬·¡½º´Â »ı¼ºÀÚ¸¦ »ç¿ëÇÒ ¼ö ¾ø´Ù.
+		 /* DBAccess í´ë˜ìŠ¤ëŠ” ìƒì„±ìë¥¼ ì‚¬ìš©í•  ìˆ˜ ì—†ë‹¤.
 		DBAccess db1 = new DBAccess();
 		DBAccess db2 = new DBAccess();
 		DBAccess db3 = new DBAccess();

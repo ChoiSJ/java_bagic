@@ -1,6 +1,6 @@
 public class Product {
-	// ¼Ó¼º
-	// »óÇ°¹øÈ£, »óÇ°¸í, Á¦Á¶»ç, °¡°İ, ÇÒÀÎÀ²(½Ç¼ö), ÆÇ¸Å¿©ºÎ
+	// ì†ì„±
+	// ìƒí’ˆë²ˆí˜¸, ìƒí’ˆëª…, ì œì¡°ì‚¬, ê°€ê²©, í• ì¸ìœ¨(ì‹¤ìˆ˜), íŒë§¤ì—¬ë¶€
 	int no;
 	String name;
 	String company;
@@ -8,8 +8,8 @@ public class Product {
 	double discount;
 	boolean isSale;
 
-	// »ı¼ºÀÚ
-	//		±âº»»ı¼ºÀÚ, ¸Å°³º¯¼ö ÀÖ´Â »ı¼ºÀÚ
+	// ìƒì„±ì
+	//		ê¸°ë³¸ìƒì„±ì, ë§¤ê°œë³€ìˆ˜ ìˆëŠ” ìƒì„±ì
 	public Product() {
 		no = 1;
 		name = "";
@@ -28,24 +28,24 @@ public class Product {
 		isSale = hanbai;
 	}
 
-	// ±â´É
-	// ÇÒÀÎµÈ °¡°İ(°á°ú)À» ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+	// ê¸°ëŠ¥
+	// í• ì¸ëœ ê°€ê²©(ê²°ê³¼)ì„ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
 	public int discountPrice() {
 		int result = 0;
-		result = (int) (price - (price/100)*discount);		// °ıÈ£ Áú¹® ÇÒ °Í
+		result = (int) (price - (price/100)*discount);		// ê´„í˜¸ ì§ˆë¬¸ í•  ê²ƒ
 		return result;
 	}
 
-	// »óÇ°Á¤º¸¸¦ ¸ğµÎ Ãâ·ÂÇÏ´Â ¸Ş¼Òµå(ÇÒÀÎ°¡ Æ÷ÇÔ)
+	// ìƒí’ˆì •ë³´ë¥¼ ëª¨ë‘ ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œ(í• ì¸ê°€ í¬í•¨)
 	public void info() {
 		System.out.println("------------------------------");
-		System.out.println("»óÇ°¹øÈ£: " + no);
-		System.out.println("»óÇ°¸í: " + name);
-		System.out.println("Á¦Á¶»ç: " + company);
-		System.out.println("°¡°İ: " + price);
-		System.out.println("ÇÒÀÎÀ²: " + discount);
-		System.out.println("ÇÒÀÎ°¡: " + discountPrice());
-		System.out.println("ÆÇ¸Å¿©ºÎ: " + isSale);
+		System.out.println("ìƒí’ˆë²ˆí˜¸: " + no);
+		System.out.println("ìƒí’ˆëª…: " + name);
+		System.out.println("ì œì¡°ì‚¬: " + company);
+		System.out.println("ê°€ê²©: " + price);
+		System.out.println("í• ì¸ìœ¨: " + discount);
+		System.out.println("í• ì¸ê°€: " + discountPrice());
+		System.out.println("íŒë§¤ì—¬ë¶€: " + isSale);
 		System.out.println("------------------------------");
 	}
 }

@@ -2,7 +2,7 @@ public class BankingApp {
 
 	public static void main(String[] args) {
 	
-		Banking banking = new Banking("È«±æµ¿", "11-111", "1234", 1000000, false);
+		Banking banking = new Banking("í™ê¸¸ë™", "11-111", "1234", 1000000, false);
 		try {
 			banking.changePassword("1234", "2222");
 
@@ -10,7 +10,7 @@ public class BankingApp {
 		} catch(BankingException e) {
 			String errorMessage = e.getMessage();
 			String errorCode = e.getErrorCode();
-			System.out.println("¿À·ù Á¤º¸: ["+errorCode+"] " + errorMessage);
+			System.out.println("ì˜¤ë¥˜ ì •ë³´: ["+errorCode+"] " + errorMessage);
 		}
 	}
 }

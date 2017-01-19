@@ -1,7 +1,7 @@
 public class Phone {
 
-	private String telNumber;	// ÀüÈ­¹øÈ£
-	private String company;		// Åë½Å»ç
+	private String telNumber;	// ì „í™”ë²ˆí˜¸
+	private String company;		// í†µì‹ ì‚¬
 
 	public Phone() {}
 
@@ -24,7 +24,7 @@ public class Phone {
 	}
 
 	public void displayInfo() {
-		System.out.println("ÀüÈ­¹øÈ£:" + telNumber);
-		System.out.println("Åë ½Å »ç:" + company);
+		System.out.println("ì „í™”ë²ˆí˜¸:" + telNumber);
+		System.out.println("í†µ ì‹  ì‚¬:" + company);
 	}
 }

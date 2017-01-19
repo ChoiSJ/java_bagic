@@ -1,6 +1,6 @@
 public class MemberDBAccess extends DBAccess {
 	
 	public void createRepository() {
-		System.out.println("雀盔 沥焊 历厘家 积己");
+		System.out.println("須岇洂 鞝曤炒 鞝�鞛レ唽 靸濎劚");
 	}
 }

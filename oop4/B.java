@@ -7,10 +7,10 @@ public class B {
 		System.out.println(y);
 	}
 	
-	// static ¸Ş¼Òµå¿¡¼­´Â non-static º¯¼ö, this¸¦ »ç¿ëÇÒ ¼ö ¾ø´Ù.
+	// static ë©”ì†Œë“œì—ì„œëŠ” non-static ë³€ìˆ˜, thisë¥¼ ì‚¬ìš©í•  ìˆ˜ ì—†ë‹¤.
 	public static void m2() {
-		// x´Â °´Ã¼°¡ ¸¸µé¾îÁö´Â ½ÃÁ¡¿¡ »ç¿ëÀÌ °¡´ÉÇÏ¹Ç·Î static ¿¡¼­ °ªÀ» ¸ğ¸£´Ï ÂüÁ¶ÇÒ ¼ö°¡ ¾ø´Ù.
-		//System.out.println(x); // ÄÄÆÄÀÏ ¿À·ù
+		// xëŠ” ê°ì²´ê°€ ë§Œë“¤ì–´ì§€ëŠ” ì‹œì ì— ì‚¬ìš©ì´ ê°€ëŠ¥í•˜ë¯€ë¡œ static ì—ì„œ ê°’ì„ ëª¨ë¥´ë‹ˆ ì°¸ì¡°í•  ìˆ˜ê°€ ì—†ë‹¤.
+		//System.out.println(x); // ì»´íŒŒì¼ ì˜¤ë¥˜
 		System.out.println(y);
 	}
 
@@ -20,7 +20,7 @@ public class B {
 	}
 
 	public static void m4() {
-		//m1(); // ÄÄÆÄÀÏ ¿À·ù
+		//m1(); // ì»´íŒŒì¼ ì˜¤ë¥˜
 		m2();
 	}
 }

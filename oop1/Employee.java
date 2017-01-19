@@ -1,8 +1,8 @@
 public class Employee {
 	
-	// ÀÎÀû Á¤º¸¸¦ ÀúÀåÇÏ°í ±× Á¤º¸¸¦ Ãâ·ÂÇÏ´Â ±â´ÉÀÌ ±¸ÇöµÈ ¼³°èµµ
-	// ¼Ó¼º
-	// »ç¿ø ¹øÈ£, ÀÌ¸§, ÀüÈ­¹øÈ£, ¼Ò¼ÓºÎÅÍ, Á÷À§, ±Ş¿©
+	// ì¸ì  ì •ë³´ë¥¼ ì €ì¥í•˜ê³  ê·¸ ì •ë³´ë¥¼ ì¶œë ¥í•˜ëŠ” ê¸°ëŠ¥ì´ êµ¬í˜„ëœ ì„¤ê³„ë„
+	// ì†ì„±
+	// ì‚¬ì› ë²ˆí˜¸, ì´ë¦„, ì „í™”ë²ˆí˜¸, ì†Œì†ë¶€í„°, ì§ìœ„, ê¸‰ì—¬
 	int no;
 	String name;
 	String phone;
@@ -10,21 +10,21 @@ public class Employee {
 	String position;
 	int salary;
 
-	// ±â´É
-	// ¿¬ºÀÀ» °è»êÇØ¼­ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
-	// »ç¿øÀÇ ¸ğµç Á¤º¸¸¦ Ãâ·ÂÇÏ´Â ¸Ş¼Òµå
+	// ê¸°ëŠ¥
+	// ì—°ë´‰ì„ ê³„ì‚°í•´ì„œ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
+	// ì‚¬ì›ì˜ ëª¨ë“  ì •ë³´ë¥¼ ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œ
 	public int annual(int x) {
 		int result = x*12;
-		System.out.println("¿¬ºÀÀº " + result + " ¸¸¿ø ÀÔ´Ï´Ù.");
+		System.out.println("ì—°ë´‰ì€ " + result + " ë§Œì› ì…ë‹ˆë‹¤.");
 
 		return result;
 	}
 
 	public void personal() {
-		System.out.println("ÀÌ¸§: " + name);
-		System.out.println("ÀüÈ­¹øÈ£: " + phone);
-		System.out.println("ºÎ¼­: " + department);
-		System.out.println("Á÷Ã¥: " + position);
-		System.out.println("±Ş¿©: " + salary);
+		System.out.println("ì´ë¦„: " + name);
+		System.out.println("ì „í™”ë²ˆí˜¸: " + phone);
+		System.out.println("ë¶€ì„œ: " + department);
+		System.out.println("ì§ì±…: " + position);
+		System.out.println("ê¸‰ì—¬: " + salary);
 	}
 }

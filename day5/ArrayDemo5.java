@@ -1,20 +1,20 @@
 public class ArrayDemo5 {
 	public static void main(String[] args) {
-		String[][] names = {{"È«±æµ¿", "±èÀ¯½Å"}, {"°­°¨Âù", "ÀÌ¼ø½Å", "±Ç·ü"}, {"À»Áö¹®´ö"}};
+		String[][] names = {{"í™ê¸¸ë™", "ê¹€ìœ ì‹ "}, {"ê°•ê°ì°¬", "ì´ìˆœì‹ ", "ê¶Œë¥ "}, {"ì„ì§€ë¬¸ë•"}};
 
-		// ¹è¿­ÀÇ Å©±â
-		System.out.println("¹è¿­ÀÇ Å©±â: " + names.length);
-		// 0¹øÂ° ¹è¿­ÀÇ Å©±â
-		System.out.println("0¹øÂ° ¹è¿­ÀÇ Å©±â: " + names[0].length);
-		// 1¹øÂ° ¹è¿­ÀÇ Å©±â
-		System.out.println("1¹øÂ° ¹è¿­ÀÇ Å©±â: " + names[1].length);
-		// 2¹øÂ° ¹è¿­ÀÇ Å©±â
-		System.out.println("2¹øÂ° ¹è¿­ÀÇ Å©±â: " + names[2].length);
+		// ë°°ì—´ì˜ í¬ê¸°
+		System.out.println("ë°°ì—´ì˜ í¬ê¸°: " + names.length);
+		// 0ë²ˆì§¸ ë°°ì—´ì˜ í¬ê¸°
+		System.out.println("0ë²ˆì§¸ ë°°ì—´ì˜ í¬ê¸°: " + names[0].length);
+		// 1ë²ˆì§¸ ë°°ì—´ì˜ í¬ê¸°
+		System.out.println("1ë²ˆì§¸ ë°°ì—´ì˜ í¬ê¸°: " + names[1].length);
+		// 2ë²ˆì§¸ ë°°ì—´ì˜ í¬ê¸°
+		System.out.println("2ë²ˆì§¸ ë°°ì—´ì˜ í¬ê¸°: " + names[2].length);
 
 
-		for (int i=0; i<names.length; i++) {		// name.length <- ¹è¿­ÀÇ ÇàÀÇ °¹¼ö
+		for (int i=0; i<names.length; i++) {		// name.length <- ë°°ì—´ì˜ í–‰ì˜ ê°¯ìˆ˜
 		
-			for (int j=0; j<names[i].length; j++) {	// name[i].length <- °¢¹è¿­ÀÇ ¿­ÀÇ °¹¼ö
+			for (int j=0; j<names[i].length; j++) {	// name[i].length <- ê°ë°°ì—´ì˜ ì—´ì˜ ê°¯ìˆ˜
 			
 			System.out.println(names[i][j]);
 			}

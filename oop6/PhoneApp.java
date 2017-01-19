@@ -6,20 +6,20 @@ public class PhoneApp {
 		p.telNumber = "010-1234-5678";
 		
 		p.call("010-2222-2222");
-		p.message("010-2222-2222", "-¤±-¤±-¤±-¤±-¤±-");
+		p.message("010-2222-2222", "-ã…-ã…-ã…-ã…-ã…-");
 		
 		p.ip = "210.11.123.152";
 		p.email = "hong@gmail.com";
 
 		p.web("http://www.daum.net");
-		p.sendEmail("lee@gmail.com", "°úÁ¦¹°", "ÁÖ¸» ÄÚµù°úÁ¦ÀÔ´Ï´Ù.");
+		p.sendEmail("lee@gmail.com", "ê³¼ì œë¬¼", "ì£¼ë§ ì½”ë”©ê³¼ì œì…ë‹ˆë‹¤.");
 		
 		
 		FeaturePhone f = new FeaturePhone();
 		
 		f.telNumber = "010-5678-1572";
 		f.call("010-1111-1111");
-		f.message("010-1111-1111", "7½Ã¿¡ ±³º¸¹®°í ¾Õ¿¡¼­ ¸¸³ª.");
+		f.message("010-1111-1111", "7ì‹œì— êµë³´ë¬¸ê³  ì•ì—ì„œ ë§Œë‚˜.");
 		f.keypad();
 	} 
 }

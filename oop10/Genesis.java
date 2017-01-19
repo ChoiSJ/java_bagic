@@ -1,27 +1,27 @@
 public class Genesis implements Car {
 	
 	public void on() {
-		System.out.println("½Ãµ¿ ÄÑ±â");
+		System.out.println("ì‹œë™ ì¼œê¸°");
 	}
 	public void off() {
-		System.out.println("½Ãµ¿ ²ô±â");
+		System.out.println("ì‹œë™ ë„ê¸°");
 	}
 	public void run() {
-		System.out.println("ÁÖÇàÇÏ±â");
+		System.out.println("ì£¼í–‰í•˜ê¸°");
 	}
 	public void stop() {
-		System.out.println("¸ØÃß±â");
+		System.out.println("ë©ˆì¶”ê¸°");
 	}
 	public void audio() {
-		System.out.println("À½¾Ç µè±â");
+		System.out.println("ìŒì•… ë“£ê¸°");
 	}
 	public void navi() {
-		System.out.println("Áöµµ º¸±â");
+		System.out.println("ì§€ë„ ë³´ê¸°");
 	}
 	public void aircon() {
-		System.out.println("½Ç³»¿Âµµ Á¶ÀıÇÏ±â");
+		System.out.println("ì‹¤ë‚´ì˜¨ë„ ì¡°ì ˆí•˜ê¸°");
 	}
 	public void wiper() {
-		System.out.println("¹°±â Á¦°ÅÇÏ±â");
+		System.out.println("ë¬¼ê¸° ì œê±°í•˜ê¸°");
 	}
 }

@@ -2,8 +2,8 @@ public class ForDemo1 {
 	public static void main(String[] args) {
 		
 		for (int a=1; a<=10; a++) {
-			System.out.println("aÀÇ °ª:" + a);
-			System.out.println("½ÇÇà");
+			System.out.println("aì˜ ê°’:" + a);
+			System.out.println("ì‹¤í–‰");
 		}
 	}
 }

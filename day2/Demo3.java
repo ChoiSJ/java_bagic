@@ -1,6 +1,6 @@
 public class Demo3 {
 	public static void main(String[] args) {
-		// ³í¸® ÀÚ·áÇü - ºÒ¸°°ªÀ» ´ã´Â ÀÚ·áÇü
+		// ë…¼ë¦¬ ìë£Œí˜• - ë¶ˆë¦°ê°’ì„ ë‹´ëŠ” ìë£Œí˜•
 		boolean b1 = true;
 		boolean b2 = false;
 
@@ -10,8 +10,8 @@ public class Demo3 {
 		System.out.println(b3);
 		System.out.println(b4);
 		
-		// ¿À·ù´Ù.
-		boolean b5 = "true";	// "true" ¶ó´Â ±ÛÀÚ(ÅØ½ºÆ®)¸¦ ´ãÀ» ¼ö´Â ¾ø´Ù.
+		// ì˜¤ë¥˜ë‹¤.
+		boolean b5 = "true";	// "true" ë¼ëŠ” ê¸€ì(í…ìŠ¤íŠ¸)ë¥¼ ë‹´ì„ ìˆ˜ëŠ” ì—†ë‹¤.
 
 	}
 }

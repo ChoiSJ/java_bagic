@@ -5,12 +5,12 @@ public class ContactApp {
 		Contact c2 = new Contact();
 
 		c1.no = 23;
-		c1.name = "È«±æµ¿";
+		c1.name = "í™ê¸¸ë™";
 		c1.cellnum = "010-1234-5678";
 		c1.email = "hong@gmail.com";
 
 		c2.no = 25;
-		c2.name = "±èÀ¯½Å";
+		c2.name = "ê¹€ìœ ì‹ ";
 		c2.cellnum = "010-3939-3939";
 		c2.email = "kim@gmail.com";
 

@@ -1,23 +1,23 @@
 public class OpticalMouse implements Mouse, Lightable {
 
-	// Mouse ÀÎÅÍÆäÀÌ½º¿¡ Á¤ÀÇµÈ Ãß»ó¸Ş¼Òµå ±¸Çö
+	// Mouse ì¸í„°í˜ì´ìŠ¤ì— ì •ì˜ëœ ì¶”ìƒë©”ì†Œë“œ êµ¬í˜„
 	public void wheel() {
-		System.out.println("ºûÀ» ¹øÂ½ÀÌ¸ç ºù±Û... ºù±Û...");
+		System.out.println("ë¹›ì„ ë²ˆì©ì´ë©° ë¹™ê¸€... ë¹™ê¸€...");
 	}
 	public void click() {
-		System.out.println("ºûÀ» ¹øÂ½ÀÌ¸ç Å¬¸¯... Å¬¸¯...");
+		System.out.println("ë¹›ì„ ë²ˆì©ì´ë©° í´ë¦­... í´ë¦­...");
 	}
 	public void move() {
-		System.out.println("ºûÀ» ¹øÂ½ÀÌ¸ç ¿òÁ÷... ¿òÁ÷...");
+		System.out.println("ë¹›ì„ ë²ˆì©ì´ë©° ì›€ì§... ì›€ì§...");
 	}
 
-	// Lightable ÀÎÅÍÆäÀÌ½º¿¡ Á¤ÀÇµÈ Ãß»ó¸Ş¼Òµå ±¸Çö
+	// Lightable ì¸í„°í˜ì´ìŠ¤ì— ì •ì˜ëœ ì¶”ìƒë©”ì†Œë“œ êµ¬í˜„
 	public void light() {
-		System.out.println("¹İÂ¦~~ ¹İÂ¦~~");
+		System.out.println("ë°˜ì§~~ ë°˜ì§~~");
 	}
 
-	// Cleanable ÀÎÅÍÆäÀÌ½º¿¡ Á¤ÀÇµÈ Ãß»ó¸Ş¼Òµå ±¸Çö
+	// Cleanable ì¸í„°í˜ì´ìŠ¤ì— ì •ì˜ëœ ì¶”ìƒë©”ì†Œë“œ êµ¬í˜„
 	//public void clean() {
-	//	System.out.println("LED ¹ß½ÅºÎ Ã»¼Ò ¿Ï·á...");
+	//	System.out.println("LED ë°œì‹ ë¶€ ì²­ì†Œ ì™„ë£Œ...");
 	//}
 }

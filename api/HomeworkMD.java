@@ -5,12 +5,12 @@ import java.text.ParseException;
 public class HomeworkMD {
 	public static void main(String[] args) throws ParseException {
 		
-		// args ¹è¿­À» ÀÌ¿ëÇØ ÇÊ¿ä ÀÔ·Â »çÇ×À» ÀÔ·Â
+		// args ë°°ì—´ì„ ì´ìš©í•´ í•„ìš” ì…ë ¥ ì‚¬í•­ì„ ì…ë ¥
 		System.out.println("args[0]" + args[0]);
 		System.out.println("args[1]" + args[1]);
 		
-		// SimpleDateFormat À¸·Î ¼­½Ä ¼³Á¤, args[0] À» parse ÀÇ ¸Å°³º¯¼ö·Î ÁÖ¾î date·Î º¯È¯
-		// Date ÀÇ getTime À» ÀÌ¿ëÇØ ÇöÀç½Ã°£À» long Å¸ÀÔÀ¸·Î º¯È¯
+		// SimpleDateFormat ìœ¼ë¡œ ì„œì‹ ì„¤ì •, args[0] ì„ parse ì˜ ë§¤ê°œë³€ìˆ˜ë¡œ ì£¼ì–´ dateë¡œ ë³€í™˜
+		// Date ì˜ getTime ì„ ì´ìš©í•´ í˜„ì¬ì‹œê°„ì„ long íƒ€ì…ìœ¼ë¡œ ë³€í™˜
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		Date day = sdf.parse(args[0]);
 		long time = day.getTime();
@@ -18,6 +18,6 @@ public class HomeworkMD {
 		long period = (long)Integer.parseInt(args[1]) * 60*60*24*100;
 		day.setTime(time + period);
 
-		System.out.println("["+args[1]+"]Â° µÇ´Â ³¯:" + sdf.format(day));
+		System.out.println("["+args[1]+"]ì§¸ ë˜ëŠ” ë‚ :" + sdf.format(day));
 	}
 }

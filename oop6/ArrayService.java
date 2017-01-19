@@ -4,13 +4,13 @@ public class ArrayService {
 	int[] arr3 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 	int[] arr4 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-	// ¹è¿­ ÀÌµ¿½ÃÅ°±â
-	// arr1 ¹è¿­¿¡¼­ ÁöÁ¤µÈ ¹øÈ£¸¦ Á¦ÀÏ µÚ·Î ÇÏ°í ±× µÚÀÇ ÀÚ¸®¸¦ ÇÑ ÀÚ¸®¾¿ ¾ÕÀ¸·Î ´ç±â±â
+	// ë°°ì—´ ì´ë™ì‹œí‚¤ê¸°
+	// arr1 ë°°ì—´ì—ì„œ ì§€ì •ëœ ë²ˆí˜¸ë¥¼ ì œì¼ ë’¤ë¡œ í•˜ê³  ê·¸ ë’¤ì˜ ìë¦¬ë¥¼ í•œ ìë¦¬ì”© ì•ìœ¼ë¡œ ë‹¹ê¸°ê¸°
 	public int[] move(int no) {
 		int[] result = new int[arr1.length];
 
 		/*
-		// ¿øº»ÀÇ º¹»çº»À» ¸¸µéÀÚ.
+		// ì›ë³¸ì˜ ë³µì‚¬ë³¸ì„ ë§Œë“¤ì.
 		int temp = arr1[no-1]
 		int position = 0;
 
@@ -18,15 +18,15 @@ public class ArrayService {
 			result[i] = arr[i];
 		}
 		
-		// Á¦ÀÏ Ã³À½ µ¤Çô¾²¿©Áú °ªÀ» ¹Ì¸® º¸°üÇØ³õÀÚ.
+		// ì œì¼ ì²˜ìŒ ë®í˜€ì“°ì—¬ì§ˆ ê°’ì„ ë¯¸ë¦¬ ë³´ê´€í•´ë†“ì.
 		int number = arr1[no-1];
 		
-		// ¹è¿­ÀÇ °ªÀ» ÇÑ Ä­¾¿ ¾ÕÀ¸·Î ÀÌµ¿½ÃÅ°ÀÚ.
+		// ë°°ì—´ì˜ ê°’ì„ í•œ ì¹¸ì”© ì•ìœ¼ë¡œ ì´ë™ì‹œí‚¤ì.
 		for (int i=no; i<arr1.length; i++) {
 			result[i-1] = arr[i];
 		}
 
-		// ¸Ç ¸¶Áö¸· Ä­¿¡ ¾Æ±î º¸°üÇØµÎ¾ú´ø °ªÀ» ´ãÀÚ.
+		// ë§¨ ë§ˆì§€ë§‰ ì¹¸ì— ì•„ê¹Œ ë³´ê´€í•´ë‘ì—ˆë˜ ê°’ì„ ë‹´ì.
 		result[result.length - 1] = number;
 
 		System.out.println(java.util.Arrays.toString(result));
@@ -46,8 +46,8 @@ public class ArrayService {
 		return result;
 	}
 
-	// ´Ù ÇÏ¸é
-	// arr4 (5, 2) ¸é, 5¸¦ 2Ä­ ¿ŞÂÊÀ¸·Î ÀÌµ¿
+	// ë‹¤ í•˜ë©´
+	// arr4 (5, 2) ë©´, 5ë¥¼ 2ì¹¸ ì™¼ìª½ìœ¼ë¡œ ì´ë™
 
 	public int[] shift(int begin, int step) {
 		int[] result = new int[10];
@@ -66,8 +66,8 @@ public class ArrayService {
 		return result;
 	}
 
-	// ¹è¿­ º¹»çÇÏ±â
-	// arr2 ¹è¿­À» ÁöÁ¤µÈ À§Ä¡ºÎÅÍ ³¡±îÁö º¹»çÇÑ ¹è¿­À» ¹İÈ¯ÇÏ±â
+	// ë°°ì—´ ë³µì‚¬í•˜ê¸°
+	// arr2 ë°°ì—´ì„ ì§€ì •ëœ ìœ„ì¹˜ë¶€í„° ëê¹Œì§€ ë³µì‚¬í•œ ë°°ì—´ì„ ë°˜í™˜í•˜ê¸°
 	public int[] copy(int begin) {
 		int[] result = new int[arr2.length-begin+1];
 		int index = 0;
@@ -80,8 +80,8 @@ public class ArrayService {
 	
 	}
 
-	// ¹è¿­ Àß¶ó³»±â
-	// arr3 ¹è¿­À» ÁöÁ¤µÈ À§Ä¡ºÎÅÍ ÁöÁ¤µÈ À§Ä¡±îÁö º¹»çÇÑ ¹è¿­À» ¹İÈ¯ÇÏ±â
+	// ë°°ì—´ ì˜ë¼ë‚´ê¸°
+	// arr3 ë°°ì—´ì„ ì§€ì •ëœ ìœ„ì¹˜ë¶€í„° ì§€ì •ëœ ìœ„ì¹˜ê¹Œì§€ ë³µì‚¬í•œ ë°°ì—´ì„ ë°˜í™˜í•˜ê¸°
 	public int[] copy(int begin, int end) {
 		int[] result = new int[(10-begin)-(10-end)+1];
 		int index = 0;

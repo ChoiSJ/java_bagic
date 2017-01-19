@@ -4,14 +4,14 @@ public class ArrayListDemo3 {
 	
 	public static void main(String[] args) {
 	
-		// ±âº»ÀÚ·áÇü°ªÀ» ÀúÀåÇÏ´Â ArrayList ¸¸µé±â
-		// ±âº»ÀÚ·áÇü Å¸ÀÔ¿¡ ´ëÀÀµÇ´Â Wrapper Å¬·¡½º Å¸ÀÔÀ» ArrayList ÀÇ Å¸ÀÔÀ¸·Î ÁöÁ¤ÇÑ´Ù.
+		// ê¸°ë³¸ìë£Œí˜•ê°’ì„ ì €ì¥í•˜ëŠ” ArrayList ë§Œë“¤ê¸°
+		// ê¸°ë³¸ìë£Œí˜• íƒ€ì…ì— ëŒ€ì‘ë˜ëŠ” Wrapper í´ë˜ìŠ¤ íƒ€ì…ì„ ArrayList ì˜ íƒ€ì…ìœ¼ë¡œ ì§€ì •í•œë‹¤.
 		// ArrayList<Integer>, ArrayList<Double>, ...
 		
-		// Á¤¼ö¸¦ ¿©·¯ °³ ÀúÀåÇÏ´Â ArrayList ¸¸µé±â
+		// ì •ìˆ˜ë¥¼ ì—¬ëŸ¬ ê°œ ì €ì¥í•˜ëŠ” ArrayList ë§Œë“¤ê¸°
 		ArrayList<Integer> numbers = new ArrayList<Integer>();
 		numbers.add(new Integer(12));
-		numbers.add(23);	// numbers.add(new Integer(23));	// ¿ÀÅä¹Ú½Ì
+		numbers.add(23);	// numbers.add(new Integer(23));	// ì˜¤í† ë°•ì‹±
 		numbers.add(16);	// numbers.add(new Integer(16));
 		numbers.add(5);		// numbers.add(new Integer(5));
 
@@ -21,8 +21,8 @@ public class ArrayListDemo3 {
 		//Integer e4 = numbers.get(3);
 
 		/*
-			ArrayList ¿¡¼­ ÇÏ³ª ²¨³»¸é Integer °´Ã¼°¡ ¾ò¾îÁöÁö¸¸
-			´ã´Â º¯¼ö°¡ int Å¸ÀÔÀÌ¸é Integer °´Ã¼¿¡ ÀúÀåµÈ Á¤¼ö°ªÀ» ²¨³½´Ù.
+			ArrayList ì—ì„œ í•˜ë‚˜ êº¼ë‚´ë©´ Integer ê°ì²´ê°€ ì–»ì–´ì§€ì§€ë§Œ
+			ë‹´ëŠ” ë³€ìˆ˜ê°€ int íƒ€ì…ì´ë©´ Integer ê°ì²´ì— ì €ì¥ëœ ì •ìˆ˜ê°’ì„ êº¼ë‚¸ë‹¤.
 		*/
 
 		int e1 = numbers.get(0);	// int e1 <-- x.intvalue() <- Integer x = numbers.get(0)

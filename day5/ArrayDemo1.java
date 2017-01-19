@@ -1,24 +1,24 @@
 public class ArrayDemo1 {
 	public static void main(String[] args) {
 		
-		// Á¤¼ö 5°³¸¦ °¡Áö°í ÀÖ´Â ¹è¿­ ¸¸µé±â
+		// ì •ìˆ˜ 5ê°œë¥¼ ê°€ì§€ê³  ìˆëŠ” ë°°ì—´ ë§Œë“¤ê¸°
 		int[] numbers = {1, 5, 8, 10, 4, 45, 63, 36, 72, 35, 74, 25, 73, 74, 35, 89, 29, 95, 345, 69};
 
-		// ¹è¿­ÀÇ Å©±â¸¦ ¾Ë¾Æ³»±â
+		// ë°°ì—´ì˜ í¬ê¸°ë¥¼ ì•Œì•„ë‚´ê¸°
 		// number.length
 		int size = numbers.length;
-		System.out.println("¹è¿­ÀÇ Å©±â: " + size);
+		System.out.println("ë°°ì—´ì˜ í¬ê¸°: " + size);
 
-		// ¹è¿­¿¡¼­ °ª °¡Á®¿À±â
-		// number[ÀÎµ¦½º¹øÈ£]
+		// ë°°ì—´ì—ì„œ ê°’ ê°€ì ¸ì˜¤ê¸°
+		// number[ì¸ë±ìŠ¤ë²ˆí˜¸]
 		int x = numbers[0];
 		int y = numbers[1];
-		System.out.println("¹è¿­ÀÇ 0¹øÂ° °ª: " + x);
-		System.out.println("¹è¿­ÀÇ 1¹øÂ° °ª: " + y);
+		System.out.println("ë°°ì—´ì˜ 0ë²ˆì§¸ ê°’: " + x);
+		System.out.println("ë°°ì—´ì˜ 1ë²ˆì§¸ ê°’: " + y);
 
-		// ¸ğµç ¼ıÀÚÀÇ ÇÕÀ» ±¸ÇÏ±â
+		// ëª¨ë“  ìˆ«ìì˜ í•©ì„ êµ¬í•˜ê¸°
 		//int total = number[0] + number[1] + number[2] + number[3] + number[4];
-		//System.out.println("ÇÕ°è: " + total);
+		//System.out.println("í•©ê³„: " + total);
 
 		/*
 		int total = 0;
@@ -33,12 +33,12 @@ public class ArrayDemo1 {
 		for (int z : numbers) {
 			total += z;
 		}
-		System.out.println("ÇÕ°è: " + total);
+		System.out.println("í•©ê³„: " + total);
 
 		//int total = 0;
 		//for (int i=0; i<size; i++) {
 		//	total += numbers[i];
 		//}
-		//System.out.println("ÇÕ°è: " + total);
+		//System.out.println("í•©ê³„: " + total);
 	}
 }

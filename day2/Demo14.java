@@ -1,17 +1,17 @@
 public class Demo14 {
 	public static void main(String[] args) {
-		// ºñ±³ ¿¬»êÀÚ
-		// ºñ±³ ¿¬»êÀÚÀÇ ¿¬»ê°á°ú´Â Ç×»ó true, false °ª Áß¿¡ ÇÏ³ª´Ù.
+		// ë¹„êµ ì—°ì‚°ì
+		// ë¹„êµ ì—°ì‚°ìì˜ ì—°ì‚°ê²°ê³¼ëŠ” í•­ìƒ true, false ê°’ ì¤‘ì— í•˜ë‚˜ë‹¤.
 		int x = 30;
 		int y = 29;
 
 		boolean z = x > y;
-		System.out.println("zÀÇ °ª: " + z);
+		System.out.println("zì˜ ê°’: " + z);
 
 		z = (x == y);
-		System.out.println("zÀÇ °ª: " + z);
+		System.out.println("zì˜ ê°’: " + z);
 
 		z = (x != y);
-		System.out.println("zÀÇ °ª: " + z);
+		System.out.println("zì˜ ê°’: " + z);
 	}
 }

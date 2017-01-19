@@ -4,9 +4,9 @@ public class Demo2 {
 		System.out.println(2 + 4);
 		System.out.println(0.1 + 0.9);
 		System.out.println('A');
-		System.out.println("¾È³çÇÏ¼¼¿ä\t¹İ°©½À´Ï´Ù.\n¶Ç ¸¸³ª¿ä.");
-		System.out.println("Ã¥ÀÇ Á¦¸ñÀº \"ÀÌ°ÍÀÌ ÀÚ¹Ù´Ù\" ÀÔ´Ï´Ù.");
-		System.out.println("Ã¥ÀÇ Á¦¸ñÀº \\ÀÌ°ÍÀÌ ÀÚ¹Ù´Ù\\ ÀÔ´Ï´Ù.");
+		System.out.println("ì•ˆë…•í•˜ì„¸ìš”\të°˜ê°‘ìŠµë‹ˆë‹¤.\në˜ ë§Œë‚˜ìš”.");
+		System.out.println("ì±…ì˜ ì œëª©ì€ \"ì´ê²ƒì´ ìë°”ë‹¤\" ì…ë‹ˆë‹¤.");
+		System.out.println("ì±…ì˜ ì œëª©ì€ \\ì´ê²ƒì´ ìë°”ë‹¤\\ ì…ë‹ˆë‹¤.");
 		System.out.println("C:\\java_project\\day1");
 
 		System.out.println("true");

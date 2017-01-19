@@ -1,15 +1,15 @@
 public class Demo7 {
 	public static void main(String[] args) {
-		// Çü º¯È¯ - ÀÚµ¿Çüº¯È¯
+		// í˜• ë³€í™˜ - ìžë™í˜•ë³€í™˜
 
-		// Å« Å¸ÀÔÀÇ ÀÚ·áÇü¿¡ ÀÛÀº Å¸ÀÔÀÇ ÀÚ·áÇüÀ» ´ãÀº °æ¿ì
+		// í° íƒ€ìž…ì˜ ìžë£Œí˜•ì— ìž‘ì€ íƒ€ìž…ì˜ ìžë£Œí˜•ì„ ë‹´ì€ ê²½ìš°
 		double a = 10;
 		System.out.println(a);
-		// Å©±â´Â °°Áö¸¸, Á¤¹Ðµµ°¡ ³ôÀº ÀÚ·áÇü¿¡ Á¤¹Ðµµ°¡ ³·Àº ÀÚ·áÇüÀ» ´ãÀº °æ¿ì
+		// í¬ê¸°ëŠ” ê°™ì§€ë§Œ, ì •ë°€ë„ê°€ ë†’ì€ ìžë£Œí˜•ì— ì •ë°€ë„ê°€ ë‚®ì€ ìžë£Œí˜•ì„ ë‹´ì€ ê²½ìš°
 		float b = 10;
 		System.out.println(b);
 
-		// char¿Í int´Â »óÈ£º¯È¯ÀÌ µÈ´Ù.
+		// charì™€ intëŠ” ìƒí˜¸ë³€í™˜ì´ ëœë‹¤.
 		char c = 65;
 		int d = 'A';
 

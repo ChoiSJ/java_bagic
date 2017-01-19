@@ -3,43 +3,43 @@ import java.util.*;
 public class SystemDemo {
 	public static void main(String[] args) {
 	
-		// ÇöÀç ½Ã°£Á¤º¸ ¾Ë¾Æ³»±â
+		// í˜„ì¬ ì‹œê°„ì •ë³´ ì•Œì•„ë‚´ê¸°
 		long time = System.currentTimeMillis();
 		System.out.println(time);
 
 		long nanoTime = System.nanoTime();
 		System.out.println(nanoTime);
 
-		// È¯°æº¯¼ö°ª Á¶È¸ÇÏ±â
+		// í™˜ê²½ë³€ìˆ˜ê°’ ì¡°íšŒí•˜ê¸°
 		String value1 = System.getenv("JAVA_HOME");
 		System.out.println(value1);
 		String value2 = System.getenv("PATH");
 		System.out.println(value2);
 
-		// ½Ã½ºÅÛÀÇ ÇÁ·ÎÆÛÆ¼°ª Á¶È¸ÇÏ±â
+		// ì‹œìŠ¤í…œì˜ í”„ë¡œí¼í‹°ê°’ ì¡°íšŒí•˜ê¸°
 
-		// ÇöÀç ½Ã½ºÅÛÀÇ ÁÙ¹Ù²Ş¹®ÀÚ Á¶È¸ÇÏ±â
+		// í˜„ì¬ ì‹œìŠ¤í…œì˜ ì¤„ë°”ê¿ˆë¬¸ì ì¡°íšŒí•˜ê¸°
 		String newLineChar = System.getProperty("line.separator");
 		System.out.println("abcdef"+newLineChar+"ghijt");
 
-		// ÇöÀç ½Ã½ºÅÛÀÇ »ç¿ëÀÚ È¨ µğ·ºÅä¸® Á¶È¸ÇÏ±â
+		// í˜„ì¬ ì‹œìŠ¤í…œì˜ ì‚¬ìš©ì í™ˆ ë””ë ‰í† ë¦¬ ì¡°íšŒí•˜ê¸°
 		String dir = System.getProperty("user.home");
 		System.out.println(dir);
 
-		// ÇÁ·Î±×·¥ Á¾·áÇÏ±â
+		// í”„ë¡œê·¸ë¨ ì¢…ë£Œí•˜ê¸°
 		//System.exit(0);
 
 		/*
 			System.out.println(src, srcPosition, dest, destPosition, length);
-				src			 : ¿øº» ¹è¿­
-				srcPosition	 : ¿øº» ¹è¿­¿¡¼­ º¹»çÇÒ Ç×¸ñÀÇ ½ÃÀÛ À§Ä¡
-				dest		 : »õ ¹è¿­
-				destPosition : »õ ¹è¿­¿¡¼­ º¹»çÇÒ Ç×¸ñÀ» ºÙ¿©³ÖÀ» ½ÃÀÛ À§Ä¡
-				length		 : ¿øº» ¹è¿­¿¡¼­ º¹»çÇÒ Ç×¸ñÀÇ °¹¼ö
+				src			 : ì›ë³¸ ë°°ì—´
+				srcPosition	 : ì›ë³¸ ë°°ì—´ì—ì„œ ë³µì‚¬í•  í•­ëª©ì˜ ì‹œì‘ ìœ„ì¹˜
+				dest		 : ìƒˆ ë°°ì—´
+				destPosition : ìƒˆ ë°°ì—´ì—ì„œ ë³µì‚¬í•  í•­ëª©ì„ ë¶™ì—¬ë„£ì„ ì‹œì‘ ìœ„ì¹˜
+				length		 : ì›ë³¸ ë°°ì—´ì—ì„œ ë³µì‚¬í•  í•­ëª©ì˜ ê°¯ìˆ˜
 		*/
 
-		// ¹è¿­ º¹»çÇÏ±â
-		String[] src = {"ÀÌ¼ø½Å", "°­°¨Âù", "±èÀ¯½Å", "È«±æµ¿", "ÀÏÁö¸Å", "ÀÓ²©Á¤"};
+		// ë°°ì—´ ë³µì‚¬í•˜ê¸°
+		String[] src = {"ì´ìˆœì‹ ", "ê°•ê°ì°¬", "ê¹€ìœ ì‹ ", "í™ê¸¸ë™", "ì¼ì§€ë§¤", "ì„êº½ì •"};
 		String[] dest = new String[10];
 		
 		System.arraycopy(src, 3, dest, 1, 2);
@@ -47,23 +47,23 @@ public class SystemDemo {
 		System.out.println();
 		System.out.println(Arrays.toString(dest));
 
-		// ¹®ÀÚ¿­À» ÁöÁ¤ÇÑ ±¸ºĞÀÚ¸¦ ±âÁØÀ¸·Î Àß¶ó¼­ ¹è¿­·Î ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå: String[] split(String delim)
-		String text = "¼­¿ï,°æ±â,ÀÎÃµ,´ëÀü,ºÎ»ê,±¤ÁÖ,¿ï»ê,´ë±¸";
+		// ë¬¸ìì—´ì„ ì§€ì •í•œ êµ¬ë¶„ìë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì˜ë¼ì„œ ë°°ì—´ë¡œ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ: String[] split(String delim)
+		String text = "ì„œìš¸,ê²½ê¸°,ì¸ì²œ,ëŒ€ì „,ë¶€ì‚°,ê´‘ì£¼,ìš¸ì‚°,ëŒ€êµ¬";
 		String[] area = text.split(",");
 		System.out.println(area[0]);
 		System.out.println(area[2]);
 
-		// ¹®ÀÚ¿­À» ¼Ò¹®ÀÚ/´ë¹®ÀÚ·Î º¯È¯ÇÑ »õ·Î¿î ¹®ÀÚ¿­À» ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+		// ë¬¸ìì—´ì„ ì†Œë¬¸ì/ëŒ€ë¬¸ìë¡œ ë³€í™˜í•œ ìƒˆë¡œìš´ ë¬¸ìì—´ì„ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
 		// String toUpperCase(), String toLowerCase()
 		String str11 = "sony";
 		String str12 = str11.toUpperCase();
 		System.out.println("str11 ["+str11+"]");
 		System.out.println("str12 ["+str12+"]");
 		
-		// Á¤¼ö, ½Ç¼ö, ºÒ¸°°ª, ±âÅ¸ ¿©·¯ Á¾·ùÀÇ °ªµéÀ» ¹®ÀÚ¿­·Î º¯È¯ÇØ¼­ ¹İÈ¯ÇÏ´Â Á¤Àû ¸Ş¼Òµå
+		// ì •ìˆ˜, ì‹¤ìˆ˜, ë¶ˆë¦°ê°’, ê¸°íƒ€ ì—¬ëŸ¬ ì¢…ë¥˜ì˜ ê°’ë“¤ì„ ë¬¸ìì—´ë¡œ ë³€í™˜í•´ì„œ ë°˜í™˜í•˜ëŠ” ì •ì  ë©”ì†Œë“œ
 		// String valueOf(int value), String valueOf(double value), String valueOf(boolean value)
 		int number = 1234;
-		// ¼ıÀÚ 1234 ¸¦ ¹®ÀÚ¿­ "123" À¸·Î º¯È¯ÇØ¼­ ¹İÈ¯ÇÑ´Ù.
+		// ìˆ«ì 1234 ë¥¼ ë¬¸ìì—´ "123" ìœ¼ë¡œ ë³€í™˜í•´ì„œ ë°˜í™˜í•œë‹¤.
 		String str13 = String.valueOf(number);
 		System.out.println(str13.substring(str13.length()-1));
 

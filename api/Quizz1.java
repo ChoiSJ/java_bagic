@@ -3,20 +3,20 @@ import java.util.Scanner;
 public class Quizz1 {
 	public static void main(String[] args) {
 	
-		// ÀÌ¸ŞÀÏÀ» ÀÔ·Â¹Ş¾Æ¼­ ÀÌ¸ŞÀÏ¿¡ Æ÷ÇÔµÈ ¾ÆÀÌµğºÎºĞ¸¸ Ãâ·ÂÇÏ±â
+		// ì´ë©”ì¼ì„ ì…ë ¥ë°›ì•„ì„œ ì´ë©”ì¼ì— í¬í•¨ëœ ì•„ì´ë””ë¶€ë¶„ë§Œ ì¶œë ¥í•˜ê¸°
 		Scanner sc = new Scanner(System.in);
-		System.out.print("ÀÌ¸ŞÀÏÀ» ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.print("ì´ë©”ì¼ì„ ì…ë ¥í•˜ì„¸ìš”:");
 		String email = sc.next();
 
 		/*
-		System.out.print("ÀÌ¸ŞÀÏÀ» ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.print("ì´ë©”ì¼ì„ ì…ë ¥í•˜ì„¸ìš”:");
 		String email = sc.next();
 		int index = email.indexOf("@");
 		String result = email.substring(0, index);
-		System.out.println("ÀÌ¸ŞÀÏ ¾Õ:" + result);
+		System.out.println("ì´ë©”ì¼ ì•:" + result);
 		*/
 
 		String[] arr = email.split("@");
-		System.out.println("¾ÆÀÌµğ:" + arr[0]);
+		System.out.println("ì•„ì´ë””:" + arr[0]);
 	}
 }

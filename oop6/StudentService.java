@@ -1,6 +1,6 @@
 /*
 	StudentService sms
-		ÇĞ»ı Á¤º¸¸¦ ÀúÀå/Á¶È¸/»èÁ¦/º¯°æÇÏ´Â ±â´ÉÀ» Á¦°øÇÏ´Â Å¬·¡½º´Ù.
+		í•™ìƒ ì •ë³´ë¥¼ ì €ì¥/ì¡°íšŒ/ì‚­ì œ/ë³€ê²½í•˜ëŠ” ê¸°ëŠ¥ì„ ì œê³µí•˜ëŠ” í´ë˜ìŠ¤ë‹¤.
 */
 
 public class StudentService {
@@ -8,14 +8,14 @@ public class StudentService {
 	private Student[] db = new Student[5];
 	
 	public StudentService() {
-		db[0] = new Student(23, 3, "È«±æµ¿", "010-1111-1111");
-		db[1] = new Student(25, 1, "±èÀ¯½Å", "010-2121-1111");
-		db[2] = new Student(27, 2, "°­°¨Âù", "010-3333-1111");
-		db[3] = new Student(28, 5, "ÀÌ¼ø½Å", "010-4444-1111");
-		db[4] = new Student(30, 3, "±Ç·ü", "010-3939-3939");
+		db[0] = new Student(23, 3, "í™ê¸¸ë™", "010-1111-1111");
+		db[1] = new Student(25, 1, "ê¹€ìœ ì‹ ", "010-2121-1111");
+		db[2] = new Student(27, 2, "ê°•ê°ì°¬", "010-3333-1111");
+		db[3] = new Student(28, 5, "ì´ìˆœì‹ ", "010-4444-1111");
+		db[4] = new Student(30, 3, "ê¶Œë¥ ", "010-3939-3939");
 	}
 
-	// ÇĞ¹øÀ» Àü´Ş¹Ş¾Æ¼­ ±× ÇĞ¹ø¿¡ ÇØ´çÇÏ´Â ÇĞ»ıÁ¤º¸¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+	// í•™ë²ˆì„ ì „ë‹¬ë°›ì•„ì„œ ê·¸ í•™ë²ˆì— í•´ë‹¹í•˜ëŠ” í•™ìƒì •ë³´ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
 	public Student getStudentByNo(int no) {
 		Student result = null;
 		for (Student stu : db) {
@@ -27,7 +27,7 @@ public class StudentService {
 		return result;
 	}
 	
-	// ÇĞ³âÀ» Àü´Ş¹Ş¾Æ¼­ ±× ÇĞ³â¿¡ ÇØ´çÇÏ´Â ÇĞ»ıÁ¤º¸¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+	// í•™ë…„ì„ ì „ë‹¬ë°›ì•„ì„œ ê·¸ í•™ë…„ì— í•´ë‹¹í•˜ëŠ” í•™ìƒì •ë³´ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
 	public Student[] getStudentByGrade(int grade) {
 		Student[] result = null;
 		Student[] temp = new Student[db.length];
@@ -48,7 +48,7 @@ public class StudentService {
 		return result;
 	}
 
-	// ÇĞ¹ø°ú ÇĞ»ıÁ¤º¸¸¦ Àü´Ş¹Ş¾Æ¼­ ±× ÇĞ¹ø¿¡ ÇØ´çÇÏ´Â ÇĞ»ıÁ¤º¸¸¦ º¯°æÇÏ´Â ¸Ş¼Òµå
+	// í•™ë²ˆê³¼ í•™ìƒì •ë³´ë¥¼ ì „ë‹¬ë°›ì•„ì„œ ê·¸ í•™ë²ˆì— í•´ë‹¹í•˜ëŠ” í•™ìƒì •ë³´ë¥¼ ë³€ê²½í•˜ëŠ” ë©”ì†Œë“œ
 	public void change(Student student) {
 		for (int i=0; i<db.length; i++) {
 			if (db[i].getNo() == student.getNo()) {

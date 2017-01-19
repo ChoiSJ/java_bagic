@@ -2,12 +2,12 @@ public class PhotoPrinter extends Printer {
 	
 	int size;
 	
-	// ºÎ¸ğÅ¬·¡½º(Printer)ÀÇ print(String texe) ¸Ş¼Òµå ÀçÁ¤ÀÇ
+	// ë¶€ëª¨í´ë˜ìŠ¤(Printer)ì˜ print(String texe) ë©”ì†Œë“œ ì¬ì •ì˜
 	public void print(String data) {
-		System.out.println("["+data+"]¸¦ »çÁøÀÎÈ­Áö¿¡ ÀÎ¼âÇÕ´Ï´Ù.");
+		System.out.println("["+data+"]ë¥¼ ì‚¬ì§„ì¸í™”ì§€ì— ì¸ì‡„í•©ë‹ˆë‹¤.");
 	}
 
 	public void edit() {
-		System.out.println("»çÁøÀ» ÆíÁıÇÕ´Ï´Ù.");
+		System.out.println("ì‚¬ì§„ì„ í¸ì§‘í•©ë‹ˆë‹¤.");
 	}
 }

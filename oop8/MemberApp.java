@@ -1,18 +1,18 @@
 public class MemberApp {
 	public static void main(String[] args) {
 		
-		// È¸¿øÁ¤º¸¸¦ ´ã±â À§ÇÑ Member °´Ã¼¸¦ »ı¼ºÇÏ°í
-		// setter ¸¦ »ç¿ëÇØ¼­ ÀÌ¸§, ¾ÆÀÌµğ, ºñ¹ø, ³ªÀÌ µîÀÇ µ¥ÀÌÅÍ¸¦ °´Ã¼¿¡ ÀúÀåÇÏ±â
+		// íšŒì›ì •ë³´ë¥¼ ë‹´ê¸° ìœ„í•œ Member ê°ì²´ë¥¼ ìƒì„±í•˜ê³ 
+		// setter ë¥¼ ì‚¬ìš©í•´ì„œ ì´ë¦„, ì•„ì´ë””, ë¹„ë²ˆ, ë‚˜ì´ ë“±ì˜ ë°ì´í„°ë¥¼ ê°ì²´ì— ì €ì¥í•˜ê¸°
 		Member mem = new Member();
-		mem.setName("¿Õ°Ç");
+		mem.setName("ì™•ê±´");
 		mem.setId("wang_gun");
 		mem.setPassword("1234");
 		mem.setAge(35);
 
-		// »ı¼ºµÈ Member °´Ã¼¿¡ ÀúÀåµÈ °ªÀ» È­¸é¿¡ getter ÇÔ¼ö¸¦ »ç¿ëÇØ¼­ È­¸é¿¡ Ãâ·ÂÇÏ±â
-		System.out.println("È¸¿øÀÌ¸§:" + mem.getName());
-		System.out.println("¾Æ ÀÌ µğ:" + mem.getId());
-		System.out.println("ÆĞ½º¿öµå:" + mem.getPassword());
-		System.out.println("¿¬    ·É:" + mem.getAge());
+		// ìƒì„±ëœ Member ê°ì²´ì— ì €ì¥ëœ ê°’ì„ í™”ë©´ì— getter í•¨ìˆ˜ë¥¼ ì‚¬ìš©í•´ì„œ í™”ë©´ì— ì¶œë ¥í•˜ê¸°
+		System.out.println("íšŒì›ì´ë¦„:" + mem.getName());
+		System.out.println("ì•„ ì´ ë””:" + mem.getId());
+		System.out.println("íŒ¨ìŠ¤ì›Œë“œ:" + mem.getPassword());
+		System.out.println("ì—°    ë ¹:" + mem.getAge());
 	}
 }

@@ -1,6 +1,6 @@
 public class Quizz1 {
 	public static void main(String[] args) {
-		// Áß°£°ªÀÇ 1~9 ´Â ±× ÁÙÀÇ °íÁ¤°ªÀÌ±â¿¡ Ã³À½ for ¿¡ ³Ö¾î¼­ °íÁ¤½ÃÅ²´Ù.
+		// ì¤‘ê°„ê°’ì˜ 1~9 ëŠ” ê·¸ ì¤„ì˜ ê³ ì •ê°’ì´ê¸°ì— ì²˜ìŒ for ì— ë„£ì–´ì„œ ê³ ì •ì‹œí‚¨ë‹¤.
 		for (int a=1; a<=9; a++) {
 			for (int b=2; b<=9; b++) {
 				System.out.print(b + " * " + a + " = " + (a*b) + "\t");

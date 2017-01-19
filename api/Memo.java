@@ -4,10 +4,10 @@ public class Memo {
 	public static void main(String[] args) throws Exception {
 	
 		String text = "";
-		text += "ÇĞ±³Á¾ÀÌ ¶¯¶¯¶¯" + System.lineSeparator();
-		text += "¾î¼­ ¸ğÀÌÀÚ" + System.lineSeparator();
-		text += "¼±»ı´ÔÀÌ ¿ì¸®¸¦" + System.lineSeparator();
-		text += "±â´Ù¸®½Å´Ù." + System.lineSeparator();
+		text += "í•™êµì¢…ì´ ë•¡ë•¡ë•¡" + System.lineSeparator();
+		text += "ì–´ì„œ ëª¨ì´ì" + System.lineSeparator();
+		text += "ì„ ìƒë‹˜ì´ ìš°ë¦¬ë¥¼" + System.lineSeparator();
+		text += "ê¸°ë‹¤ë¦¬ì‹ ë‹¤." + System.lineSeparator();
 
 		FileWriter writer = new FileWriter("a.txt");
 		writer.write(text);

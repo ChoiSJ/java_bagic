@@ -1,16 +1,16 @@
 public class BallMouse implements Mouse, Cleanable {
 
 	public void wheel() {
-		System.out.println("ºù±Û... ºù±Û...");
+		System.out.println("ë¹™ê¸€... ë¹™ê¸€...");
 	}
 	public void click() {
-		System.out.println("Å¬¸¯... Å¬¸¯...");
+		System.out.println("í´ë¦­... í´ë¦­...");
 	}
 	public void move() {
-		System.out.println("¶¼±¼... ¶¼±¼...");
+		System.out.println("ë–¼êµ´... ë–¼êµ´...");
 	}
 
 	public void clean() {
-		System.out.println("Ball ÀÇ ¸ÕÁö Á¦°Å ¿Ï·á...");
+		System.out.println("Ball ì˜ ë¨¼ì§€ ì œê±° ì™„ë£Œ...");
 	}
 }

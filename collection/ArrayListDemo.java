@@ -4,25 +4,25 @@ import java.util.List;
 public class ArrayListDemo {
 
 	public static void main(String[] args) {
-		// ÀÌ¸§À» ¿©·¯ °³ ÀúÀåÇÒ ¼ö ÀÖ´Â ArrayList ¸¸µé±â
+		// ì´ë¦„ì„ ì—¬ëŸ¬ ê°œ ì €ì¥í•  ìˆ˜ ìˆëŠ” ArrayList ë§Œë“¤ê¸°
 
 		List<String> names = new ArrayList<String>();
 		
-		// ArrayList ¿¡ String °´Ã¼ ÀúÀåÇÏ±â
-		names.add("È«±æµ¿");
-		names.add("±èÀ¯½Å");
-		names.add("ÀÌ¼ø½Å");
-		names.add("°­°¨Âù");
-		names.add("°­°¨Âù");
-		names.add("°­°¨Âù");
-		names.add("°­°¨Âù");
+		// ArrayList ì— String ê°ì²´ ì €ì¥í•˜ê¸°
+		names.add("í™ê¸¸ë™");
+		names.add("ê¹€ìœ ì‹ ");
+		names.add("ì´ìˆœì‹ ");
+		names.add("ê°•ê°ì°¬");
+		names.add("ê°•ê°ì°¬");
+		names.add("ê°•ê°ì°¬");
+		names.add("ê°•ê°ì°¬");
 		
-		// ArrayList ¿¡ ÀúÀåµÈ ¸ğµç ¿¤¸®¸ÕÆ® »èÁ¦ÇÏ±â
+		// ArrayList ì— ì €ì¥ëœ ëª¨ë“  ì—˜ë¦¬ë¨¼íŠ¸ ì‚­ì œí•˜ê¸°
 		//names.clear();
 
-		// ArrayList ¿¡ ÀúÀåµÈ ¿¤¸®¸ÕÆ® °¹¼ö Á¶È¸ÇÏ±â
+		// ArrayList ì— ì €ì¥ëœ ì—˜ë¦¬ë¨¼íŠ¸ ê°¯ìˆ˜ ì¡°íšŒí•˜ê¸°
 		int len = names.size();
-		System.out.println("ÀúÀåµÈ °¹¼ö:" + len);
+		System.out.println("ì €ì¥ëœ ê°¯ìˆ˜:" + len);
 		
 		/*
 		for (int i=0; i<len; i++) {
@@ -31,12 +31,12 @@ public class ArrayListDemo {
 		}
 		*/
 		
-		// ArrayList¿¡ ¿¤¸®¸ÕÆ®°¡ ÀúÀåµÇ¾î ÀÖ´ÂÁö È®ÀÎÇÏ±â
+		// ArrayListì— ì—˜ë¦¬ë¨¼íŠ¸ê°€ ì €ì¥ë˜ì–´ ìˆëŠ”ì§€ í™•ì¸í•˜ê¸°
 		boolean empty = names.isEmpty();
 		if (!empty) {
-			System.out.println("¿¤¸®¸ÕÆ®°¡ Á¸ÀçÇÏ´Â ArrayList ´Ù.");
+			System.out.println("ì—˜ë¦¬ë¨¼íŠ¸ê°€ ì¡´ì¬í•˜ëŠ” ArrayList ë‹¤.");
 		} else {
-			System.out.println("ºñ¾î ÀÖ´Â ArrayList ´Ù.");
+			System.out.println("ë¹„ì–´ ìˆëŠ” ArrayList ë‹¤.");
 		}
 
 		for (String username : names) {

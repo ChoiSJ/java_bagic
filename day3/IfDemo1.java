@@ -1,12 +1,12 @@
 public class IfDemo1 {
 	public static void main(String[] args) {
-		System.out.println("ÇÁ·Î±×·¥À» ½ÃÀÛÇÕ´Ï´Ù.");
+		System.out.println("í”„ë¡œê·¸ë¨ì„ ì‹œì‘í•©ë‹ˆë‹¤.");
 		int score = 39;
 
 		if (score >= 60) {
-			System.out.println("ÇÕ°İÀÔ´Ï´Ù.");
+			System.out.println("í•©ê²©ì…ë‹ˆë‹¤.");
 		}
 		
-		System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+		System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 	}
 }

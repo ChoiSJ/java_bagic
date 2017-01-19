@@ -6,24 +6,24 @@ public class ArrayListDemo5 {
 	
 		ArrayList<Product> cart = new ArrayList<Product>();
 
-		Product p1 = new Product(1, "Ã¥");
-		Product p2 = new Product(2, "¿¬ÇÊ");
-		Product p3 = new Product(3, "»öÁ¾ÀÌ");
-		Product p4 = new Product(4, "Å©·¹ÆÄ½Ã");
+		Product p1 = new Product(1, "ì±…");
+		Product p2 = new Product(2, "ì—°í•„");
+		Product p3 = new Product(3, "ìƒ‰ì¢…ì´");
+		Product p4 = new Product(4, "í¬ë ˆíŒŒì‹œ");
 
 		cart.add(p1);
-		cart.add(new Product(5, "Áö¿ì°³"));
+		cart.add(new Product(5, "ì§€ìš°ê°œ"));
 		cart.add(p2);
 		cart.add(p3);
 		cart.add(p4);
-		cart.add(new Product(6, "ºÏ¸¶Ä¿"));
+		cart.add(new Product(6, "ë¶ë§ˆì»¤"));
 		
 
-		// ArrayList ¿¡ ÀúÀåµÈ °´Ã¼ Áß¿¡¼­ ¿¬ÇÊ »óÇ° Áö¿ì±â
+		// ArrayList ì— ì €ì¥ëœ ê°ì²´ ì¤‘ì—ì„œ ì—°í•„ ìƒí’ˆ ì§€ìš°ê¸°
 		cart.remove(p2);
 		
-		// ArrayList ¿¡ ÀúÀåµÈ °´Ã¼ Áß¿¡¼­ ÀÌ °´Ã¼[»óÇ°¹øÈ£=61, »óÇ°¸í="Áö¿ì°³"] Ã£¾Æ¼­ Áö¿ì±â
-		Product p = new Product(5, "Áö¿ì°³");
+		// ArrayList ì— ì €ì¥ëœ ê°ì²´ ì¤‘ì—ì„œ ì´ ê°ì²´[ìƒí’ˆë²ˆí˜¸=61, ìƒí’ˆëª…="ì§€ìš°ê°œ"] ì°¾ì•„ì„œ ì§€ìš°ê¸°
+		Product p = new Product(5, "ì§€ìš°ê°œ");
 		cart.remove(p);
 
 		System.out.println(cart);

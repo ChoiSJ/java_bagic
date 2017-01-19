@@ -1,7 +1,7 @@
-// ÀÎÅÍÆäÀÌ½º: ¸í¼¼, ±Ô¾à, Ç¥ÁØ, ½ºÆå
-// ¸ðµç ¸¶¿ì½º °´Ã¼°¡ ¹Ýµå½Ã ±¸ÇöÇØ¾ß ÇÏ´Â ±â´ÉÀ» Á¤ÀÇÇÑ °Í
+// ì¸í„°íŽ˜ì´ìŠ¤: ëª…ì„¸, ê·œì•½, í‘œì¤€, ìŠ¤íŽ™
+// ëª¨ë“  ë§ˆìš°ìŠ¤ ê°ì²´ê°€ ë°˜ë“œì‹œ êµ¬í˜„í•´ì•¼ í•˜ëŠ” ê¸°ëŠ¥ì„ ì •ì˜í•œ ê²ƒ
 public interface Mouse {
-	// ÀÎÅÍÆäÀÌ½º ÀÚÃ¼°¡ Ãß»ó¸Þ¼Òµå¸¸À» °¡Áú ¼ö ÀÖ±â¿¡ abstract ¸¦ ±»ÀÌ ÀÔ·ÂÇÏÁö ¾Ê¾Æµµ µÈ´Ù.
+	// ì¸í„°íŽ˜ì´ìŠ¤ ìžì²´ê°€ ì¶”ìƒë©”ì†Œë“œë§Œì„ ê°€ì§ˆ ìˆ˜ ìžˆê¸°ì— abstract ë¥¼ êµ³ì´ ìž…ë ¥í•˜ì§€ ì•Šì•„ë„ ëœë‹¤.
 	void wheel();
 	public abstract void click();
 	public abstract void move();

@@ -3,11 +3,11 @@ import java.util.Date;
 public class PostingApp {
 	public static void main(String[] args) {
 	
-		Posting p = new Posting(1, "ÀÌº¥Æ®", "Å©¸®½º¸¶½º ½ÃÁğ ÀÌº¥Æ®", new Date());
+		Posting p = new Posting(1, "ì´ë²¤íŠ¸", "í¬ë¦¬ìŠ¤ë§ˆìŠ¤ ì‹œì¦Œ ì´ë²¤íŠ¸", new Date());
 		
-		System.out.println("±Û¹øÈ£:" + p.getNo());
-		System.out.println("Á¦  ¸ñ:" + p.getTitle());
-		System.out.println("ÀÛ¼ºÀÏ:" + p.getPrettyRegdate());
+		System.out.println("ê¸€ë²ˆí˜¸:" + p.getNo());
+		System.out.println("ì œ  ëª©:" + p.getTitle());
+		System.out.println("ì‘ì„±ì¼:" + p.getPrettyRegdate());
 		/*
 		Date d1 = p.getRegdate();
 		System.out.println(d1);

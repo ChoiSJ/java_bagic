@@ -1,6 +1,6 @@
 public class MethodDemo4 {
 
-	// ÀÌµîº¯»ç¸·ÇüÀÇ ³ĞÀÌ¸¦ °è»êÇÏ´Â ¸Ş¼Òµå
+	// ì´ë“±ë³€ì‚¬ë§‰í˜•ì˜ ë„“ì´ë¥¼ ê³„ì‚°í•˜ëŠ” ë©”ì†Œë“œ
 
 	public static double area(double width, double height) {
 		double result = (width*height)/2;

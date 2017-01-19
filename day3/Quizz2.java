@@ -2,17 +2,17 @@ import java.util.*;
 
 public class Quizz2 {
 	public static void main(String[] args) {
-		// 3ÀÚ¸®ÀÇ Á¤¼ö¸¦ ÀÔ·Â¹Ş¾Æ¼­ 
-		// 100ÀÇ ÀÚ¸® ¼ıÀÚ
-		// 10ÀÇ ÀÚ¸® ¼ıÀÚ
-		// 1ÀÇ ÀÚ¸® ¼ıÀÚ¸¦ °¢°¢ Ãâ·ÂÇÏ½Ã¿À
+		// 3ìë¦¬ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ì„œ 
+		// 100ì˜ ìë¦¬ ìˆ«ì
+		// 10ì˜ ìë¦¬ ìˆ«ì
+		// 1ì˜ ìë¦¬ ìˆ«ìë¥¼ ê°ê° ì¶œë ¥í•˜ì‹œì˜¤
 		Scanner sc = new Scanner(System.in)
-;		System.out.print("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+;		System.out.print("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 		int number = sc.nextInt();
 
 		int a = number/100;
 		int b = (number - (a*100))/10;
 		int c = number - (a*100+b*10);
-		System.out.print("¹éÀÇ ÀÚ¸®: " + a + "\t½ÊÀÇ ÀÚ¸®: " + b + "\tÀÏÀÇ ÀÚ¸®: " + c + "\n");
+		System.out.print("ë°±ì˜ ìë¦¬: " + a + "\tì‹­ì˜ ìë¦¬: " + b + "\tì¼ì˜ ìë¦¬: " + c + "\n");
 	}
 }

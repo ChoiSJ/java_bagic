@@ -6,18 +6,18 @@ public class BookApp2 {
 		Book book1 = new Book();
 
 		book1.setNo(23);
-		book1.setTitle("ÇÏµÓ ÀÎ ¾×¼Ç");
-		book1.setAuthor("Ã´ ·¥");
-		book1.setPublisher("Áö¾Ø¼±");
+		book1.setTitle("í•˜ë‘¡ ì¸ ì•¡ì…˜");
+		book1.setAuthor("ì²™ ë¨");
+		book1.setPublisher("ì§€ì•¤ì„ ");
 		book1.setPrice(30000);
 		book1.setPubdate("2015-01-05");
 
 		Book book2 = new Book();
 
 		book2.setNo(25);
-		book2.setTitle("ÀÚ¹Ù À¥ ÇÁ·Î±×·¡¹Ö");
-		book2.setAuthor("¹ÚÀç¼º");
-		book2.setPublisher("°¡¸ŞÃâÆÇ»ç");
+		book2.setTitle("ìë°” ì›¹ í”„ë¡œê·¸ë˜ë°");
+		book2.setAuthor("ë°•ì¬ì„±");
+		book2.setPublisher("ê°€ë©”ì¶œíŒì‚¬");
 		book2.setPrice(28000);
 		book2.setPubdate("2016-07-05");
 		

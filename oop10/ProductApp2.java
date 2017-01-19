@@ -1,26 +1,26 @@
 public class ProductApp2 {
 	public static void main(String[] args) {
 	
-		Product p1 = new Product("¿¬ÇÊ", 500);
-		Product p2 = new Product("¿¬ÇÊ", 500);
+		Product p1 = new Product("ì—°í•„", 500);
+		Product p2 = new Product("ì—°í•„", 500);
 		
-		// == °ú equals(Object o) ´Â °°Àº °´Ã¼¿¡¼­ ºñ±³
+		// == ê³¼ equals(Object o) ëŠ” ê°™ì€ ê°ì²´ì—ì„œ ë¹„êµ
 		boolean result1 = (p1 == p2);
 		boolean result2 = p1.equals(p2);
 
-		System.out.println("==		ºñ±³: " + result1);
-		System.out.println("equals	ºñ±³: " + result2);
+		System.out.println("==		ë¹„êµ: " + result1);
+		System.out.println("equals	ë¹„êµ: " + result2);
 
 		int value1 = p1.hashCode();
 		int value2 = p2.hashCode();
-		System.out.println("ÇØ½ÃÄÚµå°ª: " + value1);
-		System.out.println("ÇØ½ÃÄÚµå°ª: " + value2);
+		System.out.println("í•´ì‹œì½”ë“œê°’: " + value1);
+		System.out.println("í•´ì‹œì½”ë“œê°’: " + value2);
 
 		// toString
 		String str1 = p1.toString();
 		String str2 = p2.toString();
-		System.out.println("°´Ã¼ Á¤º¸: " + str1);
-		System.out.println("°´Ã¼ Á¤º¸: " + str2);
+		System.out.println("ê°ì²´ ì •ë³´: " + str1);
+		System.out.println("ê°ì²´ ì •ë³´: " + str2);
 
 		System.out.println(p1);	// System.out.println(p1.toString());
 		System.out.println(p2);	// System.out.println(p2.toString());

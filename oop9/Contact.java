@@ -26,7 +26,7 @@ public class Contact {
 
 	private int index;
 	public void addTel(Tel tel) {
-		// Tels ¹è¿­ÀÇ ÀûÀıÇÑ À§Ä¡¿¡ ´ã±â
+		// Tels ë°°ì—´ì˜ ì ì ˆí•œ ìœ„ì¹˜ì— ë‹´ê¸°
 		tels[index++] = tel;
 	}
 	public Address getAddress() {
@@ -37,13 +37,13 @@ public class Contact {
 	}
 
 	public void getInfo() {
-		System.out.println("ÀÌ   ¸§:" + getName());
+		System.out.println("ì´   ë¦„:" + getName());
 
 		for (int i=0; i<index; i++) {
-			System.out.println("ÀüÈ­Á¾·ù:" + tels[i].getType());
-			System.out.println("ÀüÈ­¹øÈ£:" + tels[i].getNumber());
+			System.out.println("ì „í™”ì¢…ë¥˜:" + tels[i].getType());
+			System.out.println("ì „í™”ë²ˆí˜¸:" + tels[i].getNumber());
 		}
 
-		System.out.println("ÁÖ   ¼Ò:" + address.getSido() + " " + address.getGugun() + " " + address.getDetail());
+		System.out.println("ì£¼   ì†Œ:" + address.getSido() + " " + address.getGugun() + " " + address.getDetail());
 	}
 }

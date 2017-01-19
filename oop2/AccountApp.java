@@ -2,7 +2,7 @@ public class AccountApp {
 	public static void main(String[] args) {
 	
 		Account acc = new Account();
-		acc.owner = "¿Õ°Ç";
+		acc.owner = "ì™•ê±´";
 		acc.accountNumber = "123-1234-1234";
 		acc.password = 1234;
 		acc.balance = 10000000;

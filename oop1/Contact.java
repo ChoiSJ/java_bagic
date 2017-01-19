@@ -1,29 +1,29 @@
 public class Contact {
-	// ¼Ó¼º Á¤ÀÇÇÏ±â
+	// ì†ì„± ì •ì˜í•˜ê¸°
 
-	// ¼ø¹ø
-	// ÀÌ¸§
-	// ¿¬¶ôÃ³
-	// ÀÌ¸ŞÀÏ
+	// ìˆœë²ˆ
+	// ì´ë¦„
+	// ì—°ë½ì²˜
+	// ì´ë©”ì¼
 
 	int no;
 	String name;
 	String cellnum;
 	String email;
 
-	// ±â´É Á¤ÀÇÇÏ±â
-	// ÀüÈ­ÇÏ±â		call
+	// ê¸°ëŠ¥ ì •ì˜í•˜ê¸°
+	// ì „í™”í•˜ê¸°		call
 	public void call() {
-		System.out.println(cellnum + " ¿¡°Ô ÀüÈ­¸¦ ½ÃµµÇÕ´Ï´Ù.");
+		System.out.println(cellnum + " ì—ê²Œ ì „í™”ë¥¼ ì‹œë„í•©ë‹ˆë‹¤.");
 	}
 
-	// ¹®ÀÚº¸³»±â	sendMessage()
+	// ë¬¸ìë³´ë‚´ê¸°	sendMessage()
 	public void sendMessage() {
-		System.out.println(name + " ¿¡°Ô ¸Ş½ÃÁö¸¦ º¸³À´Ï´Ù.");
+		System.out.println(name + " ì—ê²Œ ë©”ì‹œì§€ë¥¼ ë³´ëƒ…ë‹ˆë‹¤.");
 	}
 
-	// ¸ŞÀÏº¸³»±â	sendMail()
+	// ë©”ì¼ë³´ë‚´ê¸°	sendMail()
 	public void sendMail() {
-		System.out.println(email + " ·Î ¸ŞÀÏÀ» Àü¼ÛÇÕ´Ï´Ù.");
+		System.out.println(email + " ë¡œ ë©”ì¼ì„ ì „ì†¡í•©ë‹ˆë‹¤.");
 	}
 }

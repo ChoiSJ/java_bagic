@@ -4,7 +4,7 @@ public class Quizz3 {
 			for (int y=1; y<=10; y++) {
 				if (4*x + 5*y == 60) {
 				System.out.println("(" + x + ", " + y + ")");
-				System.out.printf("(%2d, %2d)\n", x, y); // ¹®ÀÚ´Â %d, ¼ýÀÚ´Â %s, 2%´Â 2Ä­À» ÀÌ¿ëÇØ Ãâ·Â
+				System.out.printf("(%2d, %2d)\n", x, y); // ë¬¸ìžëŠ” %d, ìˆ«ìžëŠ” %s, 2%ëŠ” 2ì¹¸ì„ ì´ìš©í•´ ì¶œë ¥
 				}
 			}
 		}

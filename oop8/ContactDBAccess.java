@@ -1,7 +1,7 @@
-// ±¸Çö Å¬·¡½º
+// êµ¬í˜„ í´ë˜ìŠ¤
 public class ContactDBAccess extends DBAccess {
 	
 	public void createRepository() {
-		System.out.println("¿¬¶ôÃ³ Á¤º¸ ÀúÀå¿ë ÀúÀå¼Ò »ı¼º");
+		System.out.println("ì—°ë½ì²˜ ì •ë³´ ì €ì¥ìš© ì €ì¥ì†Œ ìƒì„±");
 	}
 }

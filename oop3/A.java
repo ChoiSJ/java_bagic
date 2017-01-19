@@ -4,7 +4,7 @@ public class A {
 	public void m() {
 		int no = 10;
 
-		System.out.println("¸Ş¼Òµå mÀÇ º¯¼ö: " + no);
-		System.out.println("°´Ã¼ÀÇ º¯¼ö: " + this.no);
+		System.out.println("ë©”ì†Œë“œ mì˜ ë³€ìˆ˜: " + no);
+		System.out.println("ê°ì²´ì˜ ë³€ìˆ˜: " + this.no);
 	}
 }

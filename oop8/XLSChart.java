@@ -1,6 +1,6 @@
 public class XLSChart extends Chart {
 	
 	public void draw() {
-		System.out.println("¾×¼¿ Á¤º¸ ÀĞ¾î¼­ ±×·¡ÇÁ ±×¸®±â...");
+		System.out.println("ì•¡ì…€ ì •ë³´ ì½ì–´ì„œ ê·¸ë˜í”„ ê·¸ë¦¬ê¸°...");
 	}
 }

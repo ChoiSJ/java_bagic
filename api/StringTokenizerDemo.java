@@ -3,34 +3,34 @@ import java.util.*;
 public class StringTokenizerDemo {
 	public static void main(String[] args) {
 	
-		String text = "ÇöÀç Àü±¹ ´ëºÎºĞ      Áö¿ªÀÇ ¹Ì¼¼¸ÕÁö ³óµµ°¡ ³ô°Ô ³ªÅ¸³ª°í ÀÖ°í¿ä, ¼­¿ïÀº ÇöÀç ¹Ì¼¼¸ÕÁö ³óµµ´Â ¼¼Á¦°ö¹ÌÅÍ´ç 112 ¸¶ÀÌÅ©·Î±×·¥À¸·Î, Æò¼Òº¸´Ù 3¹è³ª ³ô½À´Ï´Ù.";
+		String text = "í˜„ì¬ ì „êµ­ ëŒ€ë¶€ë¶„      ì§€ì—­ì˜ ë¯¸ì„¸ë¨¼ì§€ ë†ë„ê°€ ë†’ê²Œ ë‚˜íƒ€ë‚˜ê³  ìˆê³ ìš”, ì„œìš¸ì€ í˜„ì¬ ë¯¸ì„¸ë¨¼ì§€ ë†ë„ëŠ” ì„¸ì œê³±ë¯¸í„°ë‹¹ 112 ë§ˆì´í¬ë¡œê·¸ë¨ìœ¼ë¡œ, í‰ì†Œë³´ë‹¤ 3ë°°ë‚˜ ë†’ìŠµë‹ˆë‹¤.";
 		
 		/*
 		StringTokenizer st = new StringTokenizer(text);
 
 		int length = st.countTokens();
-		System.out.println("´Ü¾î°¹¼ö:" + length);
+		System.out.println("ë‹¨ì–´ê°¯ìˆ˜:" + length);
 
 		while (st.hasMoreTokens()) {
 			String token = st.nextToken();
 			System.out.println(token);
-			System.out.println("³²Àº ÅäÅ« °¹¼ö:" + st.countTokens());
+			System.out.println("ë‚¨ì€ í† í° ê°¯ìˆ˜:" + st.countTokens());
 		}
 		*/
 
-		// split ´Â °ø¹éÀ» ±âÁØÀ¸·Î ÀÚ¸£±â ¶§¹®¿¡ °ø¹é¸¸Å­ °¹¼ö°¡ ´Ã¾î³­´Ù.
+		// split ëŠ” ê³µë°±ì„ ê¸°ì¤€ìœ¼ë¡œ ìë¥´ê¸° ë•Œë¬¸ì— ê³µë°±ë§Œí¼ ê°¯ìˆ˜ê°€ ëŠ˜ì–´ë‚œë‹¤.
 
 		String[] tokens = text.split(" ");
-		System.out.println("´Ü¾î°¹¼ö:" + tokens.length);
+		System.out.println("ë‹¨ì–´ê°¯ìˆ˜:" + tokens.length);
 
 		/*
 			StringTokenizer
-				- ¹®ÀÚ¿­À» ±¸ºĞÀÚ¸¦ ±âÁØÀ¸·Î Àß¶ó¼­ ÅäÅ«À¸·Î ¸¸µç´Ù.
-				- new StringTokenizer(ÅØ½ºÆ®);			// ±¸ºĞÀÚ¸¦ ÁöÁ¤ÇÏÁö ¾ÊÀ¸¸é °ø¹éÀÌ ±¸ºĞÀÚ°¡ µÈ´Ù.
-				- new StringTokenizer(ÅØ½ºÆ®, ±¸ºĞÀÚ);
+				- ë¬¸ìì—´ì„ êµ¬ë¶„ìë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì˜ë¼ì„œ í† í°ìœ¼ë¡œ ë§Œë“ ë‹¤.
+				- new StringTokenizer(í…ìŠ¤íŠ¸);			// êµ¬ë¶„ìë¥¼ ì§€ì •í•˜ì§€ ì•Šìœ¼ë©´ ê³µë°±ì´ êµ¬ë¶„ìê°€ ëœë‹¤.
+				- new StringTokenizer(í…ìŠ¤íŠ¸, êµ¬ë¶„ì);
 
-				- boolean hasMoreToken(): ´ÙÀ½ ¹ø¿¡ ²¨³¾ ÅäÅ«(¹®ÀÚ¿­)ÀÌ Á¸ÀçÇÏ¸é true ¸¦ ¹İÈ¯ÇÑ´Ù.
-				- String nextToken()	: ÅäÅ«(¹®ÀÚ¿­)À» ²¨³½´Ù.
+				- boolean hasMoreToken(): ë‹¤ìŒ ë²ˆì— êº¼ë‚¼ í† í°(ë¬¸ìì—´)ì´ ì¡´ì¬í•˜ë©´ true ë¥¼ ë°˜í™˜í•œë‹¤.
+				- String nextToken()	: í† í°(ë¬¸ìì—´)ì„ êº¼ë‚¸ë‹¤.
 		*/
 	}
 }

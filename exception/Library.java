@@ -8,7 +8,7 @@ public class Library {
 		for (Book book : db) {
 			if (book != null) {
 				if(book.getNo() == newbook.getNo()) {
-					throw new LibraryException("ÀÌ¹Ì µî·ÏµÈ ¹øÈ£°¡ ÀÖ½À´Ï´Ù.");
+					throw new LibraryException("ì´ë¯¸ ë“±ë¡ëœ ë²ˆí˜¸ê°€ ìˆìŠµë‹ˆë‹¤.");
 				} 
 			}
 		}
@@ -19,7 +19,7 @@ public class Library {
 	public void findBookByNo(int no) throws LibraryException {
 		boolean isExist = false;
 		
-		System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\n", "¹øÈ£", "Ã¥ÀÌ¸§", "ÀúÀÚ", "ÃâÆÇ»ç", "°¡°İ", "Àå¸£");
+		System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\n", "ë²ˆí˜¸", "ì±…ì´ë¦„", "ì €ì", "ì¶œíŒì‚¬", "ê°€ê²©", "ì¥ë¥´");
 		for (Book book : db) {
 			if (book != null) {
 				if (book.getNo() == no) {
@@ -31,14 +31,14 @@ public class Library {
 		}
 
 		if (!isExist) {
-			throw new LibraryException("ÇØ´çÇÏ´Â ¹øÈ£ÀÇ Ã¥ÀÌ ¾ø½À´Ï´Ù.");
+			throw new LibraryException("í•´ë‹¹í•˜ëŠ” ë²ˆí˜¸ì˜ ì±…ì´ ì—†ìŠµë‹ˆë‹¤.");
 		}
 	}
 	
 	public void findBookByTitle(String title) throws LibraryException {
 		boolean isExist = false;
 		
-		System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\n", "¹øÈ£", "Ã¥ÀÌ¸§", "ÀúÀÚ", "ÃâÆÇ»ç", "°¡°İ", "Àå¸£");
+		System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\n", "ë²ˆí˜¸", "ì±…ì´ë¦„", "ì €ì", "ì¶œíŒì‚¬", "ê°€ê²©", "ì¥ë¥´");
 		for (Book book : db) {
 			if (book != null) {
 				if (book.getTitle().contains(title)) {
@@ -50,14 +50,14 @@ public class Library {
 		}
 
 		if (!isExist) {
-			throw new LibraryException("ÇØ´çÇÏ´Â Á¦¸ñÀÇ Ã¥ÀÌ ¾ø½À´Ï´Ù.");
+			throw new LibraryException("í•´ë‹¹í•˜ëŠ” ì œëª©ì˜ ì±…ì´ ì—†ìŠµë‹ˆë‹¤.");
 		}
 	}
 
 	public void findBookByGenre(String genre) throws LibraryException {
 		boolean isExist = false;
 		
-		System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\n", "¹øÈ£", "Ã¥ÀÌ¸§", "ÀúÀÚ", "ÃâÆÇ»ç", "°¡°İ", "Àå¸£");
+		System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\n", "ë²ˆí˜¸", "ì±…ì´ë¦„", "ì €ì", "ì¶œíŒì‚¬", "ê°€ê²©", "ì¥ë¥´");
 		for (Book book : db) {
 			if (book != null) {
 				if (book.getGenre().equals(genre)) {
@@ -69,7 +69,7 @@ public class Library {
 		}
 
 		if (!isExist) {
-			throw new LibraryException("ÇØ´çÇÏ´Â Àå¸£ÀÇ Ã¥ÀÌ ¾ø½À´Ï´Ù.");
+			throw new LibraryException("í•´ë‹¹í•˜ëŠ” ì¥ë¥´ì˜ ì±…ì´ ì—†ìŠµë‹ˆë‹¤.");
 		}	
 	}
 }

@@ -1,25 +1,25 @@
 public class EmployeeApp {
 	public static void main(String[] args) {
 	
-		// 3¸íÀÇ »ç¿øÁ¤º¸¸¦ °ü¸®ÇÏ±â
+		// 3ëª…ì˜ ì‚¬ì›ì •ë³´ë¥¼ ê´€ë¦¬í•˜ê¸°
 		Employee[] employees = new Employee[3];
 		
-		// »ç¿ø Á¤º¸
+		// ì‚¬ì› ì •ë³´
 		Employee emp1 = new Employee();
 		emp1.no = 23;
-		emp1.name = "±Ã¿¹";
+		emp1.name = "ê¶ì˜ˆ";
 
-		// ¿µ¾÷»ç¿ø Á¤º¸
+		// ì˜ì—…ì‚¬ì› ì •ë³´
 		Sales emp2 = new Sales();
 		emp2.no = 25;
-		emp2.name = "°ßÈÍ";
+		emp2.name = "ê²¬í›¤";
 		emp2.goal = 50;
 		emp2.result = 37;
 	
-		// °³¹ßºÎ»ç¿ø Á¤º¸
+		// ê°œë°œë¶€ì‚¬ì› ì •ë³´
 		Developer emp3 = new Developer();
 		emp3.no = 27;
-		emp3.name = "¿Õ°Ç";
+		emp3.name = "ì™•ê±´";
 		emp3.todo = 10;
 		emp3.completed = 4;
 
@@ -27,7 +27,7 @@ public class EmployeeApp {
 		employees[1] = emp2;
 		employees[2] = emp3;
 
-		// °ª Ãâ·ÂÇÏ±â
+		// ê°’ ì¶œë ¥í•˜ê¸°
 		//employee[0].print();
 		//employee[1].print();
 		//employee[2].print();

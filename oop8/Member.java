@@ -1,14 +1,14 @@
 public class Member {
-	// ÇÊµå Á¤ÀÇ(Àº´ĞÈ­)
+	// í•„ë“œ ì •ì˜(ì€ë‹‰í™”)
 	private String name;
 	private String id;
 	private String password;
 	private int age;
 
-	// ±âº» »ı¼ºÀÚ Á¤ÀÇ
+	// ê¸°ë³¸ ìƒì„±ì ì •ì˜
 	public Member() {}
 
-	// getter, setter Á¤ÀÇ
+	// getter, setter ì •ì˜
 	public String getName() {
 		return name;
 	}

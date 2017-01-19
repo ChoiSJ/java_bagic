@@ -1,9 +1,9 @@
 public class Tico extends CarAdapter {
 
 	public void run() {
-		System.out.println("ÁÖÇàÇÏ±â");
+		System.out.println("ì£¼í–‰í•˜ê¸°");
 	}
 	public void stop() {
-		System.out.println("¸ØÃß±â");
+		System.out.println("ë©ˆì¶”ê¸°");
 	}
 }

@@ -1,16 +1,16 @@
-// Ãß»ó Å¬·¡½º
+// ì¶”ìƒ í´ë˜ìŠ¤
 public abstract class DBAccess {
 	
-	// ±¸Çö ¸Ş¼Òµå
+	// êµ¬í˜„ ë©”ì†Œë“œ
 	public void connect() {
-		System.out.println("db¿Í ¿¬°áÇÕ´Ï´Ù.");
+		System.out.println("dbì™€ ì—°ê²°í•©ë‹ˆë‹¤.");
 	}
 	
-	// Ãß»óÈ­
+	// ì¶”ìƒí™”
 	public abstract void createRepository();
 	
-	// ±¸Çö ¸Ş¼Òµå
+	// êµ¬í˜„ ë©”ì†Œë“œ
 	public void disconnect() {
-		System.out.println("db¿Í ¿¬°áÀ» ÇØÁ¦ÇÕ´Ï´Ù.");
+		System.out.println("dbì™€ ì—°ê²°ì„ í•´ì œí•©ë‹ˆë‹¤.");
 	}
 }

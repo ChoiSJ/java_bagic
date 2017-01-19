@@ -23,12 +23,12 @@ public class Desktop {
 		mouse.wheel();	
 	}
 	
-	// Å¸ÀÔ º¯È¯ÀÌ °¡´ÉÇÑ°¡ ¾Æ´Ñ°¡ instanceof ·Î °Ë»ç
+	// íƒ€ì… ë³€í™˜ì´ ê°€ëŠ¥í•œê°€ ì•„ë‹Œê°€ instanceof ë¡œ ê²€ì‚¬
 	public void cleaning() {
-		if (mouse instanceof Cleanable) {	// ÇØ´ç Å¸ÀÔÀÌ Cleanable À» °¡Áö°í ÀÖ´Â°¡ °Ë»ç
+		if (mouse instanceof Cleanable) {	// í•´ë‹¹ íƒ€ì…ì´ Cleanable ì„ ê°€ì§€ê³  ìˆëŠ”ê°€ ê²€ì‚¬
 			((Cleanable) mouse).clean();
 		} else {
-			System.out.println("Ã»¼Ò±â´ÉÀ» Áö¿øÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("ì²­ì†Œê¸°ëŠ¥ì„ ì§€ì›í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 	}
 }

@@ -4,28 +4,28 @@ import java.util.regex.Pattern;
 public class Quizz4 {
 	public static void main(String[] args) {
 	
-		// ¾ÆÀÌµğ¸¦ ÀÔ·Â¹Ş¾Æ¼­ ¿Ã¹Ù¸¥ ¾ÆÀÌµğÀÎÁö °Ë»çÇÏ±â
-		// ¾ÆÀÌµğ ÀÛ¼º ±ÔÄ¢(±æÀÌ°¡ 6±ÛÀÚ ÀÌ»ó, ¿µ¾î¼Ò¹®ÀÚ)
+		// ì•„ì´ë””ë¥¼ ì…ë ¥ë°›ì•„ì„œ ì˜¬ë°”ë¥¸ ì•„ì´ë””ì¸ì§€ ê²€ì‚¬í•˜ê¸°
+		// ì•„ì´ë”” ì‘ì„± ê·œì¹™(ê¸¸ì´ê°€ 6ê¸€ì ì´ìƒ, ì˜ì–´ì†Œë¬¸ì)
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("¾ÆÀÌµğ¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.print("ì•„ì´ë””ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 		String userId = sc.next();
 		int[] idNumber = new int[userId.length()];
 
-		// °Ë»çÇÏ±â
-		// ¾ÆÀÌµğ°¡ 6±ÛÀÚ ÀÌ»óÀÎÁö °Ë»çÇÏ±â
+		// ê²€ì‚¬í•˜ê¸°
+		// ì•„ì´ë””ê°€ 6ê¸€ì ì´ìƒì¸ì§€ ê²€ì‚¬í•˜ê¸°
 		if (userId.length() < 6) {
-			System.out.println("¾ÆÀÌµğ´Â 6±ÛÀÚ ÀÌ»óÀÔ´Ï´Ù.");
+			System.out.println("ì•„ì´ë””ëŠ” 6ê¸€ì ì´ìƒì…ë‹ˆë‹¤.");
 			return;
 		}
 
-		// ¾ÆÀÌµğ°¡ ¿µ¾î ¼Ò¹®ÀÚ·Î¸¸ ±¸¼ºµÇ¾ú´ÂÁö °Ë»çÇÏ±â <--- boolean
-		boolean invalid = false;		// <--- Flag º¯¼ö: ·ÎÁ÷ ¼öÇàÀÇ Æ¯Á¤ »óÅÂ¸¦ ÀúÀåÇÏ´Â º¯¼ö
+		// ì•„ì´ë””ê°€ ì˜ì–´ ì†Œë¬¸ìë¡œë§Œ êµ¬ì„±ë˜ì—ˆëŠ”ì§€ ê²€ì‚¬í•˜ê¸° <--- boolean
+		boolean invalid = false;		// <--- Flag ë³€ìˆ˜: ë¡œì§ ìˆ˜í–‰ì˜ íŠ¹ì • ìƒíƒœë¥¼ ì €ì¥í•˜ëŠ” ë³€ìˆ˜
 		for (int i=0; i<userId.length(); i++) {
 			int id = userId.charAt(i);
 			if (id<97 || id>122) {
-				System.out.println("¿µ¾î¼Ò¹®ÀÚ·Î ÀÔ·ÂÇÏ¼¼¿ä.");
+				System.out.println("ì˜ì–´ì†Œë¬¸ìë¡œ ì…ë ¥í•˜ì„¸ìš”.");
 				break;
 			} else {
 				invalid = true;
@@ -43,7 +43,7 @@ public class Quizz4 {
 		valid = Pattern.matches(regExp, userId);
 
 		if (!valid) {
-			System.out.println("À¯È¿ÇÏÁö ¾ÊÀ½.");
+			System.out.println("ìœ íš¨í•˜ì§€ ì•ŠìŒ.");
 		}
 	}
 }

@@ -1,7 +1,7 @@
 public class Demo8 {
 	public static void main(String[] args) {
-		// ¼öµ¿ Çüº¯È¯
-		int a = (int) 3.14;	// ÀÚ·áÀÇ ¼Õ½ÇÀÌ ¹ßÇàÇÏÁö¸¸ Á¤¼ö·Î º¯È¯ÇØ¶ó.
+		// ìˆ˜ë™ í˜•ë³€í™˜
+		int a = (int) 3.14;	// ìë£Œì˜ ì†ì‹¤ì´ ë°œí–‰í•˜ì§€ë§Œ ì •ìˆ˜ë¡œ ë³€í™˜í•´ë¼.
 		System.out.println(a);
 
 		double b = (double) 10;
@@ -13,7 +13,7 @@ public class Demo8 {
 		System.out.println((char) 65);
 		System.out.println((char) 66);
 		
-		// ¿À·ù´Ù.
+		// ì˜¤ë¥˜ë‹¤.
 		//int x = (int) "123";
 	}
 }

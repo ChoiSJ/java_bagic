@@ -1,16 +1,16 @@
 public class Demo1 {
 	public static void main(String[] args) {
-		// ³í¸® ¿¬»êÀÚ
+		// ë…¼ë¦¬ ì—°ì‚°ì
 		int x = 10;
 		int y = 10;
 		
-		// &&´Â ÁÂº¯ÀÌ false ÀÌ¸é ¿ìº¯À» Æò°¡ÇÏÁö ¾Ê°í ¹Ù·Î ÀüÃ¼ °á°ú¸¦ false ·Î ÆÇÁ¤.
+		// &&ëŠ” ì¢Œë³€ì´ false ì´ë©´ ìš°ë³€ì„ í‰ê°€í•˜ì§€ ì•Šê³  ë°”ë¡œ ì „ì²´ ê²°ê³¼ë¥¼ false ë¡œ íŒì •.
 		boolean result1 = false && x++ > 10;
-		// &´Â ÁÂº¯ÀÌ false ¿©µµ ¿ìº¯À» Æò°¡ÇÑ´Ù.
+		// &ëŠ” ì¢Œë³€ì´ false ì—¬ë„ ìš°ë³€ì„ í‰ê°€í•œë‹¤.
 		boolean result2 = false & y++ > 10;
 		System.out.println(result1);
 		System.out.println(result2);
-		System.out.println("x: " + x);	// x´Â 10ÀÌ Ãâ·ÂµÊ
-		System.out.println("x: " + y);	// y´Â 11ÀÌ Ãâ·ÂµÊ
+		System.out.println("x: " + x);	// xëŠ” 10ì´ ì¶œë ¥ë¨
+		System.out.println("x: " + y);	// yëŠ” 11ì´ ì¶œë ¥ë¨
 	}
 }

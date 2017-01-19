@@ -1,11 +1,11 @@
 public class AccountApp {
 	public static void main(String[] args) {
-		Account a = new Account("È«±æµ¿", "111-22-3333", 1234, 1000000);
+		Account a = new Account("í™ê¸¸ë™", "111-22-3333", 1234, 1000000);
 
-		// System.out.println("¿¹±İÁÖ: " + a.owner);	// owner¿¡ Á¢±ÙÇÒ ¼ö ¾øÀ½;
+		// System.out.println("ì˜ˆê¸ˆì£¼: " + a.owner);	// ownerì— ì ‘ê·¼í•  ìˆ˜ ì—†ìŒ;
 
 		a.info();
-		System.out.println("¿¹±İÁÖ: " + a.getOwner());
-		System.out.println("¿¹±İÁÖ: " + a.getPassword());
+		System.out.println("ì˜ˆê¸ˆì£¼: " + a.getOwner());
+		System.out.println("ì˜ˆê¸ˆì£¼: " + a.getPassword());
 	}
 }

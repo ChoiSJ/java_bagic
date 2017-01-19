@@ -1,22 +1,22 @@
 public class ArrayDemo2 {
 	public static void main(String[] args) {
-		// ¹è¿­ »ý¼ºÇÏ±â
-		// int[] arr1 = {1, 2, 3, 6, 7};	<-- °ªÀ» °¡Áö°í ÀÖ´Â ¹è¿­ »ý¼º
-		// int[] arr2 = new int[3];			<-- °ª 3°³¸¦ ´ãÀ» ¼ö ÀÖ´Â ¹è¿­ »ý¼º
-		//									<-- Á¤¼öÇü ¹è¿­ÀÇ ±âº»°ª 0À¸·Î Ã¤¿öÁ® ÀÖ´Ù.
-		// Á¤¼öÇüÀº 0, ½Ç¼öÇüÀº 0.0, ¹®ÀÚÇüÀº \u0000, ºÒ¸°ÇüÀº false, ÂüÁ¶ÇüÀº null
+		// ë°°ì—´ ìƒì„±í•˜ê¸°
+		// int[] arr1 = {1, 2, 3, 6, 7};	<-- ê°’ì„ ê°€ì§€ê³  ìžˆëŠ” ë°°ì—´ ìƒì„±
+		// int[] arr2 = new int[3];			<-- ê°’ 3ê°œë¥¼ ë‹´ì„ ìˆ˜ ìžˆëŠ” ë°°ì—´ ìƒì„±
+		//									<-- ì •ìˆ˜í˜• ë°°ì—´ì˜ ê¸°ë³¸ê°’ 0ìœ¼ë¡œ ì±„ì›Œì ¸ ìžˆë‹¤.
+		// ì •ìˆ˜í˜•ì€ 0, ì‹¤ìˆ˜í˜•ì€ 0.0, ë¬¸ìží˜•ì€ \u0000, ë¶ˆë¦°í˜•ì€ false, ì°¸ì¡°í˜•ì€ null
 
 		int[] numbers = new int[3];
-		System.out.println(numbers[0]);		// 0ÀÌ Ãâ·ÂµÈ´Ù.
+		System.out.println(numbers[0]);		// 0ì´ ì¶œë ¥ëœë‹¤.
 		System.out.println(numbers[1]);
 		System.out.println(numbers[2]);
 		//System.out.println(numbers);
 
 		String[] names = new String[3];
-		System.out.println(names[0]);		// nullÀÌ Ãâ·ÂµÈ´Ù.
+		System.out.println(names[0]);		// nullì´ ì¶œë ¥ëœë‹¤.
 		System.out.println(names[1]);
 		System.out.println(names[2]);
-		//System.out.println(names); // ÇØ½ÃÄÚµå: ¸Þ¸ð¸®¿¡ ºÎ¿©µÇ´Â Æ¯º°ÇÑ °ª
+		//System.out.println(names); // í•´ì‹œì½”ë“œ: ë©”ëª¨ë¦¬ì— ë¶€ì—¬ë˜ëŠ” íŠ¹ë³„í•œ ê°’
 
 
 	}

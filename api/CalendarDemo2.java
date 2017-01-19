@@ -9,12 +9,12 @@ public class CalendarDemo2 {
 
 		Calendar cal = Calendar.getInstance();
 		//cal.setTime(date);
-		// ¹Ğ¸®¼¼ÄÁµå°ª¿¡ ÇØ´çÇÏ´Â Calendar ·Î º¯°æµÈ´Ù.
+		// ë°€ë¦¬ì„¸ì»¨ë“œê°’ì— í•´ë‹¹í•˜ëŠ” Calendar ë¡œ ë³€ê²½ëœë‹¤.
 		cal.setTimeInMillis(time);
 
 
 		// Calendar ---> date
-		// Calendar °´Ã¼ÀÇ ³¯Â¥¿¡ ÇØ´çÇÏ´Â Date °´Ã¼°¡ ¹İÈ¯µÈ´Ù.
+		// Calendar ê°ì²´ì˜ ë‚ ì§œì— í•´ë‹¹í•˜ëŠ” Date ê°ì²´ê°€ ë°˜í™˜ëœë‹¤.
 		Date date2 = cal.getTime();
 	}
 }

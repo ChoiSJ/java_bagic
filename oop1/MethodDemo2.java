@@ -1,7 +1,7 @@
 public class MethodDemo2 {
 
 	public static void displayGugudan(int dan) {
-		System.out.println(dan + "´Ü");
+		System.out.println(dan + "ë‹¨");
 		for (int num=1; num<=9; num++) {
 			int result = 0;
 			result = dan*num;

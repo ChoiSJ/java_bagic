@@ -2,13 +2,13 @@ public class ColorPrinter extends Printer {
 	
 	int dpi;
 
-	// ºÎ¸ğÅ¬·¡½º(Printer)ÀÇ print() ¸Ş¼Òµå ÀçÁ¤ÀÇ
+	// ë¶€ëª¨í´ë˜ìŠ¤(Printer)ì˜ print() ë©”ì†Œë“œ ì¬ì •ì˜
 	public void print(String text) {
-		System.out.println("["+text+"]¸¦ ÄÃ·¯·Î ÀÎ¼âÇÕ´Ï´Ù.");
+		System.out.println("["+text+"]ë¥¼ ì»¬ëŸ¬ë¡œ ì¸ì‡„í•©ë‹ˆë‹¤.");
 	}
 	
-	// ColorPrinter°¡ º¸À¯ÇÑ °íÀ¯±â´É
+	// ColorPrinterê°€ ë³´ìœ í•œ ê³ ìœ ê¸°ëŠ¥
 	public void chargeInk() {
-		System.out.println("À×Å©¸¦ ÃæÀüÇÕ´Ï´Ù");
+		System.out.println("ì‰í¬ë¥¼ ì¶©ì „í•©ë‹ˆë‹¤");
 	}
 }

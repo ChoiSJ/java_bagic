@@ -2,8 +2,8 @@ import java.io.*;
 
 public class ProductApp {
 	
-	// »óÇ° Á¤º¸ ÅØ½ºÆ® ÇÑ ÁÙÀ» Àü´Ş¹Ş¾Æ¼­
-	// Àß Àß¶ó¼­ Product ¿¡ ´ã¾Æ¼­ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+	// ìƒí’ˆ ì •ë³´ í…ìŠ¤íŠ¸ í•œ ì¤„ì„ ì „ë‹¬ë°›ì•„ì„œ
+	// ì˜ ì˜ë¼ì„œ Product ì— ë‹´ì•„ì„œ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
 	public static Product parseData(String text) {
 		Product pro = new Product();
 		String[] proArr = text.split(",");
@@ -40,10 +40,10 @@ public class ProductApp {
 
 		for (Product pro : products) {
 			System.out.println("--------------------");
-			System.out.println("»ó Ç° ¸í:" + pro.getName());
-			System.out.println("Á¦ Á¶ »ç:" + pro.getCompany());
-			System.out.println("»ó Ç° °¡:" + pro.getPrice());
-			System.out.println("ÇÒ ÀÎ À²:" + pro.getDiscountRate());
+			System.out.println("ìƒ í’ˆ ëª…:" + pro.getName());
+			System.out.println("ì œ ì¡° ì‚¬:" + pro.getCompany());
+			System.out.println("ìƒ í’ˆ ê°€:" + pro.getPrice());
+			System.out.println("í•  ì¸ ìœ¨:" + pro.getDiscountRate());
 			System.out.println("--------------------");
 		}
 

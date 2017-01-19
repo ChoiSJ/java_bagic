@@ -1,5 +1,5 @@
 public class Display {
-	// Chart ·ù °´Ã¼°¡ ÀúÀåµÉ º¯¼ö
+	// Chart ë¥˜ ê°ì²´ê°€ ì €ì¥ë  ë³€ìˆ˜
 	private Chart chart;
 
 	public Display(Chart chart) {

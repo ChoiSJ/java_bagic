@@ -1,7 +1,7 @@
 public class ProductApp {
 	public static void main(String[] args) {
 		
-		Product p1 = new Product(1, "∏∆∫œ", "æ÷«√", "≥Î∆Æ∫œ", 2000000);
+		Product p1 = new Product(1, "Îß•Î∂Å", "Ïï†Ìîå", "ÎÖ∏Ìä∏Î∂Å", 2000000);
 		
 		p1.displayInfo();
 	}

@@ -8,7 +8,7 @@ public class DateFormatDemo2 {
 		String pattern = "yyyy/MM/dd";
 		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 		
-		// ÁöÁ¤µÈ Çü½ÄÀÇ ÅØ½ºÆ®¸¦ Date °´Ã¼·Î º¯È¯ÇÏ±â
+		// ì§€ì •ëœ í˜•ì‹ì˜ í…ìŠ¤íŠ¸ë¥¼ Date ê°ì²´ë¡œ ë³€í™˜í•˜ê¸°
 		String text = "2016/11/23";
 		Date date = sdf.parse(text);
 		System.out.println(date);

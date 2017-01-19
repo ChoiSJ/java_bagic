@@ -4,18 +4,18 @@ public class IfDemo3 {
 	public static void main(String[] arg) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("»ç¿ë ±â°£À» ÀÔ·ÂÇÏ¼¼¿ä(³â):");
+		System.out.print("ì‚¬ìš© ê¸°ê°„ì„ ì…ë ¥í•˜ì„¸ìš”(ë…„):");
 		int year = sc.nextInt();
-		System.out.print("¿îÇà°Å¸®¸¦ ÀÔ·ÂÇÏ¼¼¿ä(km):");
+		System.out.print("ìš´í–‰ê±°ë¦¬ë¥¼ ì…ë ¥í•˜ì„¸ìš”(km):");
 		int distance = sc.nextInt();
 
-		// »ç¿ë±â°£ÀÌ 5³â ÀÌ»óÀÌ°Å³ª ¿îÇà°Å¸®°¡ 100000km ÀÌ»óÀÌ¸é
-		// À¯»ó¼ö¸®´ë»óÀÌ°í, ±× ¿ÜÀÇ °æ¿ì´Â ¹«»ó¼ö¸®´ë»óÀÔ´Ï´Ù.
+		// ì‚¬ìš©ê¸°ê°„ì´ 5ë…„ ì´ìƒì´ê±°ë‚˜ ìš´í–‰ê±°ë¦¬ê°€ 100000km ì´ìƒì´ë©´
+		// ìœ ìƒìˆ˜ë¦¬ëŒ€ìƒì´ê³ , ê·¸ ì™¸ì˜ ê²½ìš°ëŠ” ë¬´ìƒìˆ˜ë¦¬ëŒ€ìƒì…ë‹ˆë‹¤.
 
 		if (year >= 5 || distance >= 100000) {
-			System.out.println("À¯»ó¼ö¸®´ë»ó ÀÔ´Ï´Ù.");
+			System.out.println("ìœ ìƒìˆ˜ë¦¬ëŒ€ìƒ ì…ë‹ˆë‹¤.");
 		} else {
-			System.out.println("¹«»ó¼ö¸®´ë»ó ÀÔ´Ï´Ù.");
+			System.out.println("ë¬´ìƒìˆ˜ë¦¬ëŒ€ìƒ ì…ë‹ˆë‹¤.");
 		}
 	}
 }

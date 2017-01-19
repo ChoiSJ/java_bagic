@@ -1,16 +1,16 @@
 public class Morning implements Car {
 	
 	public void on() {
-		System.out.println("½Ãµ¿ ÄÑ±â");
+		System.out.println("ì‹œë™ ì¼œê¸°");
 	}
 	public void off() {
-		System.out.println("½Ãµ¿ ²ô±â");
+		System.out.println("ì‹œë™ ë„ê¸°");
 	}
 	public void run() {
-		System.out.println("ÁÖÇàÇÏ±â");
+		System.out.println("ì£¼í–‰í•˜ê¸°");
 	}
 	public void stop() {
-		System.out.println("¸ØÃß±â");
+		System.out.println("ë©ˆì¶”ê¸°");
 	}
 	public void audio() {}
 	public void navi() {}

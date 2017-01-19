@@ -3,12 +3,12 @@ public class ArrayDemo3 {
 		
 		int[] numbers = new int[3];
 		
-		// ¹è¿­ÀÇ ÁöÁ¤µÈ À§Ä¡¿¡ °ªÀ» ÀúÀåÇÏ±â
-		// numbers[ÀÎµ¦½º] = °ª;
+		// ë°°ì—´ì˜ ì§€ì •ëœ ìœ„ì¹˜ì— ê°’ì„ ì €ì¥í•˜ê¸°
+		// numbers[ì¸ë±ìŠ¤] = ê°’;
 		numbers[0] = 12;
 		numbers[1] = 23;
 		numbers[2] = 56;
-		//numbers[3] = 100;		// ¿À·ù ¹ß»ı - ArrayIndexOutOfBoundsException
+		//numbers[3] = 100;		// ì˜¤ë¥˜ ë°œìƒ - ArrayIndexOutOfBoundsException
 
 		
 		for (int a : numbers) {

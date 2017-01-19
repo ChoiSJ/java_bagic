@@ -7,20 +7,20 @@ public class PrinterApp2 {
 		Printer p3 = new PhotoPrinter();
 		
 		/*
-		¾Æ·¡ÀÇ ¼öÇà¹®Àº ¸ðµÎ print(String text)¸¦ È£ÃâÇÑ´Ù.
-		ÇÏÁö¸¸, ½ÇÇà°á°ú´Â °¢°¢ ´Ù¸£°Ô ¹ßÇöµÈ´Ù.
+		ì•„ëž˜ì˜ ìˆ˜í–‰ë¬¸ì€ ëª¨ë‘ print(String text)ë¥¼ í˜¸ì¶œí•œë‹¤.
+		í•˜ì§€ë§Œ, ì‹¤í–‰ê²°ê³¼ëŠ” ê°ê° ë‹¤ë¥´ê²Œ ë°œí˜„ëœë‹¤.
 
-		print(String text)¸¦ ½ÇÇàÇßÁö¸¸,
-		½ÇÁ¦·Î »ý¼ºÇÑ °´Ã¼¿¡ PrinterÀÇ print(Strint text) ¸Þ¼Òµå¸¦
-		ÀçÁ¤ÀÇÇÑ ¸Þ¼Òµå°¡ Á¸ÀçÇÏ¸é, PrinterÀÇ print(Strint text) ¸Þ¼Òµå ´ë½Å
-		ÀçÁ¤ÀÇµÈ ±× ¸Þ¼Òµå°¡ ½ÇÇàµÈ´Ù.
+		print(String text)ë¥¼ ì‹¤í–‰í–ˆì§€ë§Œ,
+		ì‹¤ì œë¡œ ìƒì„±í•œ ê°ì²´ì— Printerì˜ print(Strint text) ë©”ì†Œë“œë¥¼
+		ìž¬ì •ì˜í•œ ë©”ì†Œë“œê°€ ì¡´ìž¬í•˜ë©´, Printerì˜ print(Strint text) ë©”ì†Œë“œ ëŒ€ì‹ 
+		ìž¬ì •ì˜ëœ ê·¸ ë©”ì†Œë“œê°€ ì‹¤í–‰ëœë‹¤.
 
-		µû¶ó¼­, print(String text)¶ó´Â ÀÏ°üµÈ ÀÌ¸§(»ç¿ë¹ý)À¸·Î
-		(½ÉÁö¾î ±× °´Ã¼¸¦ ÂüÁ¶ÇÏÁö ¾Ê°í ÀÖ´õ¶óµµ..)
-		½ÇÁ¦ »ý¼ºµÈ °´Ã¼ÀÇ ÀçÁ¤ÀÇµÈ ±â´ÉÀ» ¼öÇà½ÃÅ³ ¼ö ÀÖ´Ù.
+		ë”°ë¼ì„œ, print(String text)ë¼ëŠ” ì¼ê´€ëœ ì´ë¦„(ì‚¬ìš©ë²•)ìœ¼ë¡œ
+		(ì‹¬ì§€ì–´ ê·¸ ê°ì²´ë¥¼ ì°¸ì¡°í•˜ì§€ ì•Šê³  ìžˆë”ë¼ë„..)
+		ì‹¤ì œ ìƒì„±ëœ ê°ì²´ì˜ ìž¬ì •ì˜ëœ ê¸°ëŠ¥ì„ ìˆ˜í–‰ì‹œí‚¬ ìˆ˜ ìžˆë‹¤.
 		*/
-		p1.print("°øÁö»çÇ×...");
-		p2.print("¸ÅÃâÇöÈ²...");
-		p3.print("¿©Çà»çÁø...");
+		p1.print("ê³µì§€ì‚¬í•­...");
+		p2.print("ë§¤ì¶œí˜„í™©...");
+		p3.print("ì—¬í–‰ì‚¬ì§„...");
 	}
 }

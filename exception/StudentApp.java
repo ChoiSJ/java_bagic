@@ -13,10 +13,10 @@ public class StudentApp {
 
 		Student stu1 = new Student(stuArr[0], stuArr[1], kor, eng, math);
 
-		System.out.println("ÀÌ    ¸§:" + stu1.getName());
-		System.out.println("ÇĞ    ³â:" + stu1.getGrade());
-		System.out.println("±¹¾îÁ¡¼ö:" + stu1.getKor());
-		System.out.println("¿µ¾îÁ¡¼ö:" + stu1.getEng());
-		System.out.println("¼öÇĞÁ¡¼ö:" + stu1.getMath());
+		System.out.println("ì´    ë¦„:" + stu1.getName());
+		System.out.println("í•™    ë…„:" + stu1.getGrade());
+		System.out.println("êµ­ì–´ì ìˆ˜:" + stu1.getKor());
+		System.out.println("ì˜ì–´ì ìˆ˜:" + stu1.getEng());
+		System.out.println("ìˆ˜í•™ì ìˆ˜:" + stu1.getMath());
 	}
 }

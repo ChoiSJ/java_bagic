@@ -4,20 +4,20 @@ import java.util.Collections;
 public class ArrayListDemo6 {
 
 	public static void main(String[] args) {
-		// »óÇ°¸íÀ» ÀúÀåÇÏ´Â ArrayList ¸¸µé±â
+		// ìƒí’ˆëª…ì„ ì €ì¥í•˜ëŠ” ArrayList ë§Œë“¤ê¸°
 
 		ArrayList<String> productNames = new ArrayList<String>();
 
-		productNames.add("¿¬ÇÊ");
-		productNames.add("»öÁ¾ÀÌ");
-		productNames.add("°¡À§");
-		productNames.add("½ÎÀÎÆæ");
-		productNames.add("°øÃ¥");
-		productNames.add("Ã¥¹ŞÄ§");
-		productNames.add("»ö¿¬ÇÊ");
+		productNames.add("ì—°í•„");
+		productNames.add("ìƒ‰ì¢…ì´");
+		productNames.add("ê°€ìœ„");
+		productNames.add("ì‹¸ì¸íœ");
+		productNames.add("ê³µì±…");
+		productNames.add("ì±…ë°›ì¹¨");
+		productNames.add("ìƒ‰ì—°í•„");
 		
 		/*
-			Collections ´Â List, Set °ü·Ã °´Ã¼¸¦ ´Ù·ç´Â À¯¿ëÇÑ Á¤Àû ¸Ş¼Òµå¸¦ °¡Áö°í ÀÖ´Â Å¬·¡½º´Ù.
+			Collections ëŠ” List, Set ê´€ë ¨ ê°ì²´ë¥¼ ë‹¤ë£¨ëŠ” ìœ ìš©í•œ ì •ì  ë©”ì†Œë“œë¥¼ ê°€ì§€ê³  ìˆëŠ” í´ë˜ìŠ¤ë‹¤.
 		*/
 		Collections.sort(productNames);
 

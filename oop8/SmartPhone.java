@@ -5,7 +5,7 @@ public class SmartPhone extends Phone {
 	public SmartPhone() {}
 
 	public SmartPhone(String telNumber, String company, String ip) {
-		super(telNumber, company);	// ºÎ¸ğÀÇ »ı¼ºÀÚ È£ÃâÇÏ±â Phone(String, String) »ı¼ºÀÚ
+		super(telNumber, company);	// ë¶€ëª¨ì˜ ìƒì„±ì í˜¸ì¶œí•˜ê¸° Phone(String, String) ìƒì„±ì
 		this.ip = ip;
 	}
 
@@ -17,9 +17,9 @@ public class SmartPhone extends Phone {
 	}
 
 	public void displayInfo() {
-		//System.out.println("ÀüÈ­¹øÈ£:" + getTelNumber());
-		//System.out.println("Åë ½Å »ç:" + getCompany());
+		//System.out.println("ì „í™”ë²ˆí˜¸:" + getTelNumber());
+		//System.out.println("í†µ ì‹  ì‚¬:" + getCompany());
 		super.displayInfo();
-		System.out.println("¾Æ ÀÌ ÇÇ:" + ip);
+		System.out.println("ì•„ ì´ í”¼:" + ip);
 	}
 }

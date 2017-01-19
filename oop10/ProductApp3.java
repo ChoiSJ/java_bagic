@@ -4,11 +4,11 @@ public class ProductApp3 {
 	public static void main(String[] args) {
 		
 		Product[] cart = new Product[5];
-		cart[0] = new Product("º¼Ææ", 3000);
-		cart[1] = new Product("¾×ÀÚ", 16000);
-		cart[2] = new Product("¿¬ÇÊ", 1000);
-		cart[3] = new Product("»şÇÁ", 25000);
-		cart[4] = new Product("Áö¿ì°³", 500);
+		cart[0] = new Product("ë³¼íœ", 3000);
+		cart[1] = new Product("ì•¡ì", 16000);
+		cart[2] = new Product("ì—°í•„", 1000);
+		cart[3] = new Product("ìƒ¤í”„", 25000);
+		cart[4] = new Product("ì§€ìš°ê°œ", 500);
 
 		System.out.println(Arrays.toString(cart));
 	}

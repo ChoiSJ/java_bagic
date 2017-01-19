@@ -6,22 +6,22 @@ import java.io.IOException;
 public class ExceptionDemo1 {
 	public static void main(String[] args) {
 		try {
-			// FileNotFoundException À» ´øÁö´Â »ı¼ºÀÚ
+			// FileNotFoundException ì„ ë˜ì§€ëŠ” ìƒì„±ì
 			BufferedReader reader = new BufferedReader(new FileReader("fsn.txt"));
 			
-			// IOException À» ´øÁö´Â ¸Ş¼Òµå
+			// IOException ì„ ë˜ì§€ëŠ” ë©”ì†Œë“œ
 			String text = reader.readLine();
-			System.out.println("ÆÄÀÏ³»¿ë: " + text);
+			System.out.println("íŒŒì¼ë‚´ìš©: " + text);
 		} catch(FileNotFoundException fnfe) {
-			System.out.println("¿¹¿Ü¹ß»ı!!!");
-			System.out.println("¿¹¿Ü°´Ã¼: " + fnfe);
-			fnfe.printStackTrace();	// ¿À·ù¸¦ ÃßÀûÇÒ ¼ö ÀÖ´Â Á¤º¸¸¦ È­¸é¿¡ Ãâ·ÂÇÏ´Â ¸Ş¼Òµå
+			System.out.println("ì˜ˆì™¸ë°œìƒ!!!");
+			System.out.println("ì˜ˆì™¸ê°ì²´: " + fnfe);
+			fnfe.printStackTrace();	// ì˜¤ë¥˜ë¥¼ ì¶”ì í•  ìˆ˜ ìˆëŠ” ì •ë³´ë¥¼ í™”ë©´ì— ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œ
 
-			// ¿¹¿Ü Ã³¸® ÄÚµå ÀÛ¼º
-			// »ç¿ëÀÚ Ä£È­ÀûÀÎ ¿¡·¯ ¸Ş¼¼Áö¸¦ Ç¥½ÃÇÑ´Ù.
-			System.out.println("ÆÄÀÏÀ» Ã£À» ¼ö ¾ø½À´Ï´Ù. °æ·Î ¹× ÆÄÀÏ¸íÀ» È®ÀÎÇÏ¼¼¿ä.");
+			// ì˜ˆì™¸ ì²˜ë¦¬ ì½”ë“œ ì‘ì„±
+			// ì‚¬ìš©ì ì¹œí™”ì ì¸ ì—ëŸ¬ ë©”ì„¸ì§€ë¥¼ í‘œì‹œí•œë‹¤.
+			System.out.println("íŒŒì¼ì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ê²½ë¡œ ë° íŒŒì¼ëª…ì„ í™•ì¸í•˜ì„¸ìš”.");
 		} catch(IOException ioe) {
-			System.out.println("ÆÄÀÏÀ» ÀĞ¾î¿À´Â µµÁß ¿À·ù°¡ ¹ß»ıÇß½À´Ï´Ù. Á¢¼Ó»óÅÂ¸¦ È®ÀÎÇÏ¼¼¿ä.");
+			System.out.println("íŒŒì¼ì„ ì½ì–´ì˜¤ëŠ” ë„ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤. ì ‘ì†ìƒíƒœë¥¼ í™•ì¸í•˜ì„¸ìš”.");
 		}
 	}
 }

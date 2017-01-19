@@ -12,7 +12,7 @@ public class CalendarDemo {
 		int month = now.get(Calendar.MONTH) + 1;
 		int day = now.get(Calendar.DAY_OF_MONTH);
 
-		System.out.printf("%d³â %d¿ù %dÀÏ\n", year, month, day);
+		System.out.printf("%dë…„ %dì›” %dì¼\n", year, month, day);
 
 		Calendar birth = Calendar.getInstance();
 		birth.set(1986, 10, 6);
@@ -20,11 +20,11 @@ public class CalendarDemo {
 		//System.out.println(birth);
 
 		long lifeTime = (nowTime - birthTime)/1000;
-		System.out.println("ÃÊ:" + lifeTime);
-		System.out.println("ºĞ:" + lifeTime/60);
-		System.out.println("½Ã°£:" + lifeTime/(60*60));
-		System.out.println("ÀÏ:" + lifeTime/(60*60*24));
-		System.out.println("³â:" + (double)lifeTime/(60*60*24*365));
+		System.out.println("ì´ˆ:" + lifeTime);
+		System.out.println("ë¶„:" + lifeTime/60);
+		System.out.println("ì‹œê°„:" + lifeTime/(60*60));
+		System.out.println("ì¼:" + lifeTime/(60*60*24));
+		System.out.println("ë…„:" + (double)lifeTime/(60*60*24*365));
 
 		Date date = birth.getTime();
 		System.out.println(date);

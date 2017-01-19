@@ -7,13 +7,13 @@ public class ArrayListDemo7 {
 	
 		ArrayList<Product> cart = new ArrayList<Product>();
 		
-		cart.add(new Product(23, "¿¬ÇÊ"));
-		cart.add(new Product(12, "°øÃ¥"));
-		cart.add(new Product(17, "»ö¿¬ÇÊ"));
-		cart.add(new Product(16, "Ã¥¹ŞÄ§"));
-		cart.add(new Product(11, "Áö¿ì°³"));
+		cart.add(new Product(23, "ì—°í•„"));
+		cart.add(new Product(12, "ê³µì±…"));
+		cart.add(new Product(17, "ìƒ‰ì—°í•„"));
+		cart.add(new Product(16, "ì±…ë°›ì¹¨"));
+		cart.add(new Product(11, "ì§€ìš°ê°œ"));
 
-		// »óÇ°¹øÈ£·Î Á¤·ÄÇÏ±â
+		// ìƒí’ˆë²ˆí˜¸ë¡œ ì •ë ¬í•˜ê¸°
 
 		Collections.sort(cart);
 		

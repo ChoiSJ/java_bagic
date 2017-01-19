@@ -2,35 +2,35 @@ import java.util.Scanner;
 
 public class ContactApp2 {
 	public static void main(String[] args) {
-		// ¿¬¶ôÃ³ Á¤º¸¸¦ ÀÔ·Â¹Ş´Â È­¸é °ü·Ã Å¬·¡½º
-		// »ç¿ëÀÚÀÇ ÀÔ·ÂÀ» ÀĞ¾î¿À´Â Scanner °´Ã¼ »ı¼ºÇÏ±â
+		// ì—°ë½ì²˜ ì •ë³´ë¥¼ ì…ë ¥ë°›ëŠ” í™”ë©´ ê´€ë ¨ í´ë˜ìŠ¤
+		// ì‚¬ìš©ìì˜ ì…ë ¥ì„ ì½ì–´ì˜¤ëŠ” Scanner ê°ì²´ ìƒì„±í•˜ê¸°
 		Scanner sc = new Scanner(System.in);
 	
 		Contact[] contacts = new Contact[100];
 		ContactMgr mgr = new ContactMgr();
 
 		for (;;) {
-			System.out.println("1:µî·Ï	2:Á¶È¸	0:Á¾·á");
-			System.out.print("¸Ş´º ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+			System.out.println("1:ë“±ë¡	2:ì¡°íšŒ	0:ì¢…ë£Œ");
+			System.out.print("ë©”ë‰´ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 			int menuNo = sc.nextInt();
 
 			if (menuNo == 1) {
-				// ¹è¿­¿¡ µî·ÏÇÏ±â
-				// mgrÀÇ addContact(Contact contact) ¸Ş¼Òµå¿¡ µî·ÏÇÒ Contact °´Ã¼ Àü´Ş
+				// ë°°ì—´ì— ë“±ë¡í•˜ê¸°
+				// mgrì˜ addContact(Contact contact) ë©”ì†Œë“œì— ë“±ë¡í•  Contact ê°ì²´ ì „ë‹¬
 				Contact con = new Contact();
-				System.out.print("¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+				System.out.print("ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 				con.setNo(sc.nextInt());
-				System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä:");
+				System.out.print("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”:");
 				con.setName(sc.next());
-				System.out.print("ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+				System.out.print("ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 				con.setPhone(sc.next());
-				System.out.print("ÀÌ¸ŞÀÏÀ» ÀÔ·ÂÇÏ¼¼¿ä:");
+				System.out.print("ì´ë©”ì¼ì„ ì…ë ¥í•˜ì„¸ìš”:");
 				con.setEmail(sc.next());
 				mgr.addContact(con);
 
 			} else if (menuNo == 2) {
-				// ¹è¿­¿¡ ÀúÀåµÈ ¸ğµç ¿¬¶ôÃ³ Á¤º¸ Ç¥½ÃÇÏ±â
-				// mgrÀÇ displayContact()¸¦ ½ÇÇà½ÃÅ°±â
+				// ë°°ì—´ì— ì €ì¥ëœ ëª¨ë“  ì—°ë½ì²˜ ì •ë³´ í‘œì‹œí•˜ê¸°
+				// mgrì˜ displayContact()ë¥¼ ì‹¤í–‰ì‹œí‚¤ê¸°
 				mgr.displayContact();
 			} else if (menuNo == 0) {
 				break;

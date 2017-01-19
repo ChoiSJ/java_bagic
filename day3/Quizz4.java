@@ -2,56 +2,56 @@ import java.util.Scanner;
 
 public class Quizz4 {
 	public static void main(String[] args) {
-		// ÀÓÀÇÀÇ µÎ ÀÚ¸® ¼ıÀÚ¸¦ ÀÔ·Â¹Ş¾Æ¼­ ±× ¼ıÀÚ¿¡ ÇØ´çÇÏ´Â ÇÑ±Û·Î º¯È¯ÇÏ±â
-		// ¿¹> 23 -> ÀÌ½Ê»ï
+		// ì„ì˜ì˜ ë‘ ìë¦¬ ìˆ«ìë¥¼ ì…ë ¥ë°›ì•„ì„œ ê·¸ ìˆ«ìì— í•´ë‹¹í•˜ëŠ” í•œê¸€ë¡œ ë³€í™˜í•˜ê¸°
+		// ì˜ˆ> 23 -> ì´ì‹­ì‚¼
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("¼ıÀÚÀ» ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.print("ìˆ«ìì„ ì…ë ¥í•˜ì„¸ìš”:");
 		int number = sc.nextInt();
 		int zyu = number/10;
 		int iti = number - zyu*10;
 		String hangul = "";
 		
 		if (zyu == 1) {
-			hangul = "½Ê";
+			hangul = "ì‹­";
 		} else if (zyu == 2) {
-			hangul = "ÀÌ½Ê";
+			hangul = "ì´ì‹­";
 		} else if (zyu == 3) {
-			hangul = "»ï½Ê";
+			hangul = "ì‚¼ì‹­";
 		} else if (zyu == 4) {
-			hangul = "»ç½Ê";
+			hangul = "ì‚¬ì‹­";
 		} else if (zyu == 5) {
-			hangul = "¿À½Ê";
+			hangul = "ì˜¤ì‹­";
 		} else if (zyu == 6) {
-			hangul = "À°½Ê";
+			hangul = "ìœ¡ì‹­";
 		} else if (zyu == 7) {
-			hangul = "Ä¥½Ê";
+			hangul = "ì¹ ì‹­";
 		} else if (zyu == 8) {
-			hangul = "ÆÈ½Ê";
+			hangul = "íŒ”ì‹­";
 		} else if (zyu == 9) {
-			hangul = "±¸½Ê";
+			hangul = "êµ¬ì‹­";
 		}
 
 		if (iti == 1) {
-			hangul += "ÀÏ";
+			hangul += "ì¼";
 		} else if (iti == 2) {
-			hangul += "ÀÌ";
+			hangul += "ì´";
 		} else if (iti == 3) {
-			hangul += "»ï";
+			hangul += "ì‚¼";
 		} else if (iti == 4) {
-			hangul += "»ç";
+			hangul += "ì‚¬";
 		} else if (iti == 5) {
-			hangul += "¿À";
+			hangul += "ì˜¤";
 		} else if (iti == 6) {
-			hangul += "À°";
+			hangul += "ìœ¡";
 		} else if (iti == 7) {
-			hangul += "Ä¥";
+			hangul += "ì¹ ";
 		} else if (iti == 8) {
-			hangul += "ÆÈ";
+			hangul += "íŒ”";
 		} else if (iti == 9) {
-			hangul += "±¸";
+			hangul += "êµ¬";
 		}
 		
-		System.out.println("¼ıÀÚ ÇÑ±¹¾î Ç¥±â(µÎÀÚ¸®): " + hangul);
+		System.out.println("ìˆ«ì í•œêµ­ì–´ í‘œê¸°(ë‘ìë¦¬): " + hangul);
 	}
 }

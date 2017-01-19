@@ -25,10 +25,10 @@ public class StudentApp2 {
 			stu[i] = parse(reader.readLine());
 		}
 
-		System.out.println("ÀÌ¸§ \tÇĞ³â \t±¹¾î \t¿µ¾î \t¼öÇĞ \tÃÑÁ¡ \tÆò±Õ");
+		System.out.println("ì´ë¦„ \tí•™ë…„ \têµ­ì–´ \tì˜ì–´ \tìˆ˜í•™ \tì´ì  \tí‰ê· ");
 		
 		for (Student s : stu) {
-			System.out.printf("%s \t%s \t%dÁ¡ \t%dÁ¡ \t%dÁ¡ \t%dÁ¡ \t%sÁ¡\n", 
+			System.out.printf("%s \t%s \t%dì  \t%dì  \t%dì  \t%dì  \t%sì \n", 
 							s.getName(), s.getGrade(), s.getKor(), s.getEng(), s.getMath(), s.getTotal(), df.format(s.getAvg()));
 		}
 		

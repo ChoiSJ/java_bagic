@@ -2,28 +2,28 @@ public class MemberServiceApp {
 	public static void main(String[] args) {
 		
 		/*
-			ÀÌ¸§:		"È«±æµ¿"
-			¾ÆÀÌµğ:		"hong"
-			ºñ¹Ğ¹øÈ£:	"1234"
-			³ªÀÌ:		"30"
-			Á¤º¸¸¦ °¡Áø Member °´Ã¼¸¦ MemberService °´Ã¼ »ı¼ºÇÏ±â
+			ì´ë¦„:		"í™ê¸¸ë™"
+			ì•„ì´ë””:		"hong"
+			ë¹„ë°€ë²ˆí˜¸:	"1234"
+			ë‚˜ì´:		"30"
+			ì •ë³´ë¥¼ ê°€ì§„ Member ê°ì²´ë¥¼ MemberService ê°ì²´ ìƒì„±í•˜ê¸°
 		*/
 
 		Member member = new Member();
-		member.setName("È«±æµ¿");
+		member.setName("í™ê¸¸ë™");
 		member.setId("hong");
 		member.setPassword("1234");
 		member.setAge(30);
 		MemberService mem = new MemberService(member);
 		
-		// MemberService ¿¡ Á¤ÀÇµÈ login ±â´É »ç¿ëÇØº¸±â
+		// MemberService ì— ì •ì˜ëœ login ê¸°ëŠ¥ ì‚¬ìš©í•´ë³´ê¸°
 		mem.login("hong", "1234");
 		System.out.println(mem.isAuth());
 
 		mem.logout();
 		System.out.println(mem.isAuth());
 
-		// Member °´Ã¼¸¦ ºÒ·¯¿Í ÇÊµå°ªÀ» ÀÔ·ÂÇÏ°í, ±× °´Ã¼¸¦ ±â´ÉÀÌ Á¤ÀÇµÈ Å¬·¡½º MemberService ·Î º¸³½´Ù.
-		// ±â´É Å¬·¡½º·Î °ªÀ» º¸³» ±â´É Å¬·¡½ºÀÇ ¸Ş¼Òµå¸¦ ÀÌ¿ëÇØ °ªÀ» Ã³¸®ÇÑ´Ù.
+		// Member ê°ì²´ë¥¼ ë¶ˆëŸ¬ì™€ í•„ë“œê°’ì„ ì…ë ¥í•˜ê³ , ê·¸ ê°ì²´ë¥¼ ê¸°ëŠ¥ì´ ì •ì˜ëœ í´ë˜ìŠ¤ MemberService ë¡œ ë³´ë‚¸ë‹¤.
+		// ê¸°ëŠ¥ í´ë˜ìŠ¤ë¡œ ê°’ì„ ë³´ë‚´ ê¸°ëŠ¥ í´ë˜ìŠ¤ì˜ ë©”ì†Œë“œë¥¼ ì´ìš©í•´ ê°’ì„ ì²˜ë¦¬í•œë‹¤.
 	}
 }

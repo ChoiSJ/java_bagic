@@ -3,26 +3,26 @@ public class Sales extends Employee {
 	int result;
 	int goal;
 
-	// ¿µ¾÷¿¡ ¸Â°Ô print() ¸Ş¼Òµå Á¤ÀÇÇÏ±â
+	// ì˜ì—…ì— ë§ê²Œ print() ë©”ì†Œë“œ ì •ì˜í•˜ê¸°
 
 	public void print() {
-		System.out.println("»ç¿ø¹øÈ£:" + no);
-		System.out.println("ÀÌ    ¸§:" + name);
-		System.out.println("¸ñ Ç¥ ¾×:" + goal);
-		System.out.println("½Ç    Àû:" + result);
-		System.out.println("´Ş ¼º ·ü:" + result/(double)goal);
+		System.out.println("ì‚¬ì›ë²ˆí˜¸:" + no);
+		System.out.println("ì´    ë¦„:" + name);
+		System.out.println("ëª© í‘œ ì•¡:" + goal);
+		System.out.println("ì‹¤    ì :" + result);
+		System.out.println("ë‹¬ ì„± ë¥ :" + result/(double)goal);
 		System.out.println();
 	}
 
 	public void drawGraph() {
-		System.out.print("¸ñ Ç¥ ¾×:");
+		System.out.print("ëª© í‘œ ì•¡:");
 		
 		for (int i=0; i<goal; i++) {
 			System.out.print("=");
 		}
 		System.out.println();
 
-		System.out.print("½Ç    Àû:");
+		System.out.print("ì‹¤    ì :");
 		
 		for (int i=0; i<result; i++) {
 			System.out.print("=");		

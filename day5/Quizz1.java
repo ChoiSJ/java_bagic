@@ -1,8 +1,8 @@
 public class Quizz1 {
 	public static void main(String[] args) {
-		// ¹è¿­¿¡¼­ °¡Àå Å« ¼ıÀÚ Ã£±â
+		// ë°°ì—´ì—ì„œ ê°€ì¥ í° ìˆ«ì ì°¾ê¸°
 
-		// °¡Àå Å« °ªÀ» ´ãÀ» º¯¼ö
+		// ê°€ì¥ í° ê°’ì„ ë‹´ì„ ë³€ìˆ˜
 		int max = 0;
 
 		int[] numbers = {1, 3, 7, 4, 2, 6};
@@ -13,6 +13,6 @@ public class Quizz1 {
 			}
 		}
 
-		System.out.println("°¡Àå Å« ¼ö: " + max);
+		System.out.println("ê°€ì¥ í° ìˆ˜: " + max);
 	} 
 }

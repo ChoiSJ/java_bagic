@@ -4,33 +4,33 @@ public class IfDemo4 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("1: Ä¿ÇÇ(1500¿ø) 2: °úÀÏÁê½º(2000)¿ø 3: ÀÌ¿ÂÀ½·á(1000¿ø)");
+		System.out.println("1: ì»¤í”¼(1500ì›) 2: ê³¼ì¼ì¥¬ìŠ¤(2000)ì› 3: ì´ì˜¨ìŒë£Œ(1000ì›)");
 
-		System.out.print("±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.print("ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”:");
 		int money = sc.nextInt();
-		System.out.print("À½·á¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.print("ìŒë£Œë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 		int no = sc.nextInt();
 
 		int returnCoin = 0;
 		
 		if (no == 1) { 
 			int result = money - 1500;
-			System.out.println("Ä¿ÇÇ¸¦ ¹Ş¾Æ°¡¼¼¿ä.");
+			System.out.println("ì»¤í”¼ë¥¼ ë°›ì•„ê°€ì„¸ìš”.");
 			returnCoin = money - 1500;
 		}
 		
 		if (no == 2) { 
 			int result = money - 2000;
-			System.out.println("°úÀÏÁê½º¸¦ ¹Ş¾Æ°¡¼¼¿ä.");
+			System.out.println("ê³¼ì¼ì¥¬ìŠ¤ë¥¼ ë°›ì•„ê°€ì„¸ìš”.");
 			returnCoin = money - 2000;
 		}
 		
 		if (no == 3) { 
 			int result = money - 1000;
-			System.out.println("ÀÌ¿ÂÀ½·á¸¦ ¹Ş¾Æ°¡¼¼¿ä.");
+			System.out.println("ì´ì˜¨ìŒë£Œë¥¼ ë°›ì•„ê°€ì„¸ìš”.");
 			returnCoin = money - 1000;
 		}
 
-		System.out.println("°Å½º¸§µ·:" + returnCoin);
+		System.out.println("ê±°ìŠ¤ë¦„ëˆ:" + returnCoin);
 	}
 }

@@ -3,8 +3,8 @@ public class Employee {
 	String name;
 
 	public void print() {
-		System.out.println("»ç¿ø¹øÈ£:" + no);
-		System.out.println("ÀÌ    ¸§:" + name);
+		System.out.println("ì‚¬ì›ë²ˆí˜¸:" + no);
+		System.out.println("ì´    ë¦„:" + name);
 		System.out.println();
 	}
 }

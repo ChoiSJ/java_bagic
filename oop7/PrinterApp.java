@@ -1,16 +1,16 @@
 public class PrinterApp {
 	public static void main(String[] args) {
 		
-		// Èæ¹é ÀÎ¼â
+		// í‘ë°± ì¸ì‡„
 		Printer p1 = new Printer();
-		p1.print("ÀÌ¹ø ÁÖ ±İ¿äÀÏ ¿µÅ¸´ëÈ¸...");
+		p1.print("ì´ë²ˆ ì£¼ ê¸ˆìš”ì¼ ì˜íƒ€ëŒ€íšŒ...");
 
-		// ÄÃ·¯ ÀÎ¼â
+		// ì»¬ëŸ¬ ì¸ì‡„
 		ColorPrinter p2 = new ColorPrinter();
-		p2.print("ÀÏ¿äÀÏ ÂïÀº »çÁø");
+		p2.print("ì¼ìš”ì¼ ì°ì€ ì‚¬ì§„");
 
-		// »çÁø ÀÎ¼â
+		// ì‚¬ì§„ ì¸ì‡„
 		PhotoPrinter p3 = new PhotoPrinter();
-		p3.print("Áõ¸í»çÁø");
+		p3.print("ì¦ëª…ì‚¬ì§„");
 	}
 }

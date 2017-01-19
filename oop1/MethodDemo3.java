@@ -3,12 +3,12 @@ import java.util.Date;
 
 public class MethodDemo3 {
 	
-	// ³­¼ö¸¦ ¹ß»ı½ÃÅ°´Â ¸Ş¼Òµå ¸¸µé±â
+	// ë‚œìˆ˜ë¥¼ ë°œìƒì‹œí‚¤ëŠ” ë©”ì†Œë“œ ë§Œë“¤ê¸°
 	public static int random() {
 		Random r = new Random();
 		int number = r.nextInt(100);
 		
-		// return Å°¿öµå´Â ÀÌ ¸Ş¼Òµå¸¦ È£ÃâÇÑ °÷¿¡ °ªÀ» ¹İÈ¯ÇÑ´Ù.
+		// return í‚¤ì›Œë“œëŠ” ì´ ë©”ì†Œë“œë¥¼ í˜¸ì¶œí•œ ê³³ì— ê°’ì„ ë°˜í™˜í•œë‹¤.
 		return number;
 	}
 

@@ -2,54 +2,54 @@ import java.util.Scanner;
 
 public class ContactApp {
 	public static void main(String[] args) {
-		// ¿¬¶ôÃ³ Á¤º¸¸¦ ÀÔ·Â¹Ş´Â È­¸é °ü·Ã Å¬·¡½º
-		// »ç¿ëÀÚÀÇ ÀÔ·ÂÀ» ÀĞ¾î¿À´Â Scanner °´Ã¼ »ı¼ºÇÏ±â
+		// ì—°ë½ì²˜ ì •ë³´ë¥¼ ì…ë ¥ë°›ëŠ” í™”ë©´ ê´€ë ¨ í´ë˜ìŠ¤
+		// ì‚¬ìš©ìì˜ ì…ë ¥ì„ ì½ì–´ì˜¤ëŠ” Scanner ê°ì²´ ìƒì„±í•˜ê¸°
 		Scanner sc = new Scanner(System.in);
 	
 		Contact[] contacts = new Contact[100];
 		int currentPosition = 0;
 	
 		for (;;) {
-			System.out.println("1:µî·Ï	2:Á¶È¸	0:Á¾·á");
-			System.out.print("¸Ş´º ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+			System.out.println("1:ë“±ë¡	2:ì¡°íšŒ	0:ì¢…ë£Œ");
+			System.out.print("ë©”ë‰´ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 			int menuNo = sc.nextInt();
 
 			if (menuNo == 1) {
-				// ¹è¿­¿¡ µî·ÏÇÏ±â
-				// ¹è¿­¿¡ currentPosition ÀÌ °¡¸®Å°´Â À§Ä¡¿¡ Contact ¸¦ ÀúÀåÇÏ°í
-				// currentPosition ÀÇ °ªÀ» 1 Áõ°¡½ÃÅ²´Ù.
-				contacts[currentPosition] = new Contact();			// »õ·Î ¹è¿­ÀÇ ÇÏ³ª¿ëÀ» ÀÛ¼ºÇÏ¿© ÇÑ °³¿ëÀ¸·Î ¸®¼Â
+				// ë°°ì—´ì— ë“±ë¡í•˜ê¸°
+				// ë°°ì—´ì— currentPosition ì´ ê°€ë¦¬í‚¤ëŠ” ìœ„ì¹˜ì— Contact ë¥¼ ì €ì¥í•˜ê³ 
+				// currentPosition ì˜ ê°’ì„ 1 ì¦ê°€ì‹œí‚¨ë‹¤.
+				contacts[currentPosition] = new Contact();			// ìƒˆë¡œ ë°°ì—´ì˜ í•˜ë‚˜ìš©ì„ ì‘ì„±í•˜ì—¬ í•œ ê°œìš©ìœ¼ë¡œ ë¦¬ì…‹
 
-				System.out.print("¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+				System.out.print("ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 				contacts[currentPosition].setNo(sc.nextInt());
 				//int no = sc.next();
-				System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä:");
+				System.out.print("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”:");
 				contacts[currentPosition].setName(sc.next());
 				//String name = sc.next();
-				System.out.print("ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+				System.out.print("ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 				contacts[currentPosition].setPhone(sc.next());
 				//String phone = sc.next();
-				System.out.print("ÀÌ¸ŞÀÏÀ» ÀÔ·ÂÇÏ¼¼¿ä:");
+				System.out.print("ì´ë©”ì¼ì„ ì…ë ¥í•˜ì„¸ìš”:");
 				contacts[currentPosition].setEmail(sc.next());
 				//String email = sc.next();
 				currentPosition++;
 
-				// Contact °´Ã¼ »ı¼ºÇÏ°í, °ªÀ» ´ã±â
+				// Contact ê°ì²´ ìƒì„±í•˜ê³ , ê°’ì„ ë‹´ê¸°
 				//Contact contact = new Contact();
 				//contact.setNo(no);
 				//contact.setName(name);
 				//contact.setPhone(phone);
 				//contact.setEmail(email);
 
-				// ¹è¿­¿¡ ÀúÀåÇÏ±â
+				// ë°°ì—´ì— ì €ì¥í•˜ê¸°
 				//contact[currentPosition] = contact;
 				//currentPosition++;
 				
 			} else if (menuNo == 2) {
-				// ¹è¿­¿¡ ÀúÀåµÈ ¸ğµç ¿¬¶ôÃ³ Á¤º¸ Ç¥½ÃÇÏ±â
-				// <-- enhanced for¹® »ç¿ëÇÏÁö ¸»°í ±¸Çö
-				// null ÀÏ °æ¿ì ºê·¹ÀÌÅ©
-				// ¹è¿­¿¡¼­ 0ºÎÅÍ currentPosition ÀÌ °¡¸®Å°´Â À§Ä¡ ¾Õ±îÁö ¹İº¹ÇØ¼­ Ãâ·Â
+				// ë°°ì—´ì— ì €ì¥ëœ ëª¨ë“  ì—°ë½ì²˜ ì •ë³´ í‘œì‹œí•˜ê¸°
+				// <-- enhanced forë¬¸ ì‚¬ìš©í•˜ì§€ ë§ê³  êµ¬í˜„
+				// null ì¼ ê²½ìš° ë¸Œë ˆì´í¬
+				// ë°°ì—´ì—ì„œ 0ë¶€í„° currentPosition ì´ ê°€ë¦¬í‚¤ëŠ” ìœ„ì¹˜ ì•ê¹Œì§€ ë°˜ë³µí•´ì„œ ì¶œë ¥
 				for (int i=0; i<currentPosition; i++) {
 					//Contact c = contacts[i];
 					//System.out.println("%d %s %s %s\n", c.getNo(), c.getName(), 
@@ -60,10 +60,10 @@ public class ContactApp {
 
 						
 					} else {
-						System.out.println("¹øÈ£: " + contacts[i].getNo());
-						System.out.println("ÀÌ¸§: " + contacts[i].getName());
-						System.out.println("ÀüÈ­¹øÈ£: " + contacts[i].getPhone());
-						System.out.println("ÀÌ¸ŞÀÏ: " + contacts[i].getEmail());
+						System.out.println("ë²ˆí˜¸: " + contacts[i].getNo());
+						System.out.println("ì´ë¦„: " + contacts[i].getName());
+						System.out.println("ì „í™”ë²ˆí˜¸: " + contacts[i].getPhone());
+						System.out.println("ì´ë©”ì¼: " + contacts[i].getEmail());
 					}
 				}
 

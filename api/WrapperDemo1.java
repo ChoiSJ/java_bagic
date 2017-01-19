@@ -1,17 +1,17 @@
 public class WrapperDemo1 {
 	public static void main(String[] args) {
 	
-		// Á¤¼ö 23À» ÀúÀåÇÏ°í ÀÖ´Â Integer °´Ã¼¸¦ ÂüÁ¶ÇÏ´Â a
-		//Integer a = new Integer(12345);			// <-- ¹Ú½Ì(Boxing)
+		// ì •ìˆ˜ 23ì„ ì €ì¥í•˜ê³  ìˆëŠ” Integer ê°ì²´ë¥¼ ì°¸ì¡°í•˜ëŠ” a
+		//Integer a = new Integer(12345);			// <-- ë°•ì‹±(Boxing)
 		Integer a = new Integer("12345");
-		// integer °´Ã¼¿¡ º¸°üµÈ Á¤¼ö°ªÀ» ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå: int intValue()
-		int x = a.intValue();					// <-- ¾ğ¹Ú½Ì(unBoxing)
+		// integer ê°ì²´ì— ë³´ê´€ëœ ì •ìˆ˜ê°’ì„ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ: int intValue()
+		int x = a.intValue();					// <-- ì–¸ë°•ì‹±(unBoxing)
 		double y = a.doubleValue();
 		
 		System.out.println("x:" + x);
 		System.out.println("y:" + y);
 
-		// Á¤¼ö 23À» ÀúÀåÇÏ´Â b
+		// ì •ìˆ˜ 23ì„ ì €ì¥í•˜ëŠ” b
 		int b = 12345;
 	}
 }

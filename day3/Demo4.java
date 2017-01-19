@@ -1,6 +1,6 @@
 public class Demo4 {
 	public static void main(String[] args) {
-		// ºñÆ® ¿¬»êÀÚ
+		// ë¹„íŠ¸ ì—°ì‚°ì
 		int a = 4;
 		int b = 6;
 		
@@ -14,7 +14,7 @@ public class Demo4 {
 		System.out.println(result);
 		
 		int c = -4;
-		result = c >> 2; // ÀÚ½ÅÀÇ ¿ø·¡ ºÎÈ£¿Í °°Àº ºÎÈ£¸¦ Ã¤¿ì±â¿¡ À½¼ö´Â À½¼ö·Î Ãâ·Â.
+		result = c >> 2; // ìì‹ ì˜ ì›ë˜ ë¶€í˜¸ì™€ ê°™ì€ ë¶€í˜¸ë¥¼ ì±„ìš°ê¸°ì— ìŒìˆ˜ëŠ” ìŒìˆ˜ë¡œ ì¶œë ¥.
 		System.out.println(result);
 		result = c << 2;
 		System.out.println(result);

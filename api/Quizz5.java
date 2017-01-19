@@ -3,11 +3,11 @@ import java.util.*;
 public class Quizz5 {
 	public static void main(String[] args) {
 		
-		String[] words = {"»õ³¢", "³ğ", "³â", "º´½Å"};
+		String[] words = {"ìƒˆë¼", "ë†ˆ", "ë…„", "ë³‘ì‹ "};
 		
-		String text = "¿ÃÇØ´Â º´½Å³âÀÔ´Ï´Ù. ÂüÀ¸·Î ¸¹Àº ÀÏµéÀÌ ÀÖ¾ú³×¿ä.";
+		String text = "ì˜¬í•´ëŠ” ë³‘ì‹ ë…„ì…ë‹ˆë‹¤. ì°¸ìœ¼ë¡œ ë§ì€ ì¼ë“¤ì´ ìˆì—ˆë„¤ìš”.";
 
-		// À§¿¡¼­ ³ª¿­ÇÑ ±İÄ¢¾î°¡ Æ÷ÇÔµÇ¾î ÀÖ´ÂÁö ¿©ºÎ È®ÀÎÇÏ±â
+		// ìœ„ì—ì„œ ë‚˜ì—´í•œ ê¸ˆì¹™ì–´ê°€ í¬í•¨ë˜ì–´ ìˆëŠ”ì§€ ì—¬ë¶€ í™•ì¸í•˜ê¸°
 		boolean isContains = false;
 		StringTokenizer st = new StringTokenizer(text);
 

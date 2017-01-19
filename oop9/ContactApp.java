@@ -1,33 +1,33 @@
 public class ContactApp {
 	public static void main(String args) {
 	
-		// ÁÖ¼Ò·ÏÁ¤º¸(ÀÌ¸§, ¿©·¯°³ÀÇ ÀüÈ­¹øÈ£, ÁÖ¼Ò)¸¦ ÀúÀåÇÏ´Â °´Ã¼ »ı¼º
+		// ì£¼ì†Œë¡ì •ë³´(ì´ë¦„, ì—¬ëŸ¬ê°œì˜ ì „í™”ë²ˆí˜¸, ì£¼ì†Œ)ë¥¼ ì €ì¥í•˜ëŠ” ê°ì²´ ìƒì„±
 		Contact contact = new Contact();
 		
-		String name = "È«±æµ¿";
+		String name = "í™ê¸¸ë™";
 		contact.setName(name);
 		
-		// ÀüÈ­¹øÈ£ ÀúÀå
+		// ì „í™”ë²ˆí˜¸ ì €ì¥
 		Tel[] phone = new Tel[10];
 		
 		Tel tel1 = new Tel();
-		tel1.setType("Æù");
+		tel1.setType("í°");
 		tel1.setNumber("080-3939-3939");
 		phone[0] = tel1;
 
 		Tel tel2 = new Tel();
-		tel2.setType("Á÷Àå");
+		tel2.setType("ì§ì¥");
 		tel2.setNumber("02-1234-5678");
 		phone[1] = tel2;
 
 		contact.setTels(phone);
 
-		// ÁÖ¼ÒÁ¤º¸ ÀúÀå(ÄÚµå, ½Ãµµ, ±¸±º, »ó¼¼)
+		// ì£¼ì†Œì •ë³´ ì €ì¥(ì½”ë“œ, ì‹œë„, êµ¬êµ°, ìƒì„¸)
 		Address addr = new Address();
 
-		addr.setSido("¼­¿ïÆ¯º°½Ã");
-		addr.setGugun("Á¾·Î±¸");
-		addr.setDetail("ºÀÀÍµ¿ µğ¾Æ¸Áºôµù 401È£");
+		addr.setSido("ì„œìš¸íŠ¹ë³„ì‹œ");
+		addr.setGugun("ì¢…ë¡œêµ¬");
+		addr.setDetail("ë´‰ìµë™ ë””ì•„ë§ë¹Œë”© 401í˜¸");
 
 		contact.setAddress(addr);
 	}

@@ -4,19 +4,19 @@ public class ProductRepository {
 
 	ArrayList<Product> db = new ArrayList<Product>();
 	
-	// »õ·Î¿î »óÇ°°´Ã¼¸¦ Àü´Ş¹Ş¾Æ¼­ 5¹ø ¶óÀÎ¿¡ »ı¼ºÇÑ ArrayList¿¡ ÀúÀåÇÏ´Â ¸Ş¼Òµå
+	// ìƒˆë¡œìš´ ìƒí’ˆê°ì²´ë¥¼ ì „ë‹¬ë°›ì•„ì„œ 5ë²ˆ ë¼ì¸ì— ìƒì„±í•œ ArrayListì— ì €ì¥í•˜ëŠ” ë©”ì†Œë“œ
 	public void addProduct(Product item) {
 		db.add(item);
 	}
 
-	// »óÇ°ÀÌ¸§À» Àü´Ş¹Ş¾Æ¼­ ArrayList ¿¡¼­ ±× »óÇ°ÀÌ¸§¿¡ ÇØ´çÇÏ´Â »óÇ°À» Ã£¾Æ¼­ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+	// ìƒí’ˆì´ë¦„ì„ ì „ë‹¬ë°›ì•„ì„œ ArrayList ì—ì„œ ê·¸ ìƒí’ˆì´ë¦„ì— í•´ë‹¹í•˜ëŠ” ìƒí’ˆì„ ì°¾ì•„ì„œ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
 	public Product findProduct(String name) {
 		Product result = new Product();
 
 		return result;
 	}
 
-	// ArrayList ¿¡ ÀúÀåµÈ ¸ğµç »óÇ° Á¤º¸¸¦ Ãâ·ÂÇÏ´Â ¸Ş¼Òµå
+	// ArrayList ì— ì €ì¥ëœ ëª¨ë“  ìƒí’ˆ ì •ë³´ë¥¼ ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œ
 	public void displayProducts() {
 		for (Product pro : db) {
 			System.out.printf("%d %s\n", pro.getNo(), pro.getName());

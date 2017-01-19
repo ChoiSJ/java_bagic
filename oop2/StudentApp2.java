@@ -1,15 +1,15 @@
 public class StudentApp2 {
 	public static void main(String[] args) {
 		
-		// ÇĞ»ıµéÀ» ¿©·¯ ¸í ÀúÀåÇÏ´Â ¹è¿­ ¸¸µé±â
-		// Student °´Ã¼ 5°³ ´ãÀ» ¼ö ÀÖ´Â ¹è¿­À» »ı¼ºÇØ¼­ students º¯¼ö¿¡ ´ã¾Ò´Ù.
+		// í•™ìƒë“¤ì„ ì—¬ëŸ¬ ëª… ì €ì¥í•˜ëŠ” ë°°ì—´ ë§Œë“¤ê¸°
+		// Student ê°ì²´ 5ê°œ ë‹´ì„ ìˆ˜ ìˆëŠ” ë°°ì—´ì„ ìƒì„±í•´ì„œ students ë³€ìˆ˜ì— ë‹´ì•˜ë‹¤.
 		Student[] students = new Student[3];
 
-		students[0] = new Student(1, "¼ø½Å", 40, 80, 90);
-		students[1] = new Student(5, "À¯½Å", 80, 70, 70);
-		students[2] = new Student(7, "±æµ¿", 90, 10, 20);
+		students[0] = new Student(1, "ìˆœì‹ ", 40, 80, 90);
+		students[1] = new Student(5, "ìœ ì‹ ", 80, 70, 70);
+		students[2] = new Student(7, "ê¸¸ë™", 90, 10, 20);
 
-		//students[0].info();			// ¹è¿­¿¡ ³Ö¾úÀ¸´Ï È£Ãâµµ ¹è¿­À¸·Î
+		//students[0].info();			// ë°°ì—´ì— ë„£ì—ˆìœ¼ë‹ˆ í˜¸ì¶œë„ ë°°ì—´ìœ¼ë¡œ
 		//students[1].info();
 		//students[2].info();
 
@@ -18,7 +18,7 @@ public class StudentApp2 {
 			//s.info();
 		//}
 		
-		System.out.println("ÀÌ¸§ ±¹¾î ¿µ¾î ¼öÇĞ ÃÑÁ¡ Æò±Õ");
+		System.out.println("ì´ë¦„ êµ­ì–´ ì˜ì–´ ìˆ˜í•™ ì´ì  í‰ê· ");
 		for (Student s : students) {	
 			//s.info();
 			//System.out.println(s.total());

@@ -1,8 +1,8 @@
 public class ProductApp {
 	public static void main(String[] args) {
-		Product p1 = new Product(10, "¾ÆÀÌÆĞµå", "¾ÖÇÃ", 1000000, 0.05);
-		Product p2 = new Product(12, "¸ÆºÏÇÁ·Î", "¾ÖÇÃ", 2500000, 0.1);
-		Product p3 = new Product(13, "¾ÆÀÌÆù", "¾ÖÇÃ", 850000, 0);
+		Product p1 = new Product(10, "ì•„ì´íŒ¨ë“œ", "ì• í”Œ", 1000000, 0.05);
+		Product p2 = new Product(12, "ë§¥ë¶í”„ë¡œ", "ì• í”Œ", 2500000, 0.1);
+		Product p3 = new Product(13, "ì•„ì´í°", "ì• í”Œ", 850000, 0);
 
 		p1.info();
 		p2.info();

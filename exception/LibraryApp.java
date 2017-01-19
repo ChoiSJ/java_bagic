@@ -7,31 +7,31 @@ public class LibraryApp {
 		Scanner sc = new Scanner(System.in);
 		Library lib = new Library();
 
-		while (true) {	// ¹«ÇÑ·çÇÁ
+		while (true) {	// ë¬´í•œë£¨í”„
 			System.out.println("---------------------------------------------");
-			System.out.println("1.µî·Ï 2.¹øÈ£°Ë»ö 3.Á¦¸ñ°Ë»ö 4.Àå¸£°Ë»ö 0.Á¾·á");
+			System.out.println("1.ë“±ë¡ 2.ë²ˆí˜¸ê²€ìƒ‰ 3.ì œëª©ê²€ìƒ‰ 4.ì¥ë¥´ê²€ìƒ‰ 0.ì¢…ë£Œ");
 			System.out.println("---------------------------------------------");
 
-			System.out.print("¼±ÅÃ>");
+			System.out.print("ì„ íƒ>");
 			int menu = Integer.parseInt(sc.nextLine());
 
 			try {
 				if (menu == 1) {
-					System.out.print("¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+					System.out.print("ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 					int no = Integer.parseInt(sc.nextLine());
-					System.out.print("Á¦¸ñÀ» ÀÔ·ÂÇÏ¼¼¿ä:");
+					System.out.print("ì œëª©ì„ ì…ë ¥í•˜ì„¸ìš”:");
 					String title = sc.nextLine();
-					System.out.print("ÀúÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+					System.out.print("ì €ìë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 					String author = sc.nextLine();
-					System.out.print("ÃâÆÇ»ç¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+					System.out.print("ì¶œíŒì‚¬ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 					String publisher = sc.nextLine();
-					System.out.print("°¡°İÀ» ÀÔ·ÂÇÏ¼¼¿ä:");
+					System.out.print("ê°€ê²©ì„ ì…ë ¥í•˜ì„¸ìš”:");
 					int price = Integer.parseInt(sc.nextLine());
-					System.out.print("Àå¸£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+					System.out.print("ì¥ë¥´ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 					String genre = sc.nextLine();
 
 					Book book = new Book();
-					// setter ÀÌ¿ëÇØ¼­ Ã¥ Á¤º¸ ´ã±â
+					// setter ì´ìš©í•´ì„œ ì±… ì •ë³´ ë‹´ê¸°
 					book.setNo(no);
 					book.setTitle(title);
 					book.setAuthor(author);
@@ -39,30 +39,30 @@ public class LibraryApp {
 					book.setPrice(price);
 					book.setGenre(genre);
 
-					// Library °´Ã¼ÀÇ addBook(Book) ½ÇÇàÇØ¼­ Ã¥ °´Ã¼ Àü´ŞÇÏ±â
+					// Library ê°ì²´ì˜ addBook(Book) ì‹¤í–‰í•´ì„œ ì±… ê°ì²´ ì „ë‹¬í•˜ê¸°
 					lib.addBook(book);
 				} else if (menu == 2) {
-					System.out.print("Ã¥ ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+					System.out.print("ì±… ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 					int no = Integer.parseInt(sc.nextLine());
 					lib.findBookByNo(no);
 				} else if (menu == 3) {
-					System.out.print("Ã¥ Á¦¸ñÀ» ÀÔ·ÂÇÏ¼¼¿ä:");
+					System.out.print("ì±… ì œëª©ì„ ì…ë ¥í•˜ì„¸ìš”:");
 					String title = sc.nextLine();
 					lib.findBookByTitle(title);
 				} else if (menu == 4) {
-					System.out.print("Ã¥ Àå¸£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+					System.out.print("ì±… ì¥ë¥´ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 					String genre = sc.nextLine();
 					lib.findBookByGenre(genre);
 				} else if (menu == 0) {
-					System.out.println("########## ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù. ##########");
+					System.out.println("########## í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤. ##########");
 					break;
 				}
 			} catch(LibraryException e) {
-				System.out.println("µµ¼­ °ü¸® ÇÁ·Î±×·¥ ¿À·ù");
-				System.out.println("¿À·ù ¸Ş½ÃÁö:" + e.getMessage());
+				System.out.println("ë„ì„œ ê´€ë¦¬ í”„ë¡œê·¸ë¨ ì˜¤ë¥˜");
+				System.out.println("ì˜¤ë¥˜ ë©”ì‹œì§€:" + e.getMessage());
 			} catch(Exception e) {
-				System.out.println("¾Ë·ÁÁöÁö ¾ÊÀº ¿À·ù°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù.");
-				System.out.println("¿À·ù ¸Ş½ÃÁö:" + e.getMessage());
+				System.out.println("ì•Œë ¤ì§€ì§€ ì•Šì€ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì˜€ìŠµë‹ˆë‹¤.");
+				System.out.println("ì˜¤ë¥˜ ë©”ì‹œì§€:" + e.getMessage());
 			}
 		}
 	}

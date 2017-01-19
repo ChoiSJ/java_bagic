@@ -43,12 +43,12 @@ public class Product implements Comparable<Product> {
 		return true;
 	}
 
-	// �� ��ǰ��ȣ�� �ٸ� ��ǰ�� ��ȣ�� ���ϴ� �ڵ�4
+	// 내 상품번호와 다른 상품의 번호를 비교하는 코드4
 	public int compareTo(Product other) {
 		return no - other.no;
 	}
 
-	// Object �� toString() �������ϱ�
+	// Object 의 toString() 재정의하기
 
 	public String toString() {
 		return "Product[no="+no+", name="+name+"]";
@@ -56,12 +56,12 @@ public class Product implements Comparable<Product> {
 }
 
 /*
-	1. �Է°��� �ϳ��� �о����
-	2. �Է°��� �� ���� �� �ִ� ��ü ����
-	3. �Է°��� ������ ��ü�� setter �� �̿��ؼ� ���
-	4. ���� ��� ��ü�� DB�� �������ִ� �޼ҵ忡 �����ϱ�
+	1. 입력값을 하나씩 읽어오기
+	2. 입력값을 다 담을 수 있는 객체 생성
+	3. 입력값을 생성한 객체에 setter 를 이용해서 담기
+	4. 값이 담긴 객체를 DB에 저장해주는 메소드에 전달하기
 
-	1. �Է°��� �о����
-	2. DB���� ��ǰ�� ã���ִ� �޼ҵ忡�� �Է°��� �����ϱ�
+	1. 입력값을 읽어오기
+	2. DB에서 상품을 찾아주는 메소드에게 입력값을 전달하기
 
 */

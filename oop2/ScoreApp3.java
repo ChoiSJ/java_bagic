@@ -1,13 +1,13 @@
 public class ScoreApp3 {
 	public static void main(String[] args) {
 		
-		Score s = new Score("±èÀ¯½Å", 40, 50, 60);
+		Score s = new Score("ê¹€ìœ ì‹ ", 40, 50, 60);
 
 		int result1 = s.total();
-		System.out.println("ÃÑÁ¡: " + result1);
+		System.out.println("ì´ì : " + result1);
 
 		double result2 = s.average();
-		System.out.println("Æò±Õ: " + result2);
+		System.out.println("í‰ê· : " + result2);
 
 	}
 }
