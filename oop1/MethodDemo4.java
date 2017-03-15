@@ -13,5 +13,4 @@ public class MethodDemo4 {
 		double a1 = area(4.0, 3.0);
 		System.out.println(a1);
 	}
-
 }
