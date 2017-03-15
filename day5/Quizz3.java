@@ -3,7 +3,6 @@ import java.util.*;
 public class Quizz3 {
 	public static void main(String[] args) {
 		Random ran = new Random();
-	
 
 		/*
 		// 임의의 숫자 3개를 저장할 배열
