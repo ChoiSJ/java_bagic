@@ -14,6 +14,5 @@ public class Demo6 {
 		double height = 165;
 		String bloodType = "O";
 		boolean isMarryed = false;	// is 혹은 has 등으로 설정하기도 함.
-
 	}
 }
