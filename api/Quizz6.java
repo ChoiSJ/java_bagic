@@ -43,6 +43,5 @@ public class Quizz6 {
 			System.out.println("급   여:" + employees[i].getSalary());
 			System.out.println("-------------------------");
 		}
-		
 	}
 }
