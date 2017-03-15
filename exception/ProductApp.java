@@ -46,6 +46,5 @@ public class ProductApp {
 			System.out.println("할 인 율:" + pro.getDiscountRate());
 			System.out.println("--------------------");
 		}
-
 	}
 }
