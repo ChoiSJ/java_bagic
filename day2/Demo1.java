@@ -25,6 +25,5 @@ public class Demo1 {
 		int m4 = 100_000_000; 
 		int m5 = 5;
 		System.out.println(m4 * m5);
-
 	}
 }
