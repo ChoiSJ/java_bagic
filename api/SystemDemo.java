@@ -68,6 +68,5 @@ public class SystemDemo {
 		System.out.println(str13.substring(str13.length()-1));
 
 		String str14 = 1234 + "";
-
 	}
 }
