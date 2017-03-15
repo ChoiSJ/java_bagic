@@ -31,7 +31,5 @@ public class StudentApp2 {
 			System.out.printf("%s \t%s \t%d점 \t%d점 \t%d점 \t%d점 \t%s점\n", 
 							s.getName(), s.getGrade(), s.getKor(), s.getEng(), s.getMath(), s.getTotal(), df.format(s.getAvg()));
 		}
-		
-		
 	}
 }
