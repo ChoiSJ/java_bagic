@@ -17,6 +17,5 @@ public class Demo2 {
 		boolean result2 = totalPrice > 50
 				|| price1 >= 20 || price2 >= 20 || price3 >= 20;
 		System.out.println("판정 결과: " + result2);
-
 	}
 }
