@@ -17,7 +17,6 @@ public class ArrayListDemo5 {
 		cart.add(p3);
 		cart.add(p4);
 		cart.add(new Product(6, "북마커"));
-		
 
 		// ArrayList 에 저장된 객체 중에서 연필 상품 지우기
 		cart.remove(p2);
