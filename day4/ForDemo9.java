@@ -15,9 +15,6 @@ public class ForDemo9 {
 			int first = random.nextInt(6) + 1;
 			int second = random.nextInt(6) + 1;
 			System.out.printf("(%d, %d)\n", first, second);
-			
-
-
 		}
 	}
 }
