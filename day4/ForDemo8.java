@@ -16,6 +16,5 @@ public class ForDemo8 {
 			}
 			System.out.println(i);
 		}
-
 	}
 }
