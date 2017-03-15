@@ -13,6 +13,5 @@ public class DBAccessApp {
 		System.out.println(db1);
 		System.out.println(db2);
 		System.out.println(db3);
-		
 	}
 }
