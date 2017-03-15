@@ -24,6 +24,5 @@ public class CarApp {
 		System.out.println(c.speed);
 
 		// 생성된 객체의 필드, 생성된 객체의 메소드를 사용하기
-
 	}
 }
