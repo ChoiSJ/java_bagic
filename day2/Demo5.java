@@ -6,6 +6,5 @@ public class Demo5 {
 
 		System.out.println(s1);
 		System.out.println(s2);
-
 	}
 }
