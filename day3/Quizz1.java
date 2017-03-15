@@ -15,6 +15,5 @@ public class Quizz1 {
 		int total = kor + eng + math;
 		int avg = total/3;
 		System.out.println("총점: " + total + "\t평균:" + avg);
-		 
 	}
 }
