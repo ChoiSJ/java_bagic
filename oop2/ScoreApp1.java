@@ -12,6 +12,5 @@ public class ScoreApp1 {
 
 		System.out.println("총점: " + result1);
 		System.out.println("평균: " + result2);
-		
 	}
 }
