@@ -12,6 +12,5 @@ public class DisplayChartApp {
 		// 그래프 그리기
 		chartDisplay1.drawGraph();
 		chartDisplay2.drawGraph();
-		
 	}
 }
