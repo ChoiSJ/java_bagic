@@ -1,7 +1,6 @@
 public class PhoneApp2 {
 	public static void main(String[] args) {
 		
-		
 		SmartPhone	 p1 = new SmartPhone();
 		FeaturePhone p2 = new FeaturePhone();
 		// p1 참조변수는 SmartPhone 을 참조하고 있기 때문에
