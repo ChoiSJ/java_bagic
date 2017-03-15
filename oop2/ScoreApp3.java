@@ -8,6 +8,5 @@ public class ScoreApp3 {
 
 		double result2 = s.average();
 		System.out.println("평균: " + result2);
-
 	}
 }
