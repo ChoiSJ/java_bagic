@@ -6,8 +6,8 @@ public class Quizz2 {
 		// 100의 자리 숫자
 		// 10의 자리 숫자
 		// 1의 자리 숫자를 각각 출력하시오
-		Scanner sc = new Scanner(System.in)
-;		System.out.print("숫자를 입력하세요:");
+		Scanner sc = new Scanner(System.in);
+		System.out.print("숫자를 입력하세요:");
 		int number = sc.nextInt();
 
 		int a = number/100;
