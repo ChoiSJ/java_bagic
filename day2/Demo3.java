@@ -12,6 +12,5 @@ public class Demo3 {
 		
 		// 오류다.
 		boolean b5 = "true";	// "true" 라는 글자(텍스트)를 담을 수는 없다.
-
 	}
 }
