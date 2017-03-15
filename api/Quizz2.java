@@ -22,5 +22,6 @@ public class Quizz2 {
 			String result = str.replace("<", "").replace(">", "");
 			System.out.println(result);
 		}
+		
 	}
 }
