@@ -17,7 +17,5 @@ public class ArrayDemo2 {
 		System.out.println(names[1]);
 		System.out.println(names[2]);
 		//System.out.println(names); // 해시코드: 메모리에 부여되는 특별한 값
-
-
 	}
 }
