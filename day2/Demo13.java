@@ -25,6 +25,5 @@ public class Demo13 {
 		System.out.println("m의 값: " + n);
 		System.out.println("m의 값: " + x);
 		System.out.println("m의 값: " + y);
-
 	}
 }
