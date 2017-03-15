@@ -19,6 +19,5 @@ public class Demo3 {
 		// 아래 코드는 에러다.
 		a = '가';
 		System.out.println(a);
-
 	}
 }
