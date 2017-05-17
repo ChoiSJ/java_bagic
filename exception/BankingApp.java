@@ -3,6 +3,7 @@ public class BankingApp {
 	public static void main(String[] args) {
 	
 		Banking banking = new Banking("홍길동", "11-111", "1234", 1000000, false);
+
 		try {
 			banking.changePassword("1234", "2222");
 
